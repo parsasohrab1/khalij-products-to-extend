@@ -1,101 +1,101 @@
 # Khalij-Tondgooyan-PTA-PET-Quality-Chain-Digital-Twin-System (Khalij-TPQC)
 
-## سامانه هوشمند پیوند کیفیت اکسیداسیون PTA (ناخالصی 4-CBA و رنگ b*) به ویسکوزیته ذاتی (IV) و بهینه‌سازی پلیمریزاسیون حالت جامد (SSP) پلی‌استر گرید بطری — محصول اختصاصی شرکت پتروشیمی شهید تندگویان
+## Intelligent system linking PTA oxidation quality (4-CBA impurity and b* color) to intrinsic viscosity (IV) and optimization of solid-state polymerization (SSP) of bottle-grade polyester — a dedicated product of Shahid Tondgooyan Petrochemical Company
 
-> این سند یک محصول **اختصاصی دوم** برای شرکت پتروشیمی شهید تندگویان (تنها تولیدکننده PET گرید بطری در ایران) است. محصول عمومی ۳ هلدینگ (انرژی/کربن) قبلاً به این شرکت تخصیص یافته و روی مصرف انرژی و کربن Scope 1/2/3 تمرکز دارد. محصول حاضر مکمل آن است و روی **زنجیره کیفیت** (نه انرژی) از راکتور اکسیداسیون PTA تا محصول نهایی PET گرید بطری تمرکز می‌کند — شکافی که در هیچ‌یک از محصولات ۱ تا ۴ پوشش داده نشده.
-
----
-
-## ۰. شناخت شرکت پتروشیمی شهید تندگویان و شکاف فنی
-
-**منابع:** [ویکی‌پدیا فارسی — پتروشیمی شهید تندگویان](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86)، [تحلیل شگویا — سیگنال](https://isignal.ir/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%88-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%B4%D9%87%DB%8C%D8%AF-%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86/)
-
-### محصولات و وضعیت عملیاتی
-
-| ویژگی | مقدار |
-|---|---|
-| ظرفیت اسمی PTA (اسید ترفتالیک تصفیه‌شده) | ۷۰۰,۰۰۰ تن/سال |
-| ظرفیت اسمی PET | ۸۸۸,۰۰۰ تن/سال |
-| جایگاه | تنها تولیدکننده PET **گرید بطری** در ایران |
-| نرخ بهره‌برداری فعلی | از ۶۱٪ (سال ۹۸) به ۸۳٪ ظرفیت اسمی رسیده — روند صعودی با پتانسیل رشد بیشتر |
-| خوراک اصلی (پارازایلین) | عمدتاً از پتروشیمی نوری تأمین می‌شود |
-
-### فرایند فنی (پایه علمی برای طراحی محصول)
-
-زنجیره PTA→PET دو مرحله بحرانی کیفی دارد:
-1. **اکسیداسیون PX به PTA** در راکتور تیتانیومی (به دلیل خورندگی محیط اسید استیک/بروماید) با کاتالیست کبالت-منگنز-بروم (Co:Mn:Br)؛ خروجی حیاتی: غلظت ناخالصی **4-CBA** و مقدار رنگ **b-value** که کیفیت نهایی PTA را تعیین می‌کند.
-2. **پلیمریزاسیون PET و پلیمریزاسیون حالت جامد (SSP)** برای رسیدن به **ویسکوزیته ذاتی (IV)** مناسب گرید بطری؛ IV مستقیماً تابع کیفیت PTA ورودی (4-CBA/رنگ) و شرایط SSP (دما، دبی نیتروژن، زمان ماند) است.
-
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
-
-| محصول هلدینگ | چرا برای تندگویان کافی نیست |
-|---|---|
-| محصول ۳ (قبلاً به تندگویان تخصیص یافته) | تمرکز صرف بر انرژی/کربن؛ به رابطهٔ علّی «کیفیت PTA ← کیفیت PET نهایی» نمی‌پردازد و نمی‌تواند علت ریشه‌ای افت IV یا رنگ محصول نهایی را تشخیص دهد |
-| محصول ۱، ۲، ۴ | هیچ‌کدام IV پلی‌استر، ناخالصی 4-CBA یا فرایند SSP را پوشش نمی‌دهند؛ این پارامترها منحصر به زنجیره پلی‌استر گرید بطری هستند |
-
-**نتیجه:** تندگویان به یک زنجیره کیفیت اختصاصی PTA→PET نیاز دارد که در کنار محصول انرژی موجود (محصول ۳) به‌عنوان محصول دوم و مکمل عمل کند.
+> This document is the **second dedicated product** for Shahid Tondgooyan Petrochemical Company (the only bottle-grade PET producer in Iran). The holding's general product 3 (energy/carbon) was previously assigned to this company and focuses on energy consumption and Scope 1/2/3 carbon. The present product complements it and focuses on the **quality chain** (not energy) from the PTA oxidation reactor to the final bottle-grade PET product — a gap not covered by any of products 1 to 4.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 0. Understanding Shahid Tondgooyan Petrochemical Company and the technical gap
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+**Sources:** [Persian Wikipedia — Shahid Tondgooyan Petrochemical](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86), [Shaguya analysis — Signal](https://isignal.ir/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%88-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%B4%D9%87%DB%8C%D8%AF-%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86/)
+
+### Products and operational status
+
+| Feature | Value |
+|---|---|
+| Nominal PTA (purified terephthalic acid) capacity | 700,000 tons/year |
+| Nominal PET capacity | 888,000 tons/year |
+| Position | The only **bottle-grade** PET producer in Iran |
+| Current utilization rate | Rose from 61% (1398 SH) to 83% of nominal capacity — an upward trend with potential for further growth |
+| Main feed (paraxylene) | Mainly supplied from Nouri Petrochemical |
+
+### Technical process (scientific basis for product design)
+
+The PTA→PET chain has two critical quality stages:
+1. **Oxidation of PX to PTA** in a titanium reactor (due to the corrosive acetic acid/bromide environment) with a cobalt-manganese-bromine (Co:Mn:Br) catalyst; vital output: the concentration of the **4-CBA** impurity and the **b-value** color, which determine the final PTA quality.
+2. **PET polymerization and solid-state polymerization (SSP)** to reach the **intrinsic viscosity (IV)** suitable for bottle grade; IV is directly a function of the incoming PTA quality (4-CBA/color) and the SSP conditions (temperature, nitrogen flow, residence time).
+
+### Technical Gap Relative to the Holding's Products 1 to 4
+
+| Holding product | Why it is not enough for Tondgooyan |
+|---|---|
+| Product 3 (previously assigned to Tondgooyan) | Focuses purely on energy/carbon; it does not address the causal relationship "PTA quality ← final PET quality" and cannot diagnose the root cause of loss of IV or color in the final product |
+| Products 1, 2, 4 | None covers polyester IV, 4-CBA impurity or the SSP process; these parameters are unique to the bottle-grade polyester chain |
+
+**Conclusion:** Tondgooyan needs a dedicated PTA→PET quality chain that acts as a second, complementary product alongside the existing energy product (product 3).
+
+---
+
+## 1. Patent Background and Competitive Analysis
+
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | **US 4,755,048** – *Optical analysis of impurity absorptions* (سنجش نوری b-value PTA در طول موج ۴۴۵ نانومتر) | ابزار اندازه‌گیری آفلاین/نقطه‌ای؛ به پیش‌بینی و اتصال به فرایند پایین‌دستی PET نمی‌پردازد | تبدیل اندازه‌گیری نقطه‌ای به حسگر مجازی پیش‌بین متصل به DCS راکتور اکسیداسیون |
-| ۲ | **EP 2,754,649 A1** – *Method for determining impurity concentration in terephthalic acid* | روش اندازه‌گیری 4-CBA؛ فاقد مدل پیش‌بینی یادگیری‌محور یا پیوند به کیفیت پایین‌دستی | مدل ML پیش‌بینی 4-CBA از پارامترهای فرایندی (نسبت Co:Mn:Br، دما، O2) + پیوند مستقیم به IV نهایی |
-| ۳ | **US 7,557,180** – *Solid phase continuous polymerisation of PET reactor and process* | طراحی تجهیز/فرایند SSP؛ فاقد لایه پیش‌بینی یادگیری‌محور IV بلادرنگ | حسگر مجازی IV بلادرنگ SSP با ورودی هم‌زمان کیفیت PTA بالادستی |
-| ۴ | مطالعات دانشگاهی ویسکومتری خودکار PET (Polymer Char) | اندازه‌گیری آزمایشگاهی خودکار، نه پیش‌بینی پیش از تولید batch | پیش‌بینی IV **پیش از** پایان batch برای اصلاح بلادرنگ پارامترهای SSP |
+| 1 | **US 4,755,048** – *Optical analysis of impurity absorptions* (optical measurement of PTA b-value at 445 nm wavelength) | Offline/point measurement tool; does not address prediction or connection to the downstream PET process | Converting the point measurement to a predictive virtual sensor connected to the oxidation reactor DCS |
+| 2 | **EP 2,754,649 A1** – *Method for determining impurity concentration in terephthalic acid* | 4-CBA measurement method; lacks a learning-based prediction model or a link to downstream quality | An ML model for 4-CBA prediction from process parameters (Co:Mn:Br ratio, temperature, O2) + a direct link to the final IV |
+| 3 | **US 7,557,180** – *Solid phase continuous polymerisation of PET reactor and process* | SSP equipment/process design; lacks a real-time learning-based IV prediction layer | A real-time SSP IV virtual sensor with simultaneous upstream PTA quality input |
+| 4 | Academic studies on automated PET viscometry (Polymer Char) | Automated laboratory measurement, not prediction before batch production | IV prediction **before** the end of the batch for real-time correction of SSP parameters |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه دوقلوی دیجیتال زنجیره کیفیت که برای نخستین‌بار پیش‌بینی یادگیری‌محور ناخالصی 4-CBA و رنگ b* راکتور اکسیداسیون PTA را به‌عنوان ورودی مستقیم به مدل پیش‌بینی ویسکوزیته ذاتی (IV) پلیمریزاسیون حالت جامد (SSP) پایین‌دستی متصل می‌کند، و پیش از پایان batch، اصلاح پارامترهای SSP (دما/دبی نیتروژن/زمان ماند) را برای دستیابی به IV هدف گرید بطری به‌صورت خودکار پیشنهاد می‌دهد."**
+> **"A quality-chain digital twin system that, for the first time, connects learning-based prediction of the 4-CBA impurity and b* color of the PTA oxidation reactor as a direct input to the downstream solid-state polymerization (SSP) intrinsic viscosity (IV) prediction model, and — before the batch ends — automatically proposes correction of SSP parameters (temperature/nitrogen flow/residence time) to reach the bottle-grade target IV."**
 
-پیوند مستقیم و بلادرنگ کیفیت راکتور اکسیداسیون PTA به فرایند SSP پایین‌دستی در ادبیات patent یافت‌شده به‌صورت یکپارچه دیده نشد.
+A direct and real-time link of the PTA oxidation reactor quality to the downstream SSP process was not seen in an integrated form in the patent literature found.
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی شهید تندگویان
+## 2. SRS Document – Dedicated product of Shahid Tondgooyan Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** تضمین کیفیت پایدار PET گرید بطری از طریق پیش‌بینی زودهنگام کیفیت PTA و اصلاح بلادرنگ فرایند SSP پیش از پایان هر batch.
+### 2-1. Introduction
+**Purpose:** Guarantee the stable quality of bottle-grade PET through early prediction of PTA quality and real-time correction of the SSP process before the end of each batch.
 
-**چالش‌های میدانی:**
-- نوسان کیفیت PTA (4-CBA، رنگ b*) که معمولاً با تأخیر آزمایشگاهی شناسایی می‌شود و به batch های PET پایین‌دستی منتقل می‌شود.
-- کنترل IV در SSP معمولاً بر اساس تنظیمات ثابت انجام می‌شود، بدون درنظرگیری واقعی کیفیت ورودی PTA هر batch.
-- با افزایش نرخ بهره‌برداری (از ۶۱٪ به ۸۳٪ ظرفیت)، فشار برای حفظ کیفیت یکنواخت در نرخ تولید بالاتر افزایش یافته است.
+**Field challenges:**
+- Fluctuation of PTA quality (4-CBA, b* color), which is usually identified with laboratory delay and carried over to downstream PET batches.
+- IV control in SSP is usually done with fixed settings, without actually accounting for the incoming PTA quality of each batch.
+- As the utilization rate rises (from 61% to 83% of capacity), the pressure to maintain uniform quality at a higher production rate has increased.
 
-**دامنه:** مجتمع شهید تندگویان؛ اتصال به DCS واحد اکسیداسیون PTA و واحد SSP/پلیمریزاسیون PET.
+**Scope:** Shahid Tondgooyan complex; connection to the DCS of the PTA oxidation unit and the SSP/PET polymerization unit.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای راکتور اکسیداسیون (دما، فشار، نسبت Co:Mn:Br، غلظت O2) | بالا |
-| R-GEN-02 | دریافت داده واحد SSP (دما، دبی نیتروژن، زمان ماند، IV آزمایشگاهی batch قبلی) | بالا |
-| R-GEN-03 | داشبورد ردیابی کیفیت batch-به-batch از PTA تا PET نهایی | بالا |
-| R-GEN-04 | اتصال به سیستم آزمایشگاهی (LIMS) برای نتایج 4-CBA/b-value/IV | متوسط |
+| R-GEN-01 | Reception of instantaneous oxidation reactor data (temperature, pressure, Co:Mn:Br ratio, O2 concentration) | High |
+| R-GEN-02 | Reception of SSP unit data (temperature, nitrogen flow, residence time, laboratory IV of the previous batch) | High |
+| R-GEN-03 | Batch-to-batch quality tracking dashboard from PTA to final PET | High |
+| R-GEN-04 | Connection to the laboratory system (LIMS) for 4-CBA/b-value/IV results | Medium |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-PTA-01 | حسگر مجازی بلادرنگ ناخالصی 4-CBA و رنگ b* از پارامترهای راکتور اکسیداسیون | حسگر مجازی کیفیت PTA بدون انتظار آزمایشگاه |
-| FR-CHAIN-01 | مدل پیش‌بینی IV نهایی PET از ترکیب کیفیت PTA ورودی و شرایط SSP | **پیوند مستقیم کیفیت بالادستی-پایین‌دستی (نوآوری اصلی)** |
-| FR-CHAIN-02 | توصیه اصلاح بلادرنگ پارامترهای SSP (دما/دبی نیتروژن/زمان) برای رسیدن به IV هدف پیش از پایان batch | **کنترل پیش‌بین بین‌فرایندی (نوآوری اصلی)** |
-| FR-CAT-01 | پایش نسبت کاتالیست Co:Mn:Br و هشدار انحراف از بازه بهینه | پایش سلامت سیستم کاتالیستی |
-| FR-ALERT-01 | هشدار ریسک off-spec پیش از تکمیل batch با برآورد اثر مالی | توصیه‌گر اقدام پیشگیرانه |
-| FR-LOOP-01 | ثبت نتایج واقعی LIMS برای بازآموزی مداوم حسگر مجازی | یادگیری بسته |
+| FR-PTA-01 | Real-time virtual sensor of 4-CBA impurity and b* color from oxidation reactor parameters | PTA quality virtual sensor without waiting for the laboratory |
+| FR-CHAIN-01 | Final PET IV prediction model from the combination of incoming PTA quality and SSP conditions | **Direct upstream-downstream quality link (main innovation)** |
+| FR-CHAIN-02 | Recommendation of real-time correction of SSP parameters (temperature/nitrogen flow/time) to reach the target IV before the batch ends | **Cross-process predictive control (main innovation)** |
+| FR-CAT-01 | Monitoring of the Co:Mn:Br catalyst ratio and alert on deviation from the optimal range | Catalyst system health monitoring |
+| FR-ALERT-01 | Off-spec risk alert before batch completion with financial impact estimation | Preventive action recommender |
+| FR-LOOP-01 | Recording real LIMS results for continuous retraining of the virtual sensor | Closed learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر حسگر مجازی 4-CBA/رنگ | کمتر از ۳۰ ثانیه |
-| NFR-PER-02 | دقت پیش‌بینی IV نهایی (MAPE) | کمتر از ۵٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹٪ |
-| NFR-SEC-01 | رمزنگاری AES-256 + RBAC اپراتور PTA/SSP/کنترل کیفیت | اجباری |
+| NFR-PER-01 | 4-CBA/color virtual sensor delay | Less than 30 seconds |
+| NFR-PER-02 | Final IV prediction accuracy (MAPE) | Less than 5% |
+| NFR-AVAIL-01 | System availability | 99.9% |
+| NFR-SEC-01 | AES-256 encryption + RBAC for PTA/SSP/quality-control operators | Mandatory |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -118,16 +118,16 @@
                            └────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/pta-ssp-ingestion/` | اتصال DCS اکسیداسیون PTA و SSP + LIMS |
-| `services/quality-chain-model/` | حسگر مجازی 4-CBA/رنگ + مدل پیش‌بینی IV |
-| `services/ssp-control-recommender/` | توصیه‌گر اصلاح پارامتر SSP بلادرنگ |
-| `shared/` | بازاستفاده از محصولات ۱-۴ (به‌ویژه محصول ۳ انرژی همین شرکت) |
+| `services/pta-ssp-ingestion/` | Connection to PTA oxidation and SSP DCS + LIMS |
+| `services/quality-chain-model/` | 4-CBA/color virtual sensor + IV prediction model |
+| `services/ssp-control-recommender/` | Real-time SSP parameter correction recommender |
+| `shared/` | Reuse of products 1-4 (especially this company's energy product 3) |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -139,25 +139,25 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(minutes=i) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# ۱. راکتور اکسیداسیون PTA
+# 1. PTA oxidation reactor
 co_mn_br_ratio = 20 + 3 * np.sin(t * 0.1) + np.random.normal(0, 0.5, NUM_RECORDS)
 oxidation_temp_c = 195 + 3 * np.sin(t * 0.12) + np.random.normal(0, 0.8, NUM_RECORDS)
 o2_concentration_percent = 4.2 + 0.3 * np.sin(t * 0.15) + np.random.normal(0, 0.1, NUM_RECORDS)
 
-# ۲. کیفیت PTA (حسگر مجازی)
+# 2. PTA quality (virtual sensor)
 cba_4_ppm = 250 - 4 * (co_mn_br_ratio - 20) + 2 * (oxidation_temp_c - 195) + np.random.normal(0, 8, NUM_RECORDS)
 cba_4_ppm = np.clip(cba_4_ppm, 100, 400)
 pta_color_b = 1.2 + 0.02 * (cba_4_ppm - 250) / 10 + np.random.normal(0, 0.1, NUM_RECORDS)
 
-# ۳. واحد SSP
+# 3. SSP unit
 ssp_temp_c = 215 + 2 * np.sin(t * 0.08) + np.random.normal(0, 0.5, NUM_RECORDS)
 n2_flow_rate_nm3h = 1200 + 50 * np.sin(t * 0.09) + np.random.normal(0, 15, NUM_RECORDS)
 ssp_residence_time_h = 18 + np.random.normal(0, 0.5, NUM_RECORDS)
 
-# ۴. کیفیت نهایی PET
+# 4. Final PET quality
 final_iv_dlg = 0.80 - 0.0008 * (cba_4_ppm - 250) + 0.002 * (ssp_temp_c - 215) + 0.0005 * (ssp_residence_time_h - 18) + np.random.normal(0, 0.005, NUM_RECORDS)
 
-# ۵. برچسب
+# 5. Label
 off_spec_risk = ((final_iv_dlg < 0.78) | (final_iv_dlg > 0.84) | (pta_color_b > 1.8)).astype(int)
 
 df = pd.DataFrame({
@@ -175,49 +175,49 @@ df = pd.DataFrame({
 })
 
 df.to_csv("tondgooyan_pta_pet_quality_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-TPQC | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-TPQC | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| کشف انحراف کیفیت PTA | با تأخیر آزمایشگاهی، معمولاً پس از ورود به batch PET | پیش‌بینی بلادرنگ پیش از تأثیرگذاری بر SSP | کاهش batch های off-spec روی ظرفیت ۸۸۸ هزار تن/سال PET |
-| کنترل IV گرید بطری | تنظیمات ثابت SSP، عدم واکنش به نوسان کیفیت PTA batch به batch | اصلاح بلادرنگ پارامتر SSP بر مبنای کیفیت واقعی ورودی | افزایش یکنواختی کیفیت در نرخ تولید بالاتر (۸۳٪ ظرفیت و رو به رشد) |
-| ریسک بازگشت محصول از مشتریان بطری‌سازی | ناشی از نوسان IV/رنگ | کاهش با کنترل پیش‌بین | حفظ جایگاه انحصاری تنها تولیدکننده PET گرید بطری ایران |
+| Detecting PTA quality deviation | With laboratory delay, usually after entering the PET batch | Real-time prediction before affecting SSP | Reduced off-spec batches on the 888 thousand tons/year PET capacity |
+| Bottle-grade IV control | Fixed SSP settings, no reaction to batch-to-batch PTA quality fluctuation | Real-time SSP parameter correction based on actual incoming quality | Increased quality uniformity at a higher production rate (83% of capacity and growing) |
+| Risk of product return from bottling customers | Due to IV/color fluctuation | Reduced with predictive control | Maintaining the exclusive position of Iran's only bottle-grade PET producer |
 
-**Payback:** با توجه به جایگاه انحصاری تندگویان در بازار PET گرید بطری داخلی، حتی کاهش جزئی نرخ off-spec روی ظرفیت نزدیک به ۹۰۰ هزار تنی، ارزش اقتصادی قابل‌توجهی دارد.
+**Payback:** Given Tondgooyan's exclusive position in the domestic bottle-grade PET market, even a minor reduction in the off-spec rate on a capacity near 900 thousand tons has considerable economic value.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-6)
+## 5. Proposed Evolution Roadmap (Phase 1-6)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده + اتصال Kafka/TimescaleDB مشترک با محصول ۳ همین شرکت |
-| ۲ | حسگر مجازی 4-CBA و رنگ b* راکتور اکسیداسیون |
-| ۳ | مدل پیش‌بینی IV نهایی از ترکیب کیفیت PTA + شرایط SSP |
-| ۴ | توصیه‌گر اصلاح بلادرنگ پارامتر SSP |
-| ۵ | ردیابی کیفیت batch-به-batch در داشبورد یکپارچه |
-| ۶ | پایلوت عملیاتی روی یک خط SSP واقعی |
+| 1 | Base infrastructure + data simulator + Kafka/TimescaleDB connection shared with this company's product 3 |
+| 2 | 4-CBA and b* color virtual sensor of the oxidation reactor |
+| 3 | Final IV prediction model from combined PTA quality + SSP conditions |
+| 4 | Real-time SSP parameter correction recommender |
+| 5 | Batch-to-batch quality tracking in an integrated dashboard |
+| 6 | Operational pilot on one real SSP line |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **پیوند مستقیم و بلادرنگ کیفیت راکتور اکسیداسیون PTA (4-CBA/رنگ b*) به مدل پیش‌بینی IV پایین‌دستی SSP**.
-2. **توصیه‌گر اصلاح پیش‌بین پارامترهای SSP پیش از پایان batch** برای دستیابی به IV هدف گرید بطری.
-3. **ردیابی کیفیت زنجیره‌ای batch-به-batch** از راکتور اکسیداسیون تا محصول نهایی در یک مدل واحد.
+1. **Direct and real-time link of the PTA oxidation reactor quality (4-CBA/b* color) to the downstream SSP IV prediction model**.
+2. **A predictive SSP parameter correction recommender before the batch ends** to reach the bottle-grade target IV.
+3. **Batch-to-batch chain quality tracking** from the oxidation reactor to the final product in a single model.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [ویکی‌پدیا فارسی — پتروشیمی شهید تندگویان](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86)
-- [بررسی و تحلیل شرکت پتروشیمی شهید تندگویان — سیگنال](https://isignal.ir/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%88-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%B4%D9%87%DB%8C%D8%AF-%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86/)
+- [Persian Wikipedia — Shahid Tondgooyan Petrochemical](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86)
+- [Review and analysis of Shahid Tondgooyan Petrochemical Company — Signal](https://isignal.ir/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%88-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%B4%D9%87%DB%8C%D8%AF-%D8%AA%D9%86%D8%AF%DA%AF%D9%88%DB%8C%D8%A7%D9%86/)
 - [US4755048 — Optical analysis of impurity absorptions (PTA b-value)](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4755048)
 - [EP2754649A1 — Method for determining impurity concentration in terephthalic acid](https://patents.google.com/patent/EP2754649A1/en)
 - [US7557180 — Solid phase continuous polymerisation of PET reactor and process](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7557180)

@@ -1,94 +1,94 @@
 # Khalij-Nouri-Reformer-APC-ExportSlate-Optimization-System (Khalij-NRES)
 
-## سامانه هوشمند کنترل پیشرفته یادگیری‌محور راکتور ریفرمینگ CCR (واحد ۳۰۰/۳۵۰) و بهینه‌سازی مقید ترکیب محصول صادراتی-داخلی با تضمین سهم تأمین خوراک پتروشیمی تندگویان — محصول اختصاصی شرکت پتروشیمی نوری
+## Intelligent learning-based advanced control of the CCR reforming reactor (unit 300/350) and constrained optimization of the export-domestic product slate with a guaranteed feed supply share for Tondgooyan Petrochemical — a dedicated product of Nouri Petrochemical Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پتروشیمی نوری (برزویه) است — چهارمین تولیدکننده آروماتیک کشور و یکی از بزرگ‌ترین مجتمع‌های تولید پارازایلین جهان (۷۵۰ هزار تن/سال PX). این محصول با محصول اختصاصی بوعلی‌سینا (که روی کاتالیست/جاذب یک مجتمع متوسط تمرکز دارد) همپوشانی ندارد، زیرا مقیاس جهانی نوری (۱۳ واحد فرایندی) و **نقش راهبردی آن در تأمین خوراک PX شرکت شهید تندگویان** الزامات کاملاً متفاوتی ایجاد می‌کند.
-
----
-
-## ۰. شناخت شرکت پتروشیمی نوری و شکاف فنی
-
-**منابع:** [ویکی‌پدیا فارسی — پتروشیمی نوری](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D9%86%D9%88%D8%B1%DB%8C)، [nopc.co — واحدهای تولیدی](https://www.nopc.co/fa/commerceandsale/products/productionprocess/productionsunits)، [شانا — سبد محصولات نوری](https://www.shana.ir/news/301946/)
-
-### محصولات و مقیاس
-
-| ویژگی | مقدار |
-|---|---|
-| ظرفیت کل | ۴٫۵ میلیون تن/سال (چهارمین تولیدکننده آروماتیک کشور) |
-| پارازایلین (PX) | ۷۵۰,۰۰۰ تن/سال (یکی از بزرگ‌ترین مجتمع‌های PX جهان) |
-| سایر محصولات | بنزن، ارتوزایلین (OX)، برش سنگین، رافینیت، نفتای تصفیه‌شده (HTN)، LPG |
-| تعداد واحدهای فرایندی | ۱۳ واحد + واحد ذخیره و انتقال |
-| واحد کلیدی | واحد ۳۰۰ (ریفرمینگ کاتالیستی CCR) + واحد ۳۵۰ (احیای کاتالیست واحد ۳۰۰) |
-| صادرات | بخش قابل‌توجهی از محصولات (بنزن، OX، PX، رافینیت، HTN) صادراتی است |
-| نقش راهبردی | خوراک اصلی PX واحد شهید تندگویان عمدتاً از نوری تأمین می‌شود |
-
-### شکاف فنی نسبت به سایر محصولات هلدینگ (شامل محصول اختصاصی بوعلی‌سینا)
-
-| محصول | چرا برای نوری کافی نیست |
-|---|---|
-| محصول اختصاصی بوعلی‌سینا (Khalij-BACAT) | روی سلامت کاتالیست CCR و جاذب Parex یک مجتمع **متوسط‌مقیاس** تک‌محصولی تمرکز دارد؛ به **ترکیب چندمحصولی صادراتی/داخلی** یا **تعهد راهبردی تأمین خوراک شرکت دیگر** نمی‌پردازد |
-| محصول اختصاصی بندرامام (Khalij-BIMO) | برای هماهنگی **بین شرکت‌های زیرمجموعه یک مجتمع واحد** طراحی شده؛ رابطه نوری-تندگویان بین **دو شرکت کاملاً مستقل هلدینگ** با قرارداد تأمین خوراک است، نه زیرمجموعه‌های یک مادر |
-| محصول ۱، ۳، ۴ | هیچ‌کدام کنترل پیشرفته یادگیری‌محور CCR در مقیاس جهانی یا بهینه‌سازی ترکیب صادراتی-داخلی را پوشش نمی‌دهند |
-
-**نتیجه:** نوری نیاز به سامانه‌ای دارد که (الف) راکتور CCR را با کنترل پیشرفته یادگیری‌محور بهینه کند و (ب) ترکیب محصول را بین بازار صادراتی (حداکثرسازی درآمد ارزی) و **تعهد راهبردی تأمین PX تندگویان** (امنیت زنجیره تأمین داخلی) به‌صورت مقید بهینه‌سازی کند.
+> This document is a **dedicated** product for Nouri Petrochemical Company (Borzouyeh) — the country's fourth aromatics producer and one of the world's largest paraxylene complexes (750 thousand tons/year PX). This product does not overlap with the dedicated Bu Ali Sina product (which focuses on the catalyst/adsorbent of a medium-sized complex), because Nouri's global scale (13 process units) and **its strategic role in supplying PX feed to Shahid Tondgooyan Company** create completely different requirements.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 0. Understanding Nouri Petrochemical Company and the technical gap
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+**Sources:** [Persian Wikipedia — Nouri Petrochemical](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D9%86%D9%88%D8%B1%DB%8C), [nopc.co — Production units](https://www.nopc.co/fa/commerceandsale/products/productionprocess/productionsunits), [Shana — Nouri's product basket](https://www.shana.ir/news/301946/)
+
+### Products and scale
+
+| Feature | Value |
+|---|---|
+| Total capacity | 4.5 million tons/year (the country's fourth aromatics producer) |
+| Paraxylene (PX) | 750,000 tons/year (one of the world's largest PX complexes) |
+| Other products | Benzene, orthoxylene (OX), heavy cut, raffinate, hydrotreated naphtha (HTN), LPG |
+| Number of process units | 13 units + storage and transfer unit |
+| Key unit | Unit 300 (CCR catalytic reforming) + unit 350 (unit 300 catalyst regeneration) |
+| Exports | A significant portion of the products (benzene, OX, PX, raffinate, HTN) is exported |
+| Strategic role | The main PX feed of Shahid Tondgooyan is mainly supplied from Nouri |
+
+### Technical gap relative to the holding's other products (including the dedicated Bu Ali Sina product)
+
+| Product | Why it is not enough for Nouri |
+|---|---|
+| Bu Ali Sina dedicated product (Khalij-BACAT) | Focuses on the CCR catalyst health and Parex adsorbent of a **medium-scale** single-product complex; does not address **multi-product export/domestic slate** or **the strategic feed supply commitment to another company** |
+| Bandar Imam dedicated product (Khalij-BIMO) | Designed for coordination **among subsidiaries of a single complex**; the Nouri-Tondgooyan relationship is between **two completely independent holding companies** with a feed supply contract, not subsidiaries of one parent |
+| Products 1, 3, 4 | None covers global-scale learning-based CCR advanced control or export-domestic slate optimization |
+
+**Conclusion:** Nouri needs a system that (a) optimizes the CCR reactor with learning-based advanced control and (b) optimizes the product slate between the export market (maximizing foreign-currency revenue) and **the strategic PX supply commitment to Tondgooyan** (domestic supply chain security) in a constrained way.
+
+---
+
+## 1. Patent Background and Competitive Analysis
+
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | **US 11,318,438 B2** – *Advanced process control in a continuous catalytic regeneration reformer* | APC کلاسیک (کنترل پیش‌بین مبتنی بر مدل خطی/غیرخطی سنتی)؛ فاقد لایه یادگیری ماشین تطبیقی و فاقد اتصال به بهینه‌سازی ترکیب محصول | ارتقا به APC یادگیری‌محور (تطبیقی با داده واقعی) + اتصال مستقیم به بهینه‌سازی ترکیب محصول |
-| ۲ | **US 6,312,586 B1** – *Multireactor parallel flow hydrocracking process* | فرایند سخت‌افزاری چرخش کاتالیست بین راکتورهای موازی؛ رویکرد فرایندی نه نرم‌افزاری | مکمل: لایه نرم‌افزاری پیش‌بینی و بهینه‌سازی روی زیرساخت فرایندی موجود |
-| ۳ | *Yield and energy optimization of CCR reforming based on Particle Swarm Optimization* (ScienceDirect) | بهینه‌سازی بازده/انرژی سطح واحد؛ به تعهدات تأمین خوراک بین‌شرکتی یا بازار صادراتی نمی‌پردازد | بهینه‌سازی مقید با قید سخت «حداقل تأمین PX تندگویان» + هدف حداکثرسازی درآمد صادراتی |
-| ۴ | مدل‌سازی S&OP/تخصیص خوراک عمومی صنعت پتروشیمی (مشابه مرجع محصول بندرامام) | برای تخصیص خوراک درون یک مجتمع؛ به رابطه قراردادی تأمین راهبردی بین دو شرکت مستقل با اولویت امنیت عرضه ملی نمی‌پردازد | مدل اختصاصی با قید امنیت عرضه داخلی به‌عنوان اولویت اول، سپس حداکثرسازی درآمد صادراتی |
+| 1 | **US 11,318,438 B2** – *Advanced process control in a continuous catalytic regeneration reformer* | Classic APC (model predictive control based on traditional linear/nonlinear models); lacks an adaptive machine-learning layer and a connection to product slate optimization | Upgrade to learning-based APC (adaptive with real data) + direct connection to product slate optimization |
+| 2 | **US 6,312,586 B1** – *Multireactor parallel flow hydrocracking process* | Hardware process for catalyst circulation among parallel reactors; a process approach, not software | Complementary: a software prediction and optimization layer on the existing process infrastructure |
+| 3 | *Yield and energy optimization of CCR reforming based on Particle Swarm Optimization* (ScienceDirect) | Unit-level yield/energy optimization; does not address inter-company feed supply commitments or the export market | Constrained optimization with the hard constraint "minimum Tondgooyan PX supply" + the objective of maximizing export revenue |
+| 4 | General petrochemical industry S&OP/feed allocation modeling (similar to the Bandar Imam product reference) | For feed allocation within a single complex; does not address the contractual strategic supply relationship between two independent companies with national supply security priority | A dedicated model with domestic supply security as the first priority, then maximizing export revenue |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه کنترل و بهینه‌سازی یکپارچه که کنترل پیشرفته یادگیری‌محور راکتور/احیاکننده CCR (واحد ۳۰۰/۳۵۰) را با موتور بهینه‌سازی ترکیب محصول مقید ترکیب می‌کند؛ این موتور برای نخستین‌بار قید سخت «حداقل تأمین خوراک پارازایلین به شرکت پایین‌دستی تندگویان» را همراه با هدف حداکثرسازی درآمد صادراتی محصولات آروماتیک (بنزن، OX، رافینیت، HTN) بر مبنای قیمت لحظه‌ای بازار جهانی، در یک مدل بهینه‌سازی چندهدفه واحد حل می‌کند."**
+> **"An integrated control and optimization system that combines learning-based advanced control of the CCR reactor/regenerator (unit 300/350) with a constrained product slate optimization engine; for the first time, this engine solves the hard constraint 'minimum paraxylene feed supply to the downstream Tondgooyan company' together with the objective of maximizing export revenue of aromatic products (benzene, OX, raffinate, HTN) based on the instantaneous global market price, in a single multi-objective optimization model."**
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی نوری
+## 2. SRS Document – Dedicated product of Nouri Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** افزایش بازده و پایداری عملکرد راکتور CCR، و بهینه‌سازی هم‌زمان ترکیب محصول بین بازار صادراتی و تعهد راهبردی تأمین PX داخلی.
+### 2-1. Introduction
+**Purpose:** Increase the yield and performance stability of the CCR reactor, and simultaneously optimize the product slate between the export market and the strategic domestic PX supply commitment.
 
-**چالش‌های میدانی:**
-- کنترل پیشرفته موجود (APC کلاسیک) در واحد ۳۰۰/۳۵۰ به‌صورت تطبیقی با شرایط واقعی و متغیر خوراک/کاتالیست به‌روز نمی‌شود.
-- تصمیم «چقدر PX به تندگویان و چقدر به صادرات» معمولاً بدون بهینه‌سازی سیستماتیک نسبت به نوسان هم‌زمان قیمت صادراتی و اولویت امنیت تأمین داخلی گرفته می‌شود.
-- تنوع‌بخشی به سبد محصولات (طبق اعلام رسمی شانا) نیاز به ابزار تصمیم‌یار پیچیده‌تری نسبت به گذشته دارد.
+**Field challenges:**
+- The existing advanced control (classic APC) in unit 300/350 is not adaptively updated to the actual and variable feed/catalyst conditions.
+- The decision "how much PX to Tondgooyan and how much to exports" is usually made without systematic optimization against the simultaneous fluctuation of export price and the priority of domestic supply security.
+- Diversification of the product basket (per Shana's official announcement) requires a more sophisticated decision-support tool than in the past.
 
-**دامنه:** مجتمع نوری، برزویه؛ اتصال به DCS واحد ۳۰۰/۳۵۰ و سایر واحدهای فرآورش؛ اتصال به سامانه فروش/صادرات.
+**Scope:** Nouri complex, Borzouyeh; connection to the DCS of unit 300/350 and the other processing units; connection to the sales/export system.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای راکتور/احیاکننده CCR (واحد ۳۰۰/۳۵۰) | بالا |
-| R-GEN-02 | دریافت قیمت لحظه‌ای صادراتی PX/OX/بنزن/HTN از بازار جهانی | بالا |
-| R-GEN-03 | دریافت برنامه تعهد تأمین PX به شرکت تندگویان (قرارداد) | بالا |
-| R-GEN-04 | داشبورد یکپارچه «کنترل راکتور + ترکیب محصول» | بالا |
+| R-GEN-01 | Reception of instantaneous data of the CCR reactor/regenerator (unit 300/350) | High |
+| R-GEN-02 | Reception of instantaneous export prices of PX/OX/benzene/HTN from the global market | High |
+| R-GEN-03 | Reception of the PX supply commitment schedule to Tondgooyan (contract) | High |
+| R-GEN-04 | Integrated dashboard "Reactor control + product slate" | High |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-APC-01 | کنترل پیش‌بین یادگیری‌محور راکتور CCR (دما/فشار/نسبت H2) با تطبیق مداوم به داده واقعی | ارتقای APC کلاسیک به کنترل تطبیقی یادگیری‌محور |
-| FR-APC-02 | پیش‌بینی بهینه زمان‌بندی احیای کاتالیست واحد ۳۵۰ | زمان‌بندی پیش‌بین احیا در مقیاس صنعتی بزرگ |
-| FR-SLATE-01 | بهینه‌سازی مقید ترکیب محصول با قید سخت حداقل تأمین PX تندگویان و هدف حداکثرسازی درآمد صادراتی | **بهینه‌سازی مقید امنیت‌عرضه-درآمد صادراتی (نوآوری اصلی)** |
-| FR-ALERT-01 | هشدار ریسک کسری تأمین PX داخلی پیش از وقوع | توصیه‌گر پیشگیرانه زنجیره تأمین ملی |
-| FR-LOOP-01 | ثبت نتایج واقعی تحویل PX و فروش صادراتی برای بازآموزی مدل | یادگیری بسته |
+| FR-APC-01 | Learning-based predictive control of the CCR reactor (temperature/pressure/H2 ratio) with continuous adaptation to real data | Upgrading classic APC to adaptive learning-based control |
+| FR-APC-02 | Prediction of the optimal catalyst regeneration timing of unit 350 | Predictive regeneration scheduling at a large industrial scale |
+| FR-SLATE-01 | Constrained product slate optimization with the hard constraint of minimum Tondgooyan PX supply and the objective of maximizing export revenue | **Constrained supply-security / export-revenue optimization (main innovation)** |
+| FR-ALERT-01 | Alert for domestic PX supply shortfall risk before it occurs | National supply chain preventive recommender |
+| FR-LOOP-01 | Recording actual PX delivery and export sales results for model retraining | Closed learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر بازمحاسبه ترکیب محصول پس از تغییر قیمت | کمتر از ۵ دقیقه |
-| NFR-PER-02 | دقت پیش‌بینی بازده PX (MAPE) | کمتر از ۸٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹٪ |
+| NFR-PER-01 | Product slate recalculation delay after a price change | Less than 5 minutes |
+| NFR-PER-02 | PX yield prediction accuracy (MAPE) | Less than 8% |
+| NFR-AVAIL-01 | System availability | 99.9% |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -107,16 +107,16 @@
         └────────────┘    └───────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/ccr-market-ingestion/` | اتصال DCS واحد ۳۰۰/۳۵۰ + فید قیمت صادراتی + قرارداد تندگویان |
-| `services/learning-apc/` | کنترل پیش‌بین یادگیری‌محور |
-| `services/export-domestic-slate-optimizer/` | بهینه‌ساز مقید چندهدفه |
-| `shared/` | بازاستفاده از محصولات ۱-۴ و محصول اختصاصی بوعلی‌سینا/تندگویان |
+| `services/ccr-market-ingestion/` | Connection to the DCS of unit 300/350 + export price feed + Tondgooyan contract |
+| `services/learning-apc/` | Learning-based predictive control |
+| `services/export-domestic-slate-optimizer/` | Constrained multi-objective optimizer |
+| `shared/` | Reuse of products 1-4 and the Bu Ali Sina/Tondgooyan dedicated products |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -128,20 +128,20 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(hours=i/30) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# ۱. راکتور CCR
+# 1. CCR reactor
 reactor_temp_c = 510 + 5 * np.sin(t * 0.1) + np.random.normal(0, 1, NUM_RECORDS)
 catalyst_activity_percent = 95 - 0.0006 * np.arange(NUM_RECORDS) + np.random.normal(0, 0.4, NUM_RECORDS)
 catalyst_activity_percent = np.clip(catalyst_activity_percent, 78, 97)
 
-# ۲. بازده PX و سایر محصولات
+# 2. PX yield and other products
 px_production_rate_tph = 92 * (catalyst_activity_percent / 95) + np.random.normal(0, 1.5, NUM_RECORDS)
 benzene_production_rate_tph = 22 + np.random.normal(0, 1, NUM_RECORDS)
 
-# ۳. قیمت صادراتی و تعهد داخلی
+# 3. Export price and domestic commitment
 export_price_px_usd_ton = 950 + 70 * np.sin(t * 0.03) + np.random.normal(0, 15, NUM_RECORDS)
 tondgooyan_commitment_tph = 65 + 3 * np.sin(t * 0.02) + np.random.normal(0, 1, NUM_RECORDS)
 
-# ۴. تخصیص بهینه بین صادرات و تعهد داخلی
+# 4. Optimal allocation between export and domestic commitment
 export_allocation_tph = np.clip(px_production_rate_tph - tondgooyan_commitment_tph, 0, None)
 supply_shortfall_risk = (px_production_rate_tph < tondgooyan_commitment_tph).astype(int)
 
@@ -158,50 +158,50 @@ df = pd.DataFrame({
 })
 
 df.to_csv("nouri_reformer_slate_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-NRES | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-NRES | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| کنترل راکتور CCR | APC کلاسیک ایستا | کنترل تطبیقی یادگیری‌محور | افزایش بازده PX روی ظرفیت ۷۵۰ هزار تنی |
-| ترکیب صادراتی-داخلی | تصمیم‌گیری بدون بهینه‌سازی سیستماتیک | بهینه‌سازی مقید با اولویت امنیت عرضه | افزایش درآمد ارزی صادراتی بدون به‌خطر انداختن تأمین تندگویان |
-| ریسک کسری تأمین PX تندگویان | کشف دیرهنگام | هشدار پیشگیرانه | حفظ پایداری زنجیره تأمین ملی PTA/PET |
+| CCR reactor control | Static classic APC | Adaptive learning-based control | Increased PX yield on the 750 thousand ton capacity |
+| Export-domestic slate | Decision-making without systematic optimization | Constrained optimization with supply-security priority | Increased export foreign-currency revenue without jeopardizing Tondgooyan supply |
+| Tondgooyan PX shortfall risk | Late discovery | Preventive alert | Maintaining the stability of the national PTA/PET supply chain |
 
-**Payback:** با توجه به مقیاس جهانی نوری (۷۵۰ هزار تن PX/سال) و اهمیت راهبردی آن در زنجیره تأمین ملی، حتی بهبود جزئی بازده و ترکیب محصول ارزش اقتصادی و راهبردی بسیار بالایی دارد.
+**Payback:** Given Nouri's global scale (750 thousand tons PX/year) and its strategic importance in the national supply chain, even a minor improvement in yield and product slate has very high economic and strategic value.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-6)
+## 5. Proposed Evolution Roadmap (Phase 1-6)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده |
-| ۲ | کنترل پیش‌بین یادگیری‌محور واحد ۳۰۰/۳۵۰ |
-| ۳ | پیش‌بینی بازده PX/OX/بنزن |
-| ۴ | بهینه‌ساز مقید ترکیب صادراتی-داخلی |
-| ۵ | داشبورد یکپارچه + هشدار ریسک کسری تأمین |
-| ۶ | پایلوت عملیاتی با هماهنگی مستقیم تیم بازرگانی و تندگویان |
+| 1 | Base infrastructure + data simulator |
+| 2 | Learning-based predictive control of unit 300/350 |
+| 3 | PX/OX/benzene yield prediction |
+| 4 | Constrained export-domestic slate optimizer |
+| 5 | Integrated dashboard + supply shortfall risk alert |
+| 6 | Operational pilot with direct coordination of the commercial team and Tondgooyan |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **ارتقای APC کلاسیک واحد CCR به کنترل پیش‌بین یادگیری‌محور تطبیقی**.
-2. **بهینه‌سازی مقید ترکیب محصول با قید سخت امنیت تأمین خوراک بین‌شرکتی** (نوری→تندگویان) هم‌زمان با حداکثرسازی درآمد صادراتی.
-3. **هشدار پیشگیرانه ریسک کسری تأمین** زنجیره تأمین ملی PX/PTA.
+1. **Upgrading the classic APC of the CCR unit to adaptive learning-based predictive control**.
+2. **Constrained product slate optimization with the hard constraint of inter-company feed supply security** (Nouri→Tondgooyan) simultaneously with maximizing export revenue.
+3. **Preventive supply-shortfall risk alert** for the national PX/PTA supply chain.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [ویکی‌پدیا فارسی — پتروشیمی نوری](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D9%86%D9%88%D8%B1%DB%8C)
-- [nopc.co — واحدهای تولیدی پتروشیمی نوری](https://www.nopc.co/fa/commerceandsale/products/productionprocess/productionsunits)
-- [شانا — سبد محصولات پتروشیمی نوری متنوع می‌شود](https://www.shana.ir/news/301946/)
+- [Persian Wikipedia — Nouri Petrochemical](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D9%86%D9%88%D8%B1%DB%8C)
+- [nopc.co — Production units of Nouri Petrochemical](https://www.nopc.co/fa/commerceandsale/products/productionprocess/productionsunits)
+- [Shana — Nouri Petrochemical product basket is diversified](https://www.shana.ir/news/301946/)
 - [US11318438B2 — Advanced process control in a continuous catalytic regeneration reformer](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11318438)
 - [US6312586B1 — Multireactor parallel flow hydrocracking process](https://patents.google.com/patent/US6312586B1/en)
 - [Yield and energy optimization of the CCR reforming process based on particle swarm optimization — ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0360544220312056)

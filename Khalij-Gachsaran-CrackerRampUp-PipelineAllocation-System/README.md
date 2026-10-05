@@ -1,91 +1,91 @@
 # Khalij-Gachsaran-CrackerRampUp-PipelineAllocation-System (Khalij-GCPA)
 
-## سامانه هوشمند بهینه‌سازی خودآموز شدت کراکینگ کوره بومی‌ساخت در فاز افزایش ظرفیت و تخصیص بلادرنگ اتیلن خط لوله سراسری میان پنج مصرف‌کننده پایین‌دستی — محصول اختصاصی شرکت پتروشیمی گچساران
+## Intelligent system for self-learning optimization of the cracking severity of a domestically built furnace during capacity ramp-up and real-time allocation of national-pipeline ethylene among five downstream consumers — a dedicated product of Gachsaran Petrochemical Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پتروشیمی گچساران است — **بومی‌ترین مجتمع الفین ایران** (طراحی و ساخت داخلی، بدون لیسانس خارجی مرسوم) که در حال حاضر با حدود ۴۰٪ ظرفیت اسمی فعالیت می‌کند و اتیلن تولیدی را از طریق **خط لوله سراسری** به پنج مقصد پایین‌دستی مستقل منتقل می‌کند. این دو ویژگی (بومی‌سازی فناوری + توزیع خط‌لوله‌ای چندمصرف‌کننده) در هیچ شرکت دیگر هلدینگ دیده نمی‌شود.
-
----
-
-## ۰. شناخت شرکت پتروشیمی گچساران و شکاف فنی
-
-**منابع:** [Global Energy Monitor — Gachsaran Petrochemical Complex](https://www.gem.wiki/Gachsaran_Petrochemical_Complex)، [شانا — پیشرفت طرح پتروشیمی گچساران](https://www.shana.ir/news/457430/)، [PGPIC — صنایع پلیمر گچساران](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%B5%D9%86%D8%A7%DB%8C%D8%B9-%D9%BE%D9%84%DB%8C%D9%85%D8%B1-%DA%AF%DA%86%D8%B3%D8%A7%D8%B1%D8%A7%D9%86)
-
-### محصولات و ویژگی منحصربه‌فرد
-
-| ویژگی | مقدار |
-|---|---|
-| اتیلن | ۱,۰۰۰,۰۰۰ تن/سال (ظرفیت اسمی) |
-| C3+ (پروپان و سنگین‌تر) | ۸۴,۰۰۰ تن/سال |
-| وضعیت فعلی | فعالیت با ~۴۰٪ ظرفیت اسمی (در حال افزایش با نیاز به تسهیلات) |
-| ویژگی فناوری | **بومی‌ترین مجتمع الفین ایران** — طراحی/ساخت داخلی، بدون تکیه صرف بر بسته‌های کنترل پیشرفته (APC) فروشندگان بین‌المللی مثل Lummus/Technip |
-| توزیع محصول | اتیلن از طریق **خط لوله سراسری اتیلن غرب کشور** به ۵ مقصد: پتروشیمی ممسنی، کازرون، بروجن، پلیمر دهدشت، پلیمر گچساران |
-
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
-
-| محصول هلدینگ | چرا برای گچساران کافی نیست |
-|---|---|
-| محصول ۱ (بهینه‌سازی فرایند راکتور) | برای واحدهایی با بسته کنترل پیشرفته فروشنده بین‌المللی طراحی شده؛ کراکر بومی‌ساخت گچساران فاقد مدل عملکرد اثبات‌شده فروشنده است و نیاز به رویکرد **خودآموز (Self-Learning)** بدون تکیه بر منحنی طراحی از پیش موجود دارد |
-| محصول اختصاصی بندرامام (تخصیص چندشرکتی) | برای هماهنگی شرکت‌های زیرمجموعه **هم‌مکان** طراحی شده؛ گچساران اتیلن را به ۵ شرکت **مستقل و از راه دور از طریق خط لوله سراسری** می‌فرستد — مسئله هیدرولیک شبکه لوله، نه هماهنگی داخل یک سایت |
-| هیچ محصول هلدینگ | به فاز **افزایش تدریجی ظرفیت (Ramp-Up)** یک کارخانه تازه‌راه‌اندازی‌شده که ظرفیت آن در طول زمان تغییر می‌کند، نپرداخته است |
-
-**نتیجه:** گچساران نیاز به سامانه‌ای دارد که (الف) شدت کراکینگ کوره بومی‌ساخت را بدون تکیه بر مدل فروشنده خارجی، خودآموز بهینه کند و (ب) تخصیص اتیلن خط لوله را بین ۵ مصرف‌کننده متناسب با ظرفیت واقعی در حال تغییر کارخانه، بلادرنگ مدیریت کند.
+> This document is a **dedicated** product for Gachsaran Petrochemical Company — **Iran's most indigenous olefin complex** (designed and built domestically, without the usual foreign license) which currently operates at about 40% of nominal capacity and transports its ethylene via the **national pipeline** to five independent downstream destinations. These two features (technology indigenization + multi-consumer pipeline distribution) are not seen in any other holding company.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 0. Understanding Gachsaran Petrochemical Company and the technical gap
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+**Sources:** [Global Energy Monitor — Gachsaran Petrochemical Complex](https://www.gem.wiki/Gachsaran_Petrochemical_Complex), [Shana — Gachsaran petrochemical project progress](https://www.shana.ir/news/457430/), [PGPIC — Gachsaran Polymer Industries](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%B5%D9%86%D8%A7%DB%8C%D8%B9-%D9%BE%D9%84%DB%8C%D9%85%D8%B1-%DA%AF%DA%86%D8%B3%D8%A7%D8%B1%D8%A7%D9%86)
+
+### Products and unique features
+
+| Feature | Value |
+|---|---|
+| Ethylene | 1,000,000 tons/year (nominal capacity) |
+| C3+ (propane and heavier) | 84,000 tons/year |
+| Current status | Operating at ~40% of nominal capacity (increasing, requiring facilities) |
+| Technology feature | **Iran's most indigenous olefin complex** — domestic design/construction, not relying solely on international vendors' advanced process control (APC) packages such as Lummus/Technip |
+| Product distribution | Ethylene via the **western Iran national ethylene pipeline** to 5 destinations: Mamasani, Kazerun, Boroujen petrochemicals, Dehdasht Polymer, Gachsaran Polymer |
+
+### Technical Gap Relative to the Holding's Products 1 to 4
+
+| Holding product | Why it is not enough for Gachsaran |
+|---|---|
+| Product 1 (reactor process optimization) | Designed for units with an international vendor's advanced control package; Gachsaran's domestically built cracker lacks a proven vendor performance model and requires a **self-learning (Self-Learning)** approach without relying on a pre-existing design curve |
+| Bandar Imam dedicated product (multi-company allocation) | Designed for coordination of **co-located** subsidiaries; Gachsaran sends ethylene to 5 **independent, remote companies through a national pipeline** — a pipe network hydraulics problem, not coordination within one site |
+| No holding product | Has addressed the **gradual capacity ramp-up (Ramp-Up)** phase of a newly commissioned plant whose capacity changes over time |
+
+**Conclusion:** Gachsaran needs a system that (a) self-learningly optimizes the cracking severity of the domestically built furnace without relying on a foreign vendor model and (b) manages the pipeline ethylene allocation among 5 consumers in real time in proportion to the plant's actual, changing capacity.
+
+---
+
+## 1. Patent Background and Competitive Analysis
+
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | *Machine Learning-Based Profit Optimization for a Furnace in Naphtha Cracking Center with Uncertainties in Feed Composition* (SSRN) | بهینه‌سازی سودآوری کوره با عدم‌قطعیت خوراک؛ فرض بر وجود مدل فروشنده پایه دارد؛ به فاز ramp-up یا خط لوله توزیع نمی‌پردازد | مدل کاملاً خودآموز بدون نیاز به مدل پایه فروشنده، ویژه فاز افزایش ظرفیت |
-| ۲ | *Toward Intelligent and Green Ethylene Manufacturing: AI-Based Multi-Objective Dynamic Optimization* (ScienceDirect) | چارچوب کلی بهینه‌سازی کراکینگ بخار؛ به توزیع محصول چندمصرف‌کننده خط لوله‌ای نمی‌پردازد | اتصال مستقیم خروجی بهینه‌سازی کوره به تخصیص خط لوله |
-| ۳ | **US 10,268,212 B2** – *Method and devices for balancing a group of consumers in a fluid transport system* | روش عمومی توازن مصرف‌کنندگان در سیستم انتقال سیال (صنعت آب/گاز عمومی)؛ به اتیلن پتروشیمی یا وابستگی به ظرفیت متغیر کراکر بالادستی نمی‌پردازد | تطبیق برای شبکه خط لوله اتیلن با ورودی ظرفیت متغیر کراکر بالادستی در حال ramp-up |
-| ۴ | **CN103524284A** – *Forecasting and optimizing method for ethylene cracking material configuration* | بهینه‌سازی پیکربندی خوراک کراکینگ؛ سطح یک واحد، بدون در نظر گرفتن توزیع پایین‌دستی چندمقصدی | اتصال زنجیره‌ای کامل از کوره تا تخصیص نهایی بین ۵ مقصد |
+| 1 | *Machine Learning-Based Profit Optimization for a Furnace in Naphtha Cracking Center with Uncertainties in Feed Composition* (SSRN) | Furnace profitability optimization under feed uncertainty; assumes a baseline vendor model; does not address ramp-up phase or pipeline distribution | A fully self-learning model with no need for a vendor baseline model, specific to the capacity ramp-up phase |
+| 2 | *Toward Intelligent and Green Ethylene Manufacturing: AI-Based Multi-Objective Dynamic Optimization* (ScienceDirect) | General steam cracking optimization framework; does not address pipeline multi-consumer product distribution | Direct connection of furnace optimization output to pipeline allocation |
+| 3 | **US 10,268,212 B2** – *Method and devices for balancing a group of consumers in a fluid transport system* | General method of balancing consumers in a fluid transport system (general water/gas industry); does not address petrochemical ethylene or dependency on variable upstream cracker capacity | Adaptation to an ethylene pipeline network with variable upstream cracker capacity input in ramp-up |
+| 4 | **CN103524284A** – *Forecasting and optimizing method for ethylene cracking material configuration* | Optimization of cracking feed configuration; single-unit level, without considering multi-destination downstream distribution | Complete chain connection from furnace to final allocation among 5 destinations |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه یکپارچه بهینه‌سازی خودآموز-توزیع که برای نخستین‌بار (الف) شدت/بازده کوره کراکینگ یک کارخانه بومی‌ساخت بدون مدل عملکرد پایه فروشنده را از طریق یادگیری تقویتی مستقیماً از داده عملیاتی واقعی در حال ramp-up بهینه می‌کند، و (ب) خروجی ظرفیت لحظه‌ای پیش‌بینی‌شده کوره را به‌عنوان ورودی پویا به موتور تخصیص هیدرولیکی خط لوله سراسری میان پنج مصرف‌کننده مستقل پایین‌دستی متصل می‌کند تا در دوران افزایش تدریجی ظرفیت، از قطع/کمبود ناگهانی خوراک هیچ‌یک از مصرف‌کنندگان جلوگیری شود."**
+> **"An integrated self-learning optimization-distribution system that, for the first time, (a) optimizes the cracking furnace severity/yield of a domestically built plant without a baseline vendor performance model through reinforcement learning directly from real operational ramp-up data, and (b) connects the furnace's predicted instantaneous capacity output as a dynamic input to the hydraulic allocation engine of the national pipeline among five independent downstream consumers, to prevent sudden feed cut/shortage to any of the consumers during the gradual capacity increase period."**
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی گچساران
+## 2. SRS Document – Dedicated product of Gachsaran Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** افزایش پایدار بازده کوره کراکینگ بومی‌ساخت طی فاز ramp-up، و تخصیص عادلانه و بدون وقفه اتیلن خط لوله بین ۵ مصرف‌کننده متناسب با ظرفیت واقعی متغیر کارخانه.
+### 2-1. Introduction
+**Purpose:** Sustainably increase the yield of the domestically built cracking furnace during the ramp-up phase, and fair, uninterrupted allocation of pipeline ethylene among 5 consumers in proportion to the plant's actual variable capacity.
 
-**چالش‌های میدانی:**
-- نبود مدل عملکرد اثبات‌شده فروشنده برای کوره بومی‌ساخت؛ بهینه‌سازی باید مستقیماً از داده عملیاتی واقعی یاد بگیرد.
-- ظرفیت تولید در حال افزایش تدریجی (از ۴۰٪ به سمت ظرفیت اسمی) که تخصیص خط لوله را هر ماه/هفته تغییر می‌دهد.
-- ریسک کمبود ناگهانی خوراک برای یکی از ۵ مصرف‌کننده در صورت نوسان کوتاه‌مدت ظرفیت کراکر.
+**Field challenges:**
+- No proven vendor performance model for the domestically built furnace; optimization must learn directly from real operational data.
+- Production capacity is gradually increasing (from 40% toward nominal capacity), which changes the pipeline allocation every month/week.
+- Risk of a sudden feed shortage for one of the 5 consumers if the cracker capacity fluctuates in the short term.
 
-**دامنه:** مجتمع گچساران؛ اتصال به DCS کوره کراکینگ و سامانه SCADA خط لوله سراسری اتیلن.
+**Scope:** Gachsaran complex; connection to the cracking furnace DCS and the national ethylene pipeline SCADA system.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای کوره کراکینگ (دما، شدت، بازده اتیلن) | بالا |
-| R-GEN-02 | دریافت داده فشار/دبی خط لوله در پنج نقطه تحویل | بالا |
-| R-GEN-03 | داشبورد یکپارچه «ظرفیت کوره + تخصیص خط لوله» | بالا |
+| R-GEN-01 | Reception of instantaneous cracking furnace data (temperature, severity, ethylene yield) | High |
+| R-GEN-02 | Reception of pipeline pressure/flow data at five delivery points | High |
+| R-GEN-03 | Integrated dashboard "Furnace capacity + pipeline allocation" | High |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-FURNACE-01 | بهینه‌سازی خودآموز شدت/بازده کوره بدون مدل پایه فروشنده، با یادگیری مستقیم از داده ramp-up | **بهینه‌سازی خودآموز کراکر بومی‌ساخت (نوآوری اصلی)** |
-| FR-PIPE-01 | تخصیص بلادرنگ اتیلن خط لوله بین ۵ مصرف‌کننده متناسب با ظرفیت لحظه‌ای کوره | **تخصیص خط لوله‌ای آگاه از ramp-up (نوآوری اصلی)** |
-| FR-PIPE-02 | هشدار پیشگیرانه ریسک کمبود خوراک هر مصرف‌کننده پیش از وقوع | توصیه‌گر پیشگیرانه توزیع |
-| FR-FORECAST-01 | پیش‌بینی روند افزایش ظرفیت کوره طی فاز ramp-up برای برنامه‌ریزی میان‌مدت تخصیص | پیش‌بینی مسیر ramp-up |
-| FR-LOOP-01 | ثبت بازده واقعی و تحویل واقعی برای بازآموزی مداوم | یادگیری بسته |
+| FR-FURNACE-01 | Self-learning optimization of furnace severity/yield without a vendor baseline model, learning directly from ramp-up data | **Self-learning optimization of a domestically built cracker (main innovation)** |
+| FR-PIPE-01 | Real-time allocation of pipeline ethylene among 5 consumers in proportion to instantaneous furnace capacity | **Ramp-up-aware pipeline allocation (main innovation)** |
+| FR-PIPE-02 | Preventive alert of feed shortage risk of each consumer before it occurs | Preventive distribution recommender |
+| FR-FORECAST-01 | Prediction of the furnace capacity increase trend during the ramp-up phase for medium-term allocation planning | Ramp-up trajectory prediction |
+| FR-LOOP-01 | Recording actual yield and actual delivery for continuous retraining | Closed learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر بازتنظیم تخصیص خط لوله | کمتر از ۵ دقیقه |
-| NFR-PER-02 | دقت پیش‌بینی ظرفیت کوره (MAPE) | کمتر از ۱۲٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹٪ |
+| NFR-PER-01 | Delay in readjusting pipeline allocation | Less than 5 minutes |
+| NFR-PER-02 | Furnace capacity prediction accuracy (MAPE) | Less than 12% |
+| NFR-AVAIL-01 | System availability | 99.9% |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -104,16 +104,16 @@
         └────────────┘    └───────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/furnace-pipeline-ingestion/` | اتصال DCS کوره و SCADA خط لوله |
-| `services/self-learning-furnace-model/` | مدل یادگیری تقویتی بدون مدل پایه فروشنده |
-| `services/pipeline-allocation-optimizer/` | تخصیص‌گر بلادرنگ آگاه از ظرفیت |
-| `shared/` | بازاستفاده از محصولات ۱-۴ |
+| `services/furnace-pipeline-ingestion/` | Connection to the furnace DCS and pipeline SCADA |
+| `services/self-learning-furnace-model/` | Reinforcement learning model without a vendor baseline model |
+| `services/pipeline-allocation-optimizer/` | Real-time capacity-aware allocator |
+| `shared/` | Reuse of products 1-4 |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -125,12 +125,12 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(hours=i/20) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# روند افزایش تدریجی ظرفیت کوره (ramp-up از ~۴۰٪ به سمت ظرفیت بالاتر)
+# gradual furnace capacity increase trend (ramp-up from ~40% toward higher capacity)
 ramp_progress = 40 + 0.0018 * np.arange(NUM_RECORDS) + 3 * np.sin(t * 0.05) + np.random.normal(0, 1.5, NUM_RECORDS)
 furnace_capacity_percent = np.clip(ramp_progress, 30, 85)
 ethylene_production_tph = 114 * (furnace_capacity_percent / 100) + np.random.normal(0, 2, NUM_RECORDS)
 
-# تخصیص به پنج مصرف‌کننده (سهم پایه + وابستگی به ظرفیت لحظه‌ای)
+# allocation to the five consumers (base share + dependence on instantaneous capacity)
 consumers = ["Mamasani", "Kazeroun", "Boroujen", "Dehdasht_Polymer", "Gachsaran_Polymer"]
 base_share = np.array([0.15, 0.25, 0.15, 0.25, 0.20])
 allocations = np.outer(ethylene_production_tph, base_share)
@@ -150,48 +150,48 @@ for i, c in enumerate(consumers):
 df['pipeline_shortfall_risk'] = shortfall_risk
 
 df.to_csv("gachsaran_furnace_pipeline_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-GCPA | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-GCPA | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| بازده کوره در فاز ramp-up | تنظیم دستی بدون مدل بهینه اثبات‌شده | بهینه‌سازی خودآموز پیوسته | تسریع دستیابی به ظرفیت اسمی و افزایش بازده مؤثر طی ramp-up |
-| تخصیص خط لوله بین ۵ مصرف‌کننده | ثابت/دستی، ریسک کمبود در نوسان ظرفیت | تخصیص پویا و پیشگیرانه | جلوگیری از توقف ناخواسته واحدهای پایین‌دستی (ممسنی/کازرون/بروجن/دهدشت/گچساران) به دلیل کمبود خوراک |
+| Furnace yield in the ramp-up phase | Manual adjustment without a proven optimal model | Continuous self-learning optimization | Faster achievement of nominal capacity and increased effective yield during ramp-up |
+| Pipeline allocation among 5 consumers | Fixed/manual, shortage risk under capacity fluctuation | Dynamic and preventive allocation | Preventing unplanned shutdown of downstream units (Mamasani/Kazerun/Boroujen/Dehdasht/Gachsaran) due to feed shortage |
 
-**Payback:** با توجه به وابستگی مستقیم پنج شرکت پایین‌دستی به این خط لوله و فاز حساس ramp-up فعلی، این سامانه هم به تسریع بازگشت سرمایه گچساران و هم به پایداری تولید پایین‌دستی کمک می‌کند.
+**Payback:** Given the direct dependence of five downstream companies on this pipeline and the current sensitive ramp-up phase, this system helps both accelerate Gachsaran's return on investment and the stability of downstream production.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-5)
+## 5. Proposed Evolution Roadmap (Phase 1-5)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده |
-| ۲ | مدل خودآموز بهینه‌سازی کوره (اولویت اول به دلیل فاز ramp-up فعلی) |
-| ۳ | پیش‌بینی مسیر افزایش ظرفیت |
-| ۴ | تخصیص‌گر بلادرنگ خط لوله بین ۵ مصرف‌کننده |
-| ۵ | داشبورد یکپارچه + پایلوت عملیاتی |
+| 1 | Base infrastructure + data simulator |
+| 2 | Self-learning furnace optimization model (first priority due to the current ramp-up phase) |
+| 3 | Capacity increase trajectory prediction |
+| 4 | Real-time pipeline allocator among 5 consumers |
+| 5 | Integrated dashboard + operational pilot |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **بهینه‌سازی خودآموز کوره کراکینگ بومی‌ساخت بدون تکیه بر مدل عملکرد فروشنده خارجی**.
-2. **تخصیص بلادرنگ خط لوله سراسری اتیلن میان پنج مصرف‌کننده مستقل، آگاه از مسیر افزایش ظرفیت (ramp-up) کارخانه بالادستی**.
-3. **هشدار پیشگیرانه کمبود خوراک پایین‌دستی** پیش از وقوع، ناشی از نوسان ظرفیت بالادستی.
+1. **Self-learning optimization of a domestically built cracking furnace without relying on a foreign vendor performance model**.
+2. **Real-time allocation of the national ethylene pipeline among five independent consumers, aware of the upstream plant's capacity ramp-up trajectory**.
+3. **Preventive alert of downstream feed shortage** before it occurs, caused by upstream capacity fluctuation.
 
 ---
 
-## ۷. منابع
+## 7. References
 
 - [Global Energy Monitor — Gachsaran Petrochemical Complex](https://www.gem.wiki/Gachsaran_Petrochemical_Complex)
-- [شانا — طرح پتروشیمی گچساران به ۹۱.۵ درصد پیشرفت رسید](https://www.shana.ir/news/457430/)
-- [PGPIC — شرکت صنایع پلیمر گچساران](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%B5%D9%86%D8%A7%DB%8C%D8%B9-%D9%BE%D9%84%DB%8C%D9%85%D8%B1-%DA%AF%DA%86%D8%B3%D8%A7%D8%B1%D8%A7%D9%86)
+- [Shana — Gachsaran petrochemical project reached 91.5 percent progress](https://www.shana.ir/news/457430/)
+- [PGPIC — Gachsaran Polymer Industries Company](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%B5%D9%86%D8%A7%DB%8C%D8%B9-%D9%BE%D9%84%DB%8C%D9%85%D8%B1-%DA%AF%DA%86%D8%B3%D8%A7%D8%B1%D8%A7%D9%86)
 - [Toward Intelligent and Green Ethylene Manufacturing — ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2095809925004382)
 - [US10268212B2 — Method and devices for balancing a group of consumers in a fluid transport system](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10268212)
 - [CN103524284A — Forecasting and optimizing method for ethylene cracking material configuration](https://patents.google.com/patent/CN103524284A/en)

@@ -1,93 +1,93 @@
 # Khalij-AryaSasol-MultiGrade-PE-Transition-Optimization-System (Khalij-AMPT)
 
-## سامانه هوشمند حسگر مجازی شاخص جریان مذاب/دانسیته و بهینه‌سازی توالی تعویض بین ۱۹ گرید پلی‌اتیلن (LDPE+MD/HDPE) با حداقل ضایعات دوره گذار — محصول اختصاصی شرکت پلیمر آریاساسول
+## Intelligent Virtual Sensor System for Melt Flow Index/Density and Optimization of the Changeover Sequence Across 19 Polyethylene Grades (LDPE+MD/HDPE) with Minimum Transition Waste — Proprietary Product of Arya Sasol Polymer Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پلیمر آریاساسول (عسلویه) است. برخلاف اکثر تولیدکنندگان پلی‌اتیلن هلدینگ که تعداد محدودی گرید دارند، آریاساسول با **۱۹ گرید** (۹ گرید LDPE با لیسانس Stamicarbon هلند + ۱۰ گرید MD/HDPE با لیسانس Basell آلمان) در دو واحد مجزا فعالیت می‌کند و نیازمند محصولی اختصاصی برای مدیریت این پیچیدگی است.
+> This document describes a **proprietary** product for Arya Sasol Polymer Company (Asaluyeh). Unlike most polyethylene producers in the holding, which have a limited number of grades, Arya Sasol operates with **19 grades** (9 LDPE grades licensed by Stamicarbon of the Netherlands + 10 MD/HDPE grades licensed by Basell of Germany) in two separate units, and needs a dedicated product to manage this complexity.
 
 ---
 
-## ۰. شناخت شرکت پلیمر آریاساسول و شکاف فنی
+## 0. Understanding Arya Sasol Polymer Company and the Technical Gap
 
-**منابع:** [ویکی‌پدیا فارسی — پلیمر آریاساسول](https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D9%BE%D9%84%DB%8C%D9%85%D8%B1_%D8%A2%D8%B1%DB%8C%D8%A7_%D8%B3%D8%A7%D8%B3%D9%88%D9%84)، [سایت رسمی aryasasol.com — پلی‌اتیلن متوسط و سنگین](https://www.aryasasol.com/fa/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA-%D9%88-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C-%D9%87%D8%A7/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/%D9%BE%D9%84%DB%8C-%D8%A7%D8%AA%DB%8C%D9%84%D9%86-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D9%88-%D8%B3%D9%86%DA%AF%DB%8C%D9%86/)
+**Sources:** [Persian Wikipedia — Arya Sasol Polymer](https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D9%BE%D9%84%DB%8C%D9%85%D8%B1_%D8%A2%D8%B1%DB%8C%D8%A7_%D8%B3%D8%A7%D8%B3%D9%88%D9%84), [Official site aryasasol.com — Medium and heavy polyethylene](https://www.aryasasol.com/fa/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA-%D9%88-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C-%D9%87%D8%A7/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/%D9%BE%D9%84%DB%8C-%D8%A7%D8%AA%DB%8C%D9%84%D9%86-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D9%88-%D8%B3%D9%86%DA%AF%DB%8C%D9%86/)
 
-### محصولات و ظرفیت
+### Products and Capacity
 
-| واحد | ظرفیت | تعداد گرید | لیسانس |
+| Unit | Capacity | Number of grades | License |
 |---|---|---|---|
-| الفین (اتیلن) | ۱,۱۰۰,۰۰۰ تن/سال | — | — |
-| LDPE | ۳۷۵,۰۰۰ تن/سال | ۹ گرید | Stamicarbon (هلند) |
-| MD/HDPE | ۳۷۵,۰۰۰ تن/سال | ۱۰ گرید | Basell (آلمان) — از جمله گرید باک خودرو |
+| Olefin (ethylene) | 1,100,000 tons/year | — | — |
+| LDPE | 375,000 tons/year | 9 grades | Stamicarbon (Netherlands) |
+| MD/HDPE | 375,000 tons/year | 10 grades | Basell (Germany) — including the automotive fuel tank grade |
 
-مجموعاً **۱۹ گرید مختلف** در دو واحد جداگانه با فناوری متفاوت (اتوکلاو/تیوبولار برای LDPE، فاز گازی/اسلاری برای HDPE) تولید می‌شود؛ تعویض مکرر بین گریدها برای پاسخ به تقاضای بازار، بزرگ‌ترین منبع ضایعات و از‌دست‌رفتن ظرفیت مؤثر تولید در این نوع مجتمع است.
+A total of **19 different grades** are produced in two separate units with different technologies (autoclave/tubular for LDPE, gas-phase/slurry for HDPE); frequent changeovers between grades to respond to market demand are the largest source of waste and lost effective production capacity in this type of complex.
 
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
+### Technical Gap Relative to the Holding's Products 1 to 4
 
-| محصول هلدینگ | چرا برای آریاساسول کافی نیست |
+| Holding product | Why it is not sufficient for Arya Sasol |
 |---|---|
-| محصول ۱ (بهینه‌سازی پارامتر فرایندی) | یک واحد را می‌بیند، نه **توالی بهینه تعویض بین ۱۹ گرید در دو واحد** طی یک افق برنامه‌ریزی (مثلاً یک ماه) |
-| محصول ۴ (زوال کاتالیست) | مدل آن برای زوال تدریجی کاتالیست طراحی شده، نه **فعالیت لحظه‌ای کاتالیست حین گذار بین گریدها** که رفتار متفاوتی (تغییر ناگهانی نسبت کومونومر/هیدروژن) دارد |
+| Product 1 (process parameter optimization) | It sees one unit, not the **optimal changeover sequence across 19 grades in two units** over a planning horizon (e.g., one month) |
+| Product 4 (catalyst degradation) | Its model is designed for gradual catalyst degradation, not for **instantaneous catalyst activity during transitions between grades**, which behaves differently (abrupt change in comonomer/hydrogen ratio) |
 
-**نتیجه:** آریاساسول نیاز به یک لایه «برنامه‌ریزی و بهینه‌سازی توالی تعویض گرید» در سطح پورتفولیوی کامل ۱۹ گریدی دارد که در هیچ محصول دیگر پوشش داده نشده.
+**Conclusion:** Arya Sasol needs a "grade changeover sequence planning and optimization" layer at the level of the full 19-grade portfolio that is not covered by any other product.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 1. Patent Background and Competitive Analysis
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | *Deep learning model predictive control of an HDPE reactor with physics-guided sequence-to-sequence model* (ScienceDirect) | کنترل پیش‌بین برای **یک گذار مشخص** بین دو گرید؛ به بهینه‌سازی توالی چندین گذار در یک افق برنامه‌ریزی نمی‌پردازد | بهینه‌سازی **توالی کامل** گذارها بین ۱۹ گرید طی یک افق ماهانه با هدف کمینه‌سازی ضایعات تجمعی |
-| ۲ | *Predicting polymer melt flow index and catalytic activity using a pretrained transformer-based model* (Polymer Bulletin) | پیش‌بینی MFI/فعالیت کاتالیست به‌صورت مستقل از برنامه‌ریزی تولید | اتصال مستقیم پیش‌بینی MFI/فعالیت به موتور برنامه‌ریزی توالی تعویض |
-| ۳ | **US 10,577,435** – *Ethylene gas phase polymerisation process* | فرایند شیمیایی گذار بین یک HDPE و یک LLDPE مشخص؛ راهکار فرایندی نه نرم‌افزاری | تعمیم به بهینه‌سازی نرم‌افزاری برای **هر جفت گرید** از میان ۱۹ گرید، نه یک گذار خاص |
-| ۴ | **US 9,926,390** – *Method for production of polymer* | بهبود کاتالیست/فرمولاسیون برای کاهش زمان گذار؛ رویکرد ماده‌ای | مکمل: بهینه‌سازی نرم‌افزاری زمان‌بندی و ترتیب گذارها با کاتالیست موجود |
+| 1 | *Deep learning model predictive control of an HDPE reactor with physics-guided sequence-to-sequence model* (ScienceDirect) | Predictive control for **one specific transition** between two grades; does not address optimizing the sequence of multiple transitions over a planning horizon | Optimization of the **complete sequence** of transitions among 19 grades over a monthly horizon with the goal of minimizing cumulative waste |
+| 2 | *Predicting polymer melt flow index and catalytic activity using a pretrained transformer-based model* (Polymer Bulletin) | MFI/catalyst activity prediction independent of production planning | Direct link of MFI/activity prediction to the changeover sequence planning engine |
+| 3 | **US 10,577,435** – *Ethylene gas phase polymerisation process* | Chemical process of transition between one specific HDPE and one LLDPE; a process solution, not a software one | Generalization to software optimization for **any pair of grades** among the 19 grades, not a specific transition |
+| 4 | **US 9,926,390** – *Method for production of polymer* | Catalyst/formulation improvement to reduce transition time; a materials approach | Complementary: software optimization of the scheduling and order of transitions with the existing catalyst |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه بهینه‌سازی توالی چندگریدی (Multi-Grade Sequencing Optimizer) که برای نخستین‌بار حسگر مجازی بلادرنگ شاخص جریان مذاب (MFI) و دانسیته را با مدل پیش‌بینی فعالیت کاتالیست حین گذار ترکیب می‌کند و توالی بهینه تعویض بین یک پورتفولیوی بزرگ گرید (۱۹ گرید در دو واحد LDPE/HDPE) را طی یک افق برنامه‌ریزی ماهانه، با هدف کمینه‌سازی هم‌زمان تعداد گذار، زمان گذار و مجموع محصول خارج از مشخصه پورتفولیو، تعیین می‌کند."**
+> **"A Multi-Grade Sequencing Optimizer system that, for the first time, combines a real-time virtual sensor of melt flow index (MFI) and density with a catalyst activity prediction model during transitions, and determines the optimal changeover sequence across a large grade portfolio (19 grades in two LDPE/HDPE units) over a monthly planning horizon, with the goal of simultaneously minimizing the number of transitions, transition time, and the total off-spec product of the portfolio."**
 
-تمرکز بر **سطح پورتفولیو کامل گرید** (نه یک گذار منفرد) در ادبیات یافت‌شده سابقه نداشت.
+The focus on the **level of the complete grade portfolio** (not a single transition) has no precedent in the literature found.
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پلیمر آریاساسول
+## 2. SRS Document – Proprietary Product of Arya Sasol Polymer
 
-### ۲-۱. مقدمه
-**هدف:** کاهش ضایعات دوره گذار و افزایش نرخ تولید مؤثر از طریق حسگر مجازی کیفیت بلادرنگ و بهینه‌سازی توالی تعویض گرید در سطح پورتفولیوی کامل.
+### 2-1. Introduction
+**Purpose:** Reduce transition-period waste and increase effective production rate through a real-time quality virtual sensor and grade changeover sequence optimization at the full portfolio level.
 
-**چالش‌های میدانی:**
-- تعویض بین ۹ گرید LDPE و ۱۰ گرید HDPE/MDPE به‌صورت مکرر برای پاسخ به سفارش بازار.
-- تأخیر اندازه‌گیری آزمایشگاهی MFI/دانسیته که باعث تولید مقدار قابل‌توجه محصول میانی (Transition/Off-grade) می‌شود.
-- عدم بهینه‌سازی سیستماتیک ترتیب گریدها (مثلاً تعویض از گرید با چگالی بسیار پایین به بسیار بالا، زمان گذار طولانی‌تری نسبت به توالی تدریجی دارد).
+**Field challenges:**
+- Frequent changeovers between 9 LDPE grades and 10 HDPE/MDPE grades to respond to market orders.
+- Delay in laboratory measurement of MFI/density, which causes production of a significant amount of intermediate product (Transition/Off-grade).
+- No systematic optimization of grade order (e.g., switching from a very low-density grade to a very high-density one takes a longer transition time than a gradual sequence).
 
-**دامنه:** مجتمع آریاساسول، عسلویه؛ اتصال به DCS واحدهای LDPE و MD/HDPE.
+**Scope:** Arya Sasol complex, Asaluyeh; connection to the DCS of the LDPE and MD/HDPE units.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای هر دو واحد LDPE و HDPE (دما، فشار، نسبت کومونومر/هیدروژن، فعالیت کاتالیست) | بالا |
-| R-GEN-02 | دریافت برنامه فروش/تقاضای ماهانه هر یک از ۱۹ گرید | بالا |
-| R-GEN-03 | داشبورد «نقشه توالی گرید» با نمایش گذارهای برنامه‌ریزی‌شده و وضعیت فعلی | بالا |
+| R-GEN-01 | Receive real-time data from both the LDPE and HDPE units (temperature, pressure, comonomer/hydrogen ratio, catalyst activity) | High |
+| R-GEN-02 | Receive the monthly sales plan/demand for each of the 19 grades | High |
+| R-GEN-03 | "Grade sequence map" dashboard showing planned transitions and current status | High |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-SENSOR-01 | حسگر مجازی بلادرنگ MFI و دانسیته برای هر دو واحد LDPE/HDPE | حسگر مجازی کیفیت دووحدی |
-| FR-CAT-01 | پیش‌بینی فعالیت کاتالیست حین گذار (نه فقط زوال بلندمدت) | پیش‌بینی فعالیت گذرا مختص تعویض گرید |
-| FR-SEQ-01 | بهینه‌سازی توالی تعویض بین ۱۹ گرید طی افق ماهانه با کمینه‌سازی ضایعات تجمعی | **بهینه‌سازی توالی سطح پورتفولیو (نوآوری اصلی)** |
-| FR-SEQ-02 | پیشنهاد مسیر گذار بهینه (نرخ تغییر تدریجی کومونومر/هیدروژن) برای هر جفت گرید مشخص | مسیر گذار بهینه هر جفت گرید |
-| FR-ALERT-01 | هشدار انحراف از مسیر گذار پیش‌بینی‌شده | توصیه‌گر اصلاح بلادرنگ |
-| FR-LOOP-01 | ثبت نتایج واقعی هر گذار (زمان و مقدار ضایعات) برای بازآموزی مدل | یادگیری بسته |
+| FR-SENSOR-01 | Real-time MFI and density virtual sensor for both LDPE/HDPE units | Dual-unit quality virtual sensor |
+| FR-CAT-01 | Catalyst activity prediction during transitions (not only long-term degradation) | Transient activity prediction specific to grade changeover |
+| FR-SEQ-01 | Optimize the changeover sequence among 19 grades over a monthly horizon while minimizing cumulative waste | **Portfolio-level sequence optimization (main innovation)** |
+| FR-SEQ-02 | Propose the optimal transition path (gradual change rate of comonomer/hydrogen) for each specific grade pair | Optimal transition path for each grade pair |
+| FR-ALERT-01 | Alert on deviation from the predicted transition path | Real-time corrective advisor |
+| FR-LOOP-01 | Record the actual results of each transition (time and waste amount) for model retraining | Closed-loop learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر حسگر مجازی MFI/دانسیته | کمتر از ۱۵ ثانیه |
-| NFR-PER-02 | دقت پیش‌بینی MFI (MAPE) | کمتر از ۱۰٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹٪ |
+| NFR-PER-01 | MFI/density virtual sensor latency | Less than 15 seconds |
+| NFR-PER-02 | MFI prediction accuracy (MAPE) | Less than 10% |
+| NFR-AVAIL-01 | System availability | 99.9% |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -106,16 +106,16 @@
         └────────────┘    └───────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/ldpe-hdpe-ingestion/` | اتصال DCS هر دو واحد |
-| `services/quality-catalyst-twin/` | حسگر مجازی MFI/دانسیته + فعالیت کاتالیست گذرا |
-| `services/grade-sequencing-optimizer/` | بهینه‌ساز توالی سطح پورتفولیو |
-| `shared/` | بازاستفاده از محصولات ۱-۴ |
+| `services/ldpe-hdpe-ingestion/` | DCS connection for both units |
+| `services/quality-catalyst-twin/` | MFI/density virtual sensor + transient catalyst activity |
+| `services/grade-sequencing-optimizer/` | Portfolio-level sequence optimizer |
+| `shared/` | Reuse of products 1-4 |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -130,10 +130,10 @@ grades_hdpe = [f"HDPE-G{i}" for i in range(1, 11)]
 grades_ldpe = [f"LDPE-G{i}" for i in range(1, 10)]
 all_grades = grades_hdpe + grades_ldpe
 
-# شبیه‌سازی توالی گرید فعلی (تغییر هر ~400 رکورد)
+# Simulation of the current grade sequence (changes every ~400 records)
 grade_schedule = np.random.choice(all_grades, size=NUM_RECORDS // 400 + 1)
 current_grade = np.repeat(grade_schedule, 400)[:NUM_RECORDS]
-is_transition = (np.arange(NUM_RECORDS) % 400 < 40).astype(int)  # ۴۰ رکورد اول هر گرید = دوره گذار
+is_transition = (np.arange(NUM_RECORDS) % 400 < 40).astype(int)  # first 40 records of each grade = transition period
 
 comonomer_ratio = 0.015 + 0.01 * (pd.factorize(current_grade)[0] % 5) + np.random.normal(0, 0.001, NUM_RECORDS)
 hydrogen_ratio = 0.002 + 0.0015 * (pd.factorize(current_grade)[0] % 4) + np.random.normal(0, 0.0002, NUM_RECORDS)
@@ -157,48 +157,48 @@ df = pd.DataFrame({
 })
 
 df.to_csv("aryasasol_grade_transition_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-AMPT | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-AMPT | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| ضایعات دوره گذار | مستقل از توالی، بر مبنای تجربه اپراتور | بهینه‌سازی توالی برای کمینه‌سازی ضایعات تجمعی | کاهش قابل‌توجه محصول Off-grade روی ظرفیت ۷۵۰ هزار تن/سال مجموع دو واحد |
-| زمان گذار | ثابت/محافظه‌کارانه | مسیر گذار بهینه بر مبنای پیش‌بینی کاتالیست | افزایش نرخ تولید مؤثر (Uptime روی گرید هدف) |
+| Transition-period waste | Independent of sequence, based on operator experience | Sequence optimization to minimize cumulative waste | Significant reduction of off-grade product on the combined 750,000 tons/year capacity of the two units |
+| Transition time | Fixed/conservative | Optimal transition path based on catalyst prediction | Increase in effective production rate (uptime on the target grade) |
 
-**Payback:** با ۱۹ گرید و تعویض‌های مکرر، حتی کاهش ۱-۲٪ در ضایعات دوره گذار روی ظرفیت ۷۵۰ هزار تنی، ارزش اقتصادی چشمگیری دارد.
+**Payback:** With 19 grades and frequent changeovers, even a 1-2% reduction in transition-period waste on a 750,000-ton capacity has significant economic value.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-6)
+## 5. Proposed Evolution Roadmap (Phase 1-6)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده |
-| ۲ | حسگر مجازی MFI/دانسیته هر دو واحد |
-| ۳ | مدل پیش‌بینی فعالیت کاتالیست گذرا |
-| ۴ | بهینه‌ساز توالی سطح پورتفولیو ۱۹ گریدی |
-| ۵ | داشبورد نقشه توالی گرید |
-| ۶ | پایلوت عملیاتی روی چند گذار واقعی |
+| 1 | Base infrastructure + data simulator |
+| 2 | MFI/density virtual sensor for both units |
+| 3 | Transient catalyst activity prediction model |
+| 4 | 19-grade portfolio-level sequence optimizer |
+| 5 | Grade sequence map dashboard |
+| 6 | Operational pilot on several real transitions |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **بهینه‌سازی توالی تعویض در سطح پورتفولیوی کامل ۱۹ گرید** (نه یک گذار منفرد).
-2. **حسگر مجازی فعالیت کاتالیست گذرا** حین تعویض گرید، متمایز از مدل زوال بلندمدت.
-3. **مسیر گذار بهینه اختصاصی هر جفت گرید** با کمینه‌سازی هم‌زمان زمان و ضایعات.
+1. **Changeover sequence optimization at the level of the full 19-grade portfolio** (not a single transition).
+2. **Virtual sensor of transient catalyst activity** during grade changeover, distinct from the long-term degradation model.
+3. **Dedicated optimal transition path for each grade pair** with simultaneous minimization of time and waste.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [ویکی‌پدیا فارسی — پلیمر آریاساسول](https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D9%BE%D9%84%DB%8C%D9%85%D8%B1_%D8%A2%D8%B1%DB%8C%D8%A7_%D8%B3%D8%A7%D8%B3%D9%88%D9%84)
-- [سایت رسمی آریاساسول — پلی‌اتیلن متوسط و سنگین](https://www.aryasasol.com/fa/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA-%D9%88-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C-%D9%87%D8%A7/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/%D9%BE%D9%84%DB%8C-%D8%A7%D8%AA%DB%8C%D9%84%D9%86-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D9%88-%D8%B3%D9%86%DA%AF%DB%8C%D9%86/)
+- [Persian Wikipedia — Arya Sasol Polymer](https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D9%BE%D9%84%DB%8C%D9%85%D8%B1_%D8%A2%D8%B1%DB%8C%D8%A7_%D8%B3%D8%A7%D8%B3%D9%88%D9%84)
+- [Official Arya Sasol site — Medium and heavy polyethylene](https://www.aryasasol.com/fa/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA-%D9%88-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C-%D9%87%D8%A7/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/%D9%BE%D9%84%DB%8C-%D8%A7%D8%AA%DB%8C%D9%84%D9%86-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D9%88-%D8%B3%D9%86%DA%AF%DB%8C%D9%86/)
 - [Deep learning model predictive control of an HDPE reactor — ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0098135424002084)
 - [Predicting polymer melt flow index and catalytic activity using a pretrained transformer-based model — Polymer Bulletin](https://link.springer.com/article/10.1007/s00289-026-06341-5)
 - [US10577435 — Ethylene gas phase polymerisation process](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10577435)

@@ -1,104 +1,104 @@
 # Khalij-Arvand-ChlorAlkali-PVC-Digital-Twin-System (Khalij-ACPT)
 
-## سامانه هوشمند پایش سلامت سلول‌های الکترولیز کلرآلکالی، پیش‌بینی فولینگ راکتورهای پلیمریزاسیون PVC و بهینه‌سازی بلادرنگ انرژی زنجیره EDC-VCM-PVC — محصول اختصاصی شرکت پتروشیمی اروند
+## Intelligent System for Health Monitoring of Chlor-Alkali Electrolysis Cells, Prediction of PVC Polymerization Reactor Fouling, and Real-Time Energy Optimization of the EDC-VCM-PVC Chain — Proprietary Product of Arvand Petrochemical Company
 
-> این سند یک محصول **اختصاصی و سفارشی** برای شرکت پتروشیمی اروند است که برخلاف محصولات عمومی ۱ تا ۴ هلدینگ (که سپس به یک شرکت تخصیص یافتند)، از ابتدا بر مبنای فرایند واقعی و منحصربه‌فرد این شرکت (زنجیره کلرآلکالی → EDC/VCM → PVC) طراحی شده و از زیرساخت مشترک محصولات قبلی هلدینگ به‌صورت تکاملی استفاده می‌کند.
+> This document describes a **proprietary and customized** product for Arvand Petrochemical Company which, unlike the holding's generic products 1 to 4 (which were later allocated to one company), is designed from the start based on this company's real and unique process (chlor-alkali chain → EDC/VCM → PVC) and uses the shared infrastructure of the holding's previous products in an evolutionary manner.
 
 ---
 
-## ۰. شناخت شرکت پتروشیمی اروند (مبتنی بر مطالعه سایت رسمی) و شکاف فنی
+## 0. Understanding Arvand Petrochemical Company (based on a study of the official website) and the Technical Gap
 
-**منبع:** [سایت رسمی پتروشیمی اروند](https://arvandpvc.ir/) — بخش "پتروشیمی اروند در یک نگاه"
+**Source:** [Official website of Arvand Petrochemical](https://arvandpvc.ir/) — section "Arvand Petrochemical at a Glance"
 
-### محصولات و واحدهای فرایندی (طبق سایت شرکت)
+### Products and Process Units (according to the company website)
 
-| واحد فرایندی | محصول | ظرفیت اسمی سالانه |
+| Process unit | Product | Nominal annual capacity |
 |---|---|---|
-| الکترولیز آب‌نمک (Membrane Cell) | گاز کلر | ۱۸۶,۷۰۰ تن |
-| الکترولیز آب‌نمک | کاستیک سودا (خلوص ۱۰۰٪) | ۶۳۴,۰۰۰ تن |
-| EDC/VCM | اتیلن دی‌کلراید | ۳۲۹,۳۰۰ تن |
-| پلیمریزاسیون سوسپانسیون | S-PVC | ۳۰۰,۰۰۰ تن |
-| پلیمریزاسیون امولسیون | E-PVC (تولیدکننده انحصاری در ایران) | ۴۰,۰۰۰ تن |
+| Brine electrolysis (Membrane Cell) | Chlorine gas | 186,700 tons |
+| Brine electrolysis | Caustic soda (100% purity) | 634,000 tons |
+| EDC/VCM | Ethylene dichloride | 329,300 tons |
+| Suspension polymerization | S-PVC | 300,000 tons |
+| Emulsion polymerization | E-PVC (exclusive producer in Iran) | 40,000 tons |
 
-شرکت اروند **بزرگ‌ترین تولیدکننده زنجیره PVC در خاورمیانه** و دارای بالاترین ظرفیت تولید کاستیک کشور است؛ طبق اعلام رسمی شرکت، از فناوری مدرن سلول غشایی (Membrane Cell) بدون استفاده از جیوه بهره می‌برد که نشان‌دهنده حساسیت بالای شرکت به کارایی و سلامت سلول‌های الکترولیز است.
+Arvand is the **largest PVC chain producer in the Middle East** and has the highest caustic production capacity in the country; according to the company's official statement, it uses modern membrane cell technology without the use of mercury, which indicates the company's high sensitivity to the efficiency and health of the electrolysis cells.
 
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
+### Technical Gap Relative to the Holding's Products 1 to 4
 
-| محصول هلدینگ | چرا برای اروند کافی نیست |
+| Holding product | Why it is not sufficient for Arvand |
 |---|---|
-| محصول ۱ (بهینه‌سازی فرایند راکتور) | برای راکتورهای فرایندی عمومی (دما/فشار/دبی) طراحی شده، نه سلول‌های الکترولیز غشایی که فیزیک کاملاً متفاوتی (ولتاژ سلول، چگالی جریان، راندمان جریان کاستیک) دارند |
-| محصول ۳ (انرژی و کربن) | مصرف انرژی را در سطح کلان واحد می‌بیند؛ به تخریب تدریجی غشا به‌عنوان **علت ریشه‌ای افزایش مصرف انرژی ویژه** (kWh/تن کلر) وارد نمی‌شود — و ۹۰٪ برق مصرفی کل مجتمع اروند صرف همین بخش الکترولیز می‌شود |
-| محصول ۴ (پایش دارایی دوار/کوره/کاتالیست) | برای کمپرسور، کوره کراکینگ و کاتالیست پلیمریزاسیون گاز طراحی شده؛ سلول الکترولیز غشایی و راکتور اتوکلاو PVC (فولینگ رسوبی پلیمری، نه زوال کاتالیستی) پدیده‌های کاملاً متفاوتی هستند که مدل‌سازی اختصاصی می‌خواهند |
+| Product 1 (reactor process optimization) | Designed for generic process reactors (temperature/pressure/flow), not membrane electrolysis cells, which have entirely different physics (cell voltage, current density, caustic current efficiency) |
+| Product 3 (energy and carbon) | Sees energy consumption at the macro level of the unit; it does not address gradual membrane degradation as the **root cause of increased specific energy consumption** (kWh/ton chlorine) — and 90% of the total electricity consumed by the Arvand complex goes to this electrolysis section |
+| Product 4 (rotating asset/furnace/catalyst monitoring) | Designed for compressors, cracking furnaces and gas polymerization catalyst; the membrane electrolysis cell and PVC autoclave reactor (polymer scale fouling, not catalyst degradation) are entirely different phenomena that require dedicated modeling |
 
-**نتیجه:** اروند به یک محصول اختصاصی نیاز دارد که سه پدیده به‌هم‌پیوستهٔ زنجیره‌اش — (الف) زوال غشای سلول الکترولیز، (ب) فولینگ اتوکلاو پلیمریزاسیون PVC، (ج) هزینه/مصرف انرژی ویژه که مستقیماً معلول (الف) است — را در یک مدل واحد ببیند.
+**Conclusion:** Arvand needs a dedicated product that sees the three interrelated phenomena of its chain — (a) electrolysis cell membrane degradation, (b) fouling of the PVC polymerization autoclave, (c) specific energy cost/consumption that is directly caused by (a) — in a single model.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی (Prior-Art Search)
+## 1. Patent Background and Competitive Analysis (Prior-Art Search)
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | مقالات ML برای پیش‌بینی ولتاژ سلول و راندمان جریان کاستیک در سلول کلرآلکالی (Extreme Learning Machine) | فقط سطح یک سلول/یک متغیر خروجی؛ به فولینگ PVC یا هزینه انرژی متصل نیست | تلفیق سلامت سلول با کل زنجیره پایین‌دستی و هزینه انرژی واقعی |
-| ۲ | Toyota Central R&D — برآورد وضعیت غشا از طریق اندازه‌گیری کیفیت آب جداکننده (Separator) (۲۰۲۵) | برای پیل‌های الکترولیز آب (PEM/Alkaline Water) طراحی شده، نه سلول کلرآلکالی صنعتی مقیاس بزرگ | تطبیق و توسعه روش برای سلول غشایی کلرآلکالی صنعتی با داده DCS واقعی |
-| ۳ | **US 7,645,841 B2** – *Method and system to reduce polymerization reactor fouling* | تشخیص فولینگ راکتور پلیمریزاسیون عمومی از طریق آنالیز پریودوگرام؛ محصول شیمیایی خاص (PVC) و اتصال به سلول بالادستی را در نظر نمی‌گیرد | مدل اختصاصی فولینگ اتوکلاو PVC با ورودی هم‌زمان از کیفیت VCM تولیدی سلول الکترولیز |
-| ۴ | **US 8,396,600 B2** – *Prediction and control solution for polymerization reactor operation* | کنترل پیش‌بین عمومی راکتور پلیمریزاسیون؛ فاقد پیوند با هزینه انرژی زنجیره بالادستی | خروجی مستقیم به بهینه‌سازی هم‌زمان زمان‌بندی تولید و تعرفه برق زمان‌متغیر |
-| ۵ | مطالعات بهینه‌سازی هزینه برق کلرآلکالی با تعرفه زمان‌متغیر (Mixed-Integer NLP، صرفه‌جویی ~۴٪) | بهینه‌سازی صرفاً بر مبنای تعرفه برق، بدون در نظر گرفتن وضعیت سلامت لحظه‌ای سلول (که مصرف واقعی را نسبت به مقدار طراحی تغییر می‌دهد) | بهینه‌سازی هم‌زمان تعرفه + سلامت واقعی سلول (نه مقدار اسمی طراحی) |
+| 1 | ML papers for predicting cell voltage and caustic current efficiency in a chlor-alkali cell (Extreme Learning Machine) | Only single-cell level/single output variable; not connected to PVC fouling or energy cost | Integrating cell health with the entire downstream chain and the real energy cost |
+| 2 | Toyota Central R&D — membrane state estimation through separator water quality measurement (2025) | Designed for water electrolysis cells (PEM/Alkaline Water), not large-scale industrial chlor-alkali cells | Adapting and extending the method to an industrial chlor-alkali membrane cell with real DCS data |
+| 3 | **US 7,645,841 B2** – *Method and system to reduce polymerization reactor fouling* | Detects generic polymerization reactor fouling through periodogram analysis; does not consider the specific chemical product (PVC) and the connection to the upstream cell | Dedicated PVC autoclave fouling model with simultaneous input from the VCM quality produced by the electrolysis cell |
+| 4 | **US 8,396,600 B2** – *Prediction and control solution for polymerization reactor operation* | Generic predictive control of a polymerization reactor; lacks a link to the energy cost of the upstream chain | Direct output to simultaneous optimization of production scheduling and time-varying electricity tariff |
+| 5 | Optimization studies of chlor-alkali electricity cost with time-varying tariff (Mixed-Integer NLP, savings ~4%) | Optimization based solely on the electricity tariff, without considering the instantaneous health status of the cell (which changes actual consumption relative to the design value) | Simultaneous optimization of tariff + real cell health (not the nominal design value) |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه دوقلوی دیجیتال زنجیره‌ای (Chain-Level Digital Twin) که برای نخستین‌بار زوال تدریجی غشای سلول الکترولیز کلرآلکالی (از طریق روند ولتاژ سلول و راندمان جریان) را به‌عنوان متغیر ورودی مستقیم به مدل پیش‌بینی فولینگ راکتور پلیمریزاسیون PVC پایین‌دستی (از طریق کیفیت VCM تولیدشده) متصل می‌کند، و هم‌زمان در یک حلقه بهینه‌سازی واحد، برنامه تولید را بر مبنای ترکیب سه سیگنال (سلامت سلول + ریسک فولینگ راکتور + تعرفه برق زمان‌متغیر) تنظیم می‌کند."**
+> **"A Chain-Level Digital Twin system that, for the first time, connects the gradual degradation of the chlor-alkali electrolysis cell membrane (via the cell voltage and current efficiency trend) as a direct input variable to the downstream PVC polymerization reactor fouling prediction model (via the quality of the VCM produced), and simultaneously, in a single optimization loop, adjusts the production schedule based on a combination of three signals (cell health + reactor fouling risk + time-varying electricity tariff)."**
 
-این پیوند بالادستی-پایین‌دستی (سلول الکترولیز ↔ راکتور پلیمریزاسیون) در هیچ منبع یافته‌شده به‌صورت یکپارچه دیده نشد.
+This upstream-downstream link (electrolysis cell ↔ polymerization reactor) was not seen in an integrated form in any source found.
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی اروند
+## 2. SRS Document – Proprietary Product of Arvand Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** پایش پیوسته سلامت سلول‌های الکترولیز غشایی، پیش‌بینی زمان بهینه شست‌وشوی اتوکلاو PVC، و بهینه‌سازی هم‌زمان برنامه تولید و مصرف انرژی در کل زنجیره کلرآلکالی-PVC.
+### 2-1. Introduction
+**Purpose:** Continuous health monitoring of membrane electrolysis cells, prediction of the optimal washing time of the PVC autoclave, and simultaneous optimization of production schedule and energy consumption across the entire chlor-alkali-PVC chain.
 
-**چالش‌های میدانی که این محصول حل می‌کند:**
-- افزایش تدریجی ولتاژ سلول و کاهش راندمان جریان کاستیک ناشی از زوال غشا که مستقیماً هزینه kWh/تن کلر را بالا می‌برد (۹۰٪ برق مصرفی مجتمع صرف الکترولیز می‌شود).
-- فولینگ رسوبی داخل اتوکلاوهای پلیمریزاسیون PVC که باعث افت انتقال حرارت، افزایش زمان سیکل و افت کیفیت (K-value) می‌شود.
-- عدم اتصال تصمیم «چه زمانی تولید کنیم» به وضعیت واقعی سلول‌ها و تعرفه برق ساعتی.
+**Field challenges this product solves:**
+- Gradual increase in cell voltage and reduction of caustic current efficiency due to membrane degradation, which directly raises the kWh/ton chlorine cost (90% of the complex's electricity consumption goes to electrolysis).
+- Scale fouling inside PVC polymerization autoclaves that causes loss of heat transfer, longer cycle time and loss of quality (K-value).
+- Lack of connection between the decision "when do we produce" and the real status of the cells and the hourly electricity tariff.
 
-**دامنه:** سایت پتروشیمی اروند (منطقه ۳ ویژه اقتصادی پتروشیمی بندرامام)؛ اتصال به DCS واحدهای الکترولیز، EDC/VCM و PVC.
+**Scope:** Arvand Petrochemical site (Zone 3 of the Bandar Imam Petrochemical Special Economic Zone); connection to the DCS of the electrolysis, EDC/VCM and PVC units.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای ولتاژ/جریان هر سلول الکترولیز (تا سطح تک‌سلول در صورت وجود اندازه‌گیری) | بالا |
-| R-GEN-02 | دریافت داده فرایندی اتوکلاو PVC (دما ژاکت، فشار، دور همزن، توان موتور همزن) | بالا |
-| R-GEN-03 | داشبورد «سلامت زنجیره کلرآلکالی-PVC» با نمایش هم‌زمان وضعیت سلول‌ها و راکتورها | بالا |
-| R-GEN-04 | اتصال به سامانه مدیریت انرژی/تعرفه برق شرکت توزیع | متوسط |
+| R-GEN-01 | Receive real-time voltage/current data of each electrolysis cell (down to the single-cell level where measurement exists) | High |
+| R-GEN-02 | Receive PVC autoclave process data (jacket temperature, pressure, agitator speed, agitator motor power) | High |
+| R-GEN-03 | "Chlor-alkali-PVC chain health" dashboard showing the status of cells and reactors simultaneously | High |
+| R-GEN-04 | Connection to the energy management/electricity tariff system of the distribution company | Medium |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-CELL-01 | پیش‌بینی روند زوال غشا (ولتاژ سلول، راندمان جریان) با بازه اطمینان و برآورد تاریخ توصیه‌شده تعویض غشا | مدل زوال غشا مبتنی بر روند نه آستانه ثابت |
-| FR-CELL-02 | برآورد مصرف انرژی ویژه واقعی (kWh/تن کلر) لحظه‌ای در برابر مقدار طراحی و تفکیک انحراف ناشی از زوال سلول | تشخیص علت ریشه‌ای افزایش مصرف انرژی |
-| FR-PVC-01 | پیش‌بینی زمان بهینه شست‌وشوی اتوکلاو PVC از روی روند افت ضریب انتقال حرارت ژاکت و افزایش توان همزن | زمان‌بندی پیش‌بینانه شست‌وشو (نه تقویمی) |
-| FR-PVC-02 | پیش‌بینی K-value/کیفیت گرید PVC بر اساس کیفیت VCM ورودی (که خود تابع سلامت سلول بالادستی است) | **پیوند مدل کیفیت پایین‌دستی به سلامت سلول بالادستی (نوآوری اصلی)** |
-| FR-OPT-01 | بهینه‌سازی برنامه تولید ساعتی با ورودی هم‌زمان (سلامت سلول + ریسک فولینگ + تعرفه برق) | **بهینه‌سازی زنجیره‌ای سه‌سیگنالی (نوآوری اصلی)** |
-| FR-ALERT-01 | هشدار سطح‌بندی‌شده با توصیه اقدام (مثلاً «۵ روز تا نیاز به شست‌وشوی اتوکلاو ۲») | توصیه‌گر اقدام بلادرنگ |
-| FR-LOOP-01 | ثبت بازخورد واقعی زمان تعویض غشا/شست‌وشوی اتوکلاو برای بازآموزی مدل | یادگیری بسته |
+| FR-CELL-01 | Predict the membrane degradation trend (cell voltage, current efficiency) with a confidence interval and an estimate of the recommended membrane replacement date | Trend-based membrane degradation model rather than a fixed threshold |
+| FR-CELL-02 | Estimate real instantaneous specific energy consumption (kWh/ton chlorine) versus the design value and separate the deviation caused by cell degradation | Root cause detection of increased energy consumption |
+| FR-PVC-01 | Predict the optimal PVC autoclave washing time from the trend of jacket heat transfer coefficient decline and agitator power increase | Predictive (not calendar-based) washing scheduling |
+| FR-PVC-02 | Predict PVC K-value/grade quality based on the incoming VCM quality (which itself depends on the upstream cell's health) | **Linking the downstream quality model to upstream cell health (main innovation)** |
+| FR-OPT-01 | Optimize the hourly production schedule with simultaneous input (cell health + fouling risk + electricity tariff) | **Three-signal chain optimization (main innovation)** |
+| FR-ALERT-01 | Tiered alerting with action recommendation (e.g., "5 days until autoclave 2 needs washing") | Real-time action advisor |
+| FR-LOOP-01 | Record real feedback on membrane replacement/autoclave washing time for model retraining | Closed-loop learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر پردازش داده سلول/راکتور | کمتر از ۱۰ ثانیه |
-| NFR-PER-02 | دقت پیش‌بینی زمان شست‌وشوی اتوکلاو (MAPE) | کمتر از ۲۰٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹٪ |
-| NFR-SEC-01 | رمزنگاری AES-256 + RBAC نقش اپراتور الکترولیز/اپراتور PVC/مدیر انرژی | اجباری |
+| NFR-PER-01 | Cell/reactor data processing latency | Less than 10 seconds |
+| NFR-PER-02 | Autoclave washing time prediction accuracy (MAPE) | Less than 20% |
+| NFR-AVAIL-01 | System availability | 99.9% |
+| NFR-SEC-01 | AES-256 encryption + RBAC for electrolysis operator/PVC operator/energy manager roles | Mandatory |
 
-### ۲-۵. معماری فنی (بازاستفاده از الگوی محصولات ۱-۴)
+### 2-5. Technical Architecture (reusing the pattern of products 1-4)
 
 ```
 ┌──────────────────┐
-│   API Gateway     │ (RBAC + 2FA — الگوی مشترک هلدینگ)
+│   API Gateway     │ (RBAC + 2FA — shared holding pattern)
 └─────────┬─────────┘
 ┌─────────┼───────────────┬───────────────┐
 ┌───▼────────────┐┌───────▼────────┐┌──────▼──────────┐
@@ -111,7 +111,7 @@
                    ▼
         ┌────────────┐    ┌───────────────┐
         │   Kafka    │    │ TimescaleDB/  │
-        │ (مشترک)    │    │ InfluxDB      │
+        │ (shared)   │    │ InfluxDB      │
         └────────────┘    └───────────────┘
                                   │
                            ┌────────────┐
@@ -119,16 +119,16 @@
                            └────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/cell-reactor-ingestion/` | اتصال به DCS واحد الکترولیز و PVC، بازاستفاده از کلاینت OPC-UA مشترک |
-| `services/digital-twin-prediction/` | مدل زوال غشا (LSTM)، مدل فولینگ اتوکلاو، مدل کیفیت K-value |
-| `services/chain-optimization/` | بهینه‌ساز برنامه تولید ساعتی (MILP) با ورودی سلامت + تعرفه |
-| `shared/` | بازاستفاده کامل از محصول ۱-۴ |
+| `services/cell-reactor-ingestion/` | Connection to the electrolysis and PVC unit DCS, reusing the shared OPC-UA client |
+| `services/digital-twin-prediction/` | Membrane degradation model (LSTM), autoclave fouling model, K-value quality model |
+| `services/chain-optimization/` | Hourly production schedule optimizer (MILP) with health + tariff input |
+| `shared/` | Full reuse of products 1-4 |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -140,23 +140,23 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(seconds=i) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# ۱. سلول الکترولیز غشایی
+# 1. Membrane electrolysis cell
 cell_voltage_v = 3.05 + 0.00004 * np.arange(NUM_RECORDS) + 0.02 * np.sin(t * 0.3) + np.random.normal(0, 0.01, NUM_RECORDS)
 current_efficiency_percent = 96.5 - 0.0003 * np.arange(NUM_RECORDS) + np.random.normal(0, 0.3, NUM_RECORDS)
 current_efficiency_percent = np.clip(current_efficiency_percent, 88, 97)
 specific_energy_kwh_per_ton = 2350 + 15 * (cell_voltage_v - 3.05) * 100 + np.random.normal(0, 20, NUM_RECORDS)
 
-# ۲. اتوکلاو پلیمریزاسیون PVC
+# 2. PVC polymerization autoclave
 jacket_heat_transfer_coeff = 850 - 0.03 * np.arange(NUM_RECORDS) + np.random.normal(0, 15, NUM_RECORDS)
 jacket_heat_transfer_coeff = np.clip(jacket_heat_transfer_coeff, 400, 900)
 agitator_motor_power_kw = 120 + 0.002 * np.arange(NUM_RECORDS) + np.random.normal(0, 3, NUM_RECORDS)
 batch_cycle_time_min = 240 + 0.004 * np.arange(NUM_RECORDS) + np.random.normal(0, 5, NUM_RECORDS)
 
-# ۳. کیفیت محصول
+# 3. Product quality
 vcm_purity_percent = 99.9 - 0.02 * (100 - current_efficiency_percent) / 8 + np.random.normal(0, 0.02, NUM_RECORDS)
 pvc_k_value = 68 - 0.5 * (99.95 - vcm_purity_percent) + np.random.normal(0, 0.3, NUM_RECORDS)
 
-# ۴. برچسب‌ها
+# 4. Labels
 needs_wash_7d = (jacket_heat_transfer_coeff < 550).astype(int)
 membrane_replace_flag_90d = (current_efficiency_percent < 90).astype(int)
 
@@ -175,49 +175,49 @@ df = pd.DataFrame({
 })
 
 df.to_csv("arvand_chain_health_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-ACPT | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-ACPT | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| مصرف انرژی ویژه الکترولیز | تشخیص زوال غشا معمولاً پس از افت محسوس کیفیت یا افزایش شدید مصرف | تشخیص زودهنگام روند زوال + برنامه‌ریزی تعویض بهینه | با توجه به سهم ۹۰٪ برق در هزینه الکترولیز، هر ۱٪ بهبود راندمان معادل صرفه‌جویی قابل‌توجه در هزینه برق سالانه مجتمع (۶۳۴ هزار تن کاستیک/سال) |
-| توقف اتوکلاو PVC برای شست‌وشو | زمان‌محور یا پس از افت محسوس کیفیت | پیش‌بینانه بر اساس روند واقعی انتقال حرارت | افزایش نرخ تولید موثر (Uptime) خطوط ۳۰۰ هزار تنی S-PVC |
-| ضایعات/افت گرید PVC | ناشی از نوسان کیفیت VCM که علت ریشه‌ای آن (سلول) دیرتشخیص است | تشخیص علت ریشه‌ای پیش از اثرگذاری بر گرید نهایی | کاهش ضایعات و بازکار (Off-grade) |
+| Specific energy consumption of electrolysis | Membrane degradation is usually detected after a noticeable quality drop or a sharp rise in consumption | Early detection of the degradation trend + optimal replacement planning | Given the 90% share of electricity in electrolysis cost, every 1% improvement in efficiency equals significant savings in the complex's annual electricity cost (634 thousand tons caustic/year) |
+| PVC autoclave shutdown for washing | Time-based or after a noticeable quality drop | Predictive, based on the real heat transfer trend | Increased effective production rate (Uptime) of the 300-thousand-ton S-PVC lines |
+| PVC waste/grade loss | Caused by VCM quality fluctuations whose root cause (the cell) is detected late | Root cause detection before affecting the final grade | Reduced waste and rework (Off-grade) |
 
-**Payback:** با توجه به سهم غالب هزینه انرژی الکترولیز در ساختار هزینه اروند، حتی بهبود ۱-۲٪ در راندمان جریان سلول‌ها می‌تواند هزینه پیاده‌سازی را در ماه‌های اول پایلوت جبران کند.
+**Payback:** Given the dominant share of electrolysis energy cost in Arvand's cost structure, even a 1-2% improvement in cell current efficiency can offset the implementation cost within the first months of the pilot.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-7)
+## 5. Proposed Evolution Roadmap (Phase 1-7)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده + اتصال Kafka/TimescaleDB مشترک |
-| ۲ | مدل پیش‌بینی زوال غشا و مصرف انرژی ویژه |
-| ۳ | مدل فولینگ اتوکلاو PVC و زمان‌بندی شست‌وشو |
-| ۴ | مدل پیوند کیفیت VCM→K-value PVC |
-| ۵ | بهینه‌ساز برنامه تولید ساعتی (سلامت + تعرفه برق) |
-| ۶ | داشبورد مدیریتی زنجیره کلرآلکالی-PVC + هشدار بلادرنگ |
-| ۷ | پایلوت عملیاتی روی یک خط سلول و یک اتوکلاو واقعی در سایت اروند |
+| 1 | Base infrastructure + data simulator + shared Kafka/TimescaleDB connection |
+| 2 | Membrane degradation and specific energy consumption prediction model |
+| 3 | PVC autoclave fouling model and washing scheduling |
+| 4 | VCM quality→PVC K-value link model |
+| 5 | Hourly production schedule optimizer (health + electricity tariff) |
+| 6 | Chlor-alkali-PVC chain management dashboard + real-time alerting |
+| 7 | Operational pilot on one cell line and one real autoclave at the Arvand site |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **پیوند مستقیم زوال غشای سلول الکترولیز به مدل فولینگ/کیفیت راکتور پلیمریزاسیون پایین‌دستی** در یک دوقلوی دیجیتال زنجیره‌ای واحد.
-2. **بهینه‌سازی برنامه تولید ساعتی سه‌سیگنالی** (سلامت سلول + ریسک فولینگ + تعرفه برق زمان‌متغیر).
-3. **تفکیک علت ریشه‌ای افزایش مصرف انرژی ویژه** (زوال سلول در برابر سایر عوامل عملیاتی).
+1. **Direct link between electrolysis cell membrane degradation and the downstream polymerization reactor fouling/quality model** in a single chain digital twin.
+2. **Three-signal hourly production schedule optimization** (cell health + fouling risk + time-varying electricity tariff).
+3. **Root cause separation of increased specific energy consumption** (cell degradation versus other operational factors).
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [سایت رسمی پتروشیمی اروند — در یک نگاه](https://arvandpvc.ir/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%A7%D8%B1%D9%88%D9%86%D8%AF-%D8%AF%D8%B1-%DB%8C%DA%A9-%D9%86%DA%AF%D8%A7%D9%87)
+- [Official website of Arvand Petrochemical — At a Glance](https://arvandpvc.ir/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%A7%D8%B1%D9%88%D9%86%D8%AF-%D8%AF%D8%B1-%DB%8C%DA%A9-%D9%86%DA%AF%D8%A7%D9%87)
 - [Petrochemicals complex profile: Arvand Petrochemical Company — offshore-technology.com](https://www.offshore-technology.com/marketdata/arvand-petrochemical-company-bandar-imam-complex-iran/)
 - [Determination of cell voltage and current efficiency in a chlor-alkali membrane cell based on machine learning approach](https://doi.org/10.1080/10916466.2022.2153867)
 - [Machine Learning Models for Predicting Electrode and Membrane Degradation in Alkaline Water Electrolysis](https://www.researchgate.net/publication/398896117_Machine_Learning_Models_for_Predicting_Electrode_and_Membrane_Degradation_in_Alkaline_Water_Electrolysis_for_Hydrogen_Production)

@@ -1,93 +1,93 @@
 # Khalij-Bidboland-MultiSource-Feed-Adaptive-NGL-Optimization-System (Khalij-BMFA)
 
-## سامانه هوشمند استنتاج بلادرنگ ترکیب خوراک سه‌منبعی (پازنان/گچساران/بی‌بی‌حکیمه)، بهینه‌سازی تطبیقی توربواکسپندر/دی‌متانایزر و پیش‌بینی ریسک هیدرات — محصول اختصاصی شرکت پالایش گاز بیدبلند خلیج فارس
+## Intelligent system for real-time inference of the three-source feed composition (Pazanan/Gachsaran/Bibi Hakimeh), adaptive turboexpander/demethanizer optimization, and hydrate risk prediction — a dedicated product of Persian Gulf Bidboland Gas Refining Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پالایش گاز بیدبلند خلیج فارس است — بزرگ‌ترین تأسیسات جمع‌آوری و فرآورش گاز در تاریخ صنعت نفت ایران. برخلاف واحدهای پتروشیمی که خوراک نسبتاً ثابت دارند، بیدبلند از **سه میدان نفتی مختلف با ترکیب گاز همراه متغیر** خوراک می‌گیرد — چالشی که هیچ محصول دیگر هلدینگ به آن نپرداخته است.
-
----
-
-## ۰. شناخت شرکت پالایش گاز بیدبلند خلیج فارس و شکاف فنی
-
-**منابع:** [ویکی‌پدیا فارسی — پالایشگاه گاز بیدبلند](https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D9%84%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87_%DA%AF%D8%A7%D8%B2_%D8%A8%DB%8C%D8%AF%D8%A8%D9%84%D9%86%D8%AF)، [سایت رسمی pgbidboland.ir](https://www.pgbidboland.ir/fa/introduction)
-
-### محصولات و ظرفیت
-
-| محصول | ظرفیت سالانه |
-|---|---|
-| متان | ۱۰٫۴ میلیون تن |
-| اتان | ۱٫۵ میلیون تن (مقصد: منطقه ویژه پتروشیمی ماهشهر — خوراک کراکر شرکت‌هایی مثل اروند/بندرامام/کارون) |
-| پروپان | ۱ میلیون تن |
-| بوتان | ۰٫۵ میلیون تن |
-| میعانات گازی | ۰٫۶ میلیون تن |
-| گاز اسیدی | ۰٫۹ میلیون تن |
-
-**ویژگی منحصربه‌فرد:** خوراک این پالایشگاه از گاز همراه **سه میدان نفتی مختلف** (پازنان، گچساران، بی‌بی‌حکیمه) از طریق واحدهای NGL شماره ۹۰۰، ۱۰۰۰، ۱۲۰۰ و ۱۳۰۰ تأمین می‌شود. ترکیب گاز همراه هر میدان (نسبت متان/اتان/پروپان/آب/CO₂/H₂S) به‌طور ذاتی متفاوت و با گذشت زمان (افت فشار مخزن، تغییر نسبت آب تولیدی) متغیر است.
-
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
-
-| محصول هلدینگ | چرا برای بیدبلند کافی نیست |
-|---|---|
-| همه محصولات پتروشیمی هلدینگ | برای واحدهای با **خوراک نسبتاً ثابت** (نفتا/گاز طبیعی خالص) طراحی شده‌اند؛ به چالش **تغییر مداوم ترکیب خوراک از سه منبع مختلف** و اثر آن بر بازیابی اتان/پروپان و ریسک هیدرات نمی‌پردازند |
-| هیچ محصول هلدینگ | فرایند **توربواکسپندر کرایوژنیک** (انبساط سرمازا، دمای بسیار پایین، ریسک تشکیل هیدرات) را پوشش نمی‌دهد |
-
-**نتیجه:** بیدبلند نیاز به سامانه‌ای دارد که ترکیب خوراک متغیر سه‌منبعی را بلادرنگ استنتاج کند و نقطه عملیاتی توربواکسپندر/دی‌متانایزر را به‌صورت تطبیقی (نه ثابت بر مبنای طراحی) بازتنظیم کند.
+> This document is a **dedicated** product for Persian Gulf Bidboland Gas Refining Company — the largest gas gathering and processing facility in the history of Iran's oil industry. Unlike petrochemical units with relatively constant feedstock, Bidboland receives feed from **three different oil fields with variable associated-gas composition** — a challenge no other holding product has addressed.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 0. Understanding Persian Gulf Bidboland Gas Refining Company and the technical gap
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+**Sources:** [Persian Wikipedia — Bidboland Gas Refinery](https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D9%84%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87_%DA%AF%D8%A7%D8%B2_%D8%A8%DB%8C%D8%AF%D8%A8%D9%84%D9%86%D8%AF), [Official site pgbidboland.ir](https://www.pgbidboland.ir/fa/introduction)
+
+### Products and Capacity
+
+| Product | Annual capacity |
+|---|---|
+| Methane | 10.4 million tons |
+| Ethane | 1.5 million tons (destination: Mahshahr Petrochemical Special Zone — cracker feed for companies such as Arvand/Bandar Imam/Karoun) |
+| Propane | 1 million tons |
+| Butane | 0.5 million tons |
+| Gas condensate | 0.6 million tons |
+| Acid gas | 0.9 million tons |
+
+**Unique feature:** The refinery's feed is supplied from the associated gas of **three different oil fields** (Pazanan, Gachsaran, Bibi Hakimeh) through NGL units 900, 1000, 1200 and 1300. The associated-gas composition of each field (the ratio of methane/ethane/propane/water/CO₂/H₂S) is inherently different and varies over time (reservoir pressure decline, change in the produced-water ratio).
+
+### Technical Gap Relative to the Holding's Products 1 to 4
+
+| Holding product | Why it is not enough for Bidboland |
+|---|---|
+| All petrochemical holding products | Designed for units with **relatively constant feed** (naphtha/pure natural gas); they do not address the challenge of **continuously changing feed composition from three different sources** and its effect on ethane/propane recovery and hydrate risk |
+| No holding product | Covers the **cryogenic turboexpander** process (cryogenic expansion, very low temperature, hydrate formation risk) |
+
+**Conclusion:** Bidboland needs a system that infers the variable three-source feed composition in real time and adaptively readjusts the turboexpander/demethanizer operating point (not fixed based on design).
+
+---
+
+## 1. Patent Background and Competitive Analysis
+
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | *Operation optimization of a cryogenic NGL recovery unit using deep learning based surrogate modeling* (ScienceDirect) | بهینه‌سازی برای **یک خوراک با ترکیب مشخص**؛ به تغییر مداوم منبع/ترکیب خوراک از چند میدان نمی‌پردازد | بهینه‌سازی **تطبیقی بلادرنگ** که با هر تغییر ترکیب خوراک سه‌منبعی مجدداً محاسبه می‌شود |
-| ۲ | **US 6,755,965 B2** – *Ethane extraction process for a hydrocarbon gas stream* | فرایند مهندسی ثابت برای استخراج اتان؛ رویکرد فرایندی نه نرم‌افزاری تطبیقی | لایه نرم‌افزاری تطبیقی روی زیرساخت فرایندی موجود |
-| ۳ | **US 6,907,752 B2** – *Cryogenic liquid natural gas recovery process* | فرایند مهندسی برای یک نوع خوراک؛ به ترکیب سه‌منبعی و تغییر پویا نمی‌پردازد | تعمیم به سناریوی چندمنبعی با استنتاج بلادرنگ سهم هر منبع |
-| ۴ | مطالعات ML پیش‌بینی تشکیل هیدرات (Random Forest، XGBoost) | مدل‌های عمومی پیش‌بینی دمای تشکیل هیدرات از ترکیب گاز؛ به اتصال با بهینه‌سازی عملیاتی توربواکسپندر در زمان واقعی نمی‌پردازند | اتصال مستقیم پیش‌بینی هیدرات به تصمیم بلادرنگ تنظیم توربواکسپندر |
+| 1 | *Operation optimization of a cryogenic NGL recovery unit using deep learning based surrogate modeling* (ScienceDirect) | Optimization for **a single feed of known composition**; does not address continuous change of source/composition of feed from multiple fields | **Real-time adaptive** optimization that recomputes with every change of the three-source feed composition |
+| 2 | **US 6,755,965 B2** – *Ethane extraction process for a hydrocarbon gas stream* | Fixed engineered process for ethane extraction; process approach, not adaptive software | Adaptive software layer on top of the existing process infrastructure |
+| 3 | **US 6,907,752 B2** – *Cryogenic liquid natural gas recovery process* | Engineered process for one type of feed; does not address three-source composition and dynamic change | Generalization to a multi-source scenario with real-time inference of each source's share |
+| 4 | ML studies on hydrate formation prediction (Random Forest, XGBoost) | General models for predicting the hydrate formation temperature from gas composition; do not address a real-time connection with operational optimization of the turboexpander | Direct connection of hydrate prediction to the real-time turboexpander adjustment decision |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه بهینه‌سازی تطبیقی خوراک چندمنبعی (Multi-Source Feed-Adaptive Optimization) که برای نخستین‌بار سهم نسبی سه منبع خوراک گاز همراه (پازنان/گچساران/بی‌بی‌حکیمه) را از الگوی ترکیب لحظه‌ای گاز ورودی بلادرنگ استنتاج می‌کند، نقطه عملیاتی توربواکسپندر/دی‌متانایزر را برای حداکثرسازی بازیابی اتان/پروپان به‌صورت پیوسته بازتنظیم می‌کند، و هم‌زمان ریسک تشکیل هیدرات ناشی از تغییر ناگهانی ترکیب خوراک را پیش‌بینی و پیشگیری می‌کند."**
+> **"A Multi-Source Feed-Adaptive Optimization system that, for the first time, infers in real time the relative share of three associated-gas feed sources (Pazanan/Gachsaran/Bibi Hakimeh) from the instantaneous composition pattern of the incoming gas, continuously readjusts the turboexpander/demethanizer operating point to maximize ethane/propane recovery, and simultaneously predicts and prevents the hydrate formation risk caused by a sudden change in feed composition."**
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پالایش گاز بیدبلند خلیج فارس
+## 2. SRS Document – Dedicated product of Persian Gulf Bidboland Gas Refining
 
-### ۲-۱. مقدمه
-**هدف:** حداکثرسازی بازیابی اتان/پروپان (خوراک استراتژیک پتروشیمی‌های ماهشهر) از طریق بهینه‌سازی تطبیقی مداوم متناسب با تغییر ترکیب خوراک سه‌منبعی، و پیشگیری از ریسک هیدرات.
+### 2-1. Introduction
+**Purpose:** Maximize ethane/propane recovery (strategic feedstock of the Mahshahr petrochemicals) through continuous adaptive optimization matched to changes in the three-source feed composition, and prevent hydrate risk.
 
-**چالش‌های میدانی:**
-- نقطه عملیاتی ثابت توربواکسپندر/دی‌متانایزر طراحی‌شده برای یک ترکیب خوراک میانگین، با تغییر واقعی سهم هر میدان بهینه نیست.
-- تغییر ناگهانی نسبت آب/CO₂ در خوراک (به‌ویژه از میادین با افت فشار) ریسک تشکیل هیدرات و انسداد را در بخش‌های سرد افزایش می‌دهد.
-- اتان تولیدی خوراک مستقیم کراکرهای پتروشیمی ماهشهر است؛ نوسان بازیابی اتان مستقیماً بر زنجیره تأمین پتروشیمی هلدینگ اثر دارد.
+**Field challenges:**
+- The fixed turboexpander/demethanizer operating point designed for an average feed composition is not optimal with the actual change in each field's share.
+- A sudden change in the water/CO₂ ratio in the feed (especially from fields with pressure decline) increases the risk of hydrate formation and blockage in cold sections.
+- The ethane produced is the direct feed of the Mahshahr petrochemical crackers; fluctuation of ethane recovery directly affects the holding's petrochemical supply chain.
 
-**دامنه:** مجتمع بیدبلند؛ اتصال به DCS واحدهای NGL ۹۰۰/۱۰۰۰/۱۲۰۰/۱۳۰۰.
+**Scope:** Bidboland complex; connection to the DCS of NGL units 900/1000/1200/1300.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای ترکیب گاز ورودی هر واحد NGL | بالا |
-| R-GEN-02 | دریافت داده دما/فشار بخش‌های کرایوژنیک (توربواکسپندر، دی‌متانایزر) | بالا |
-| R-GEN-03 | داشبورد «سهم منبع خوراک + بازیابی اتان/پروپان + ریسک هیدرات» | بالا |
+| R-GEN-01 | Reception of instantaneous incoming gas composition data of each NGL unit | High |
+| R-GEN-02 | Reception of temperature/pressure data of the cryogenic sections (turboexpander, demethanizer) | High |
+| R-GEN-03 | Dashboard "Feed source share + ethane/propane recovery + hydrate risk" | High |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-SOURCE-01 | استنتاج بلادرنگ سهم نسبی هر یک از سه منبع خوراک از الگوی ترکیب گاز ورودی | **استنتاج منبع خوراک بلادرنگ (نوآوری اصلی)** |
-| FR-OPT-01 | بازتنظیم تطبیقی نقطه عملیاتی توربواکسپندر/دی‌متانایزر برای حداکثرسازی بازیابی اتان/پروپان | **بهینه‌سازی تطبیقی چندمنبعی (نوآوری اصلی)** |
-| FR-HYDRATE-01 | پیش‌بینی ریسک تشکیل هیدرات از ترکیب خوراک و شرایط عملیاتی | پیش‌بینی هیدرات متصل به تصمیم عملیاتی |
-| FR-ALERT-01 | هشدار پیشگیرانه ریسک هیدرات با توصیه اقدام (تزریق مهارکننده/تنظیم دما) | توصیه‌گر اقدام پیشگیرانه |
-| FR-LOOP-01 | ثبت نتایج واقعی بازیابی محصول و رویدادهای هیدرات برای بازآموزی | یادگیری بسته |
+| FR-SOURCE-01 | Real-time inference of the relative share of each of the three feed sources from the incoming gas composition pattern | **Real-time feed source inference (main innovation)** |
+| FR-OPT-01 | Adaptive readjustment of the turboexpander/demethanizer operating point to maximize ethane/propane recovery | **Multi-source adaptive optimization (main innovation)** |
+| FR-HYDRATE-01 | Prediction of hydrate formation risk from feed composition and operating conditions | Hydrate prediction linked to the operational decision |
+| FR-ALERT-01 | Preventive hydrate risk alert with action recommendation (inhibitor injection/temperature adjustment) | Preventive action recommender |
+| FR-LOOP-01 | Recording actual product recovery results and hydrate events for retraining | Closed learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر بازتنظیم نقطه عملیاتی پس از تغییر ترکیب خوراک | کمتر از ۲ دقیقه |
-| NFR-PER-02 | دقت پیش‌بینی ریسک هیدرات | کمتر از ۱۰٪ خطا |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹٪ |
+| NFR-PER-01 | Operating point readjustment delay after a feed composition change | Less than 2 minutes |
+| NFR-PER-02 | Accuracy of hydrate risk prediction | Less than 10% error |
+| NFR-AVAIL-01 | System availability | 99.9% |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -106,16 +106,16 @@
         └────────────┘    └───────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/ngl-units-ingestion/` | اتصال DCS چهار واحد NGL |
-| `services/source-inference-hydrate-model/` | استنتاج منبع خوراک + پیش‌بینی هیدرات |
-| `services/adaptive-turboexpander-optimizer/` | بهینه‌ساز تطبیقی |
-| `shared/` | بازاستفاده از محصولات ۱-۴ |
+| `services/ngl-units-ingestion/` | DCS connection of the four NGL units |
+| `services/source-inference-hydrate-model/` | Feed source inference + hydrate prediction |
+| `services/adaptive-turboexpander-optimizer/` | Adaptive optimizer |
+| `shared/` | Reuse of products 1-4 |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -126,8 +126,8 @@ NUM_RECORDS = 10000
 START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(minutes=i) for i in range(NUM_RECORDS)]
 
-# سهم نسبی سه منبع خوراک (متغیر با زمان به‌صورت گام‌های تصادفی)
-source_shift = np.random.choice([0, 1, 2], size=NUM_RECORDS // 300 + 1)  # 0=پازنان 1=گچساران 2=بی‌بی‌حکیمه
+# relative share of the three feed sources (time-varying as random steps)
+source_shift = np.random.choice([0, 1, 2], size=NUM_RECORDS // 300 + 1)  # 0=Pazanan 1=Gachsaran 2=Bibi Hakimeh
 current_source = np.repeat(source_shift, 300)[:NUM_RECORDS]
 
 base_methane = np.array([78, 82, 75])[current_source]
@@ -138,15 +138,15 @@ feed_methane_percent = base_methane + np.random.normal(0, 1, NUM_RECORDS)
 feed_ethane_percent = base_ethane + np.random.normal(0, 0.5, NUM_RECORDS)
 feed_water_ppm = base_water_ppm + np.random.normal(0, 3, NUM_RECORDS)
 
-# دما/فشار توربواکسپندر
+# turboexpander temperature/pressure
 turboexpander_outlet_temp_c = -95 + 0.1 * (feed_ethane_percent - 8) + np.random.normal(0, 1, NUM_RECORDS)
 demethanizer_pressure_bar = 28 + np.random.normal(0, 0.5, NUM_RECORDS)
 
-# بازیابی اتان (وابسته به تطبیق نقطه عملیاتی با ترکیب خوراک)
+# ethane recovery (dependent on matching the operating point to feed composition)
 ethane_recovery_percent = 92 - 3 * np.abs(feed_ethane_percent - 8) / 8 + np.random.normal(0, 1, NUM_RECORDS)
 ethane_recovery_percent = np.clip(ethane_recovery_percent, 75, 97)
 
-# ریسک هیدرات (افزایش با آب بالا و دمای بسیار پایین)
+# hydrate risk (increases with high water and very low temperature)
 hydrate_risk_index = 0.02 * feed_water_ppm - 0.05 * (turboexpander_outlet_temp_c + 95) + np.random.normal(0, 0.5, NUM_RECORDS)
 hydrate_risk_index = np.clip(hydrate_risk_index, 0, 10)
 
@@ -166,47 +166,47 @@ df = pd.DataFrame({
 })
 
 df.to_csv("bidboland_multisource_ngl_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-BMFA | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-BMFA | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| بازیابی اتان | نقطه عملیاتی ثابت طراحی، غیربهینه با تغییر منبع خوراک | بازتنظیم تطبیقی بلادرنگ | افزایش بازیابی اتان روی ظرفیت ۱٫۵ میلیون تنی — خوراک مستقیم کراکرهای ماهشهر |
-| ریسک هیدرات | واکنشی پس از بروز انسداد | پیش‌بینی پیشگیرانه | جلوگیری از توقف اضطراری بخش کرایوژنیک |
+| Ethane recovery | Fixed design operating point, suboptimal with feed source change | Real-time adaptive readjustment | Increased ethane recovery on the 1.5 million ton capacity — direct feed of the Mahshahr crackers |
+| Hydrate risk | Reactive after a blockage occurs | Preventive prediction | Preventing emergency shutdown of the cryogenic section |
 
-**Payback:** با توجه به نقش بیدبلند به‌عنوان بزرگ‌ترین تأمین‌کننده اتان زنجیره پتروشیمی ماهشهر، حتی بهبود ۱-۲٪ در بازیابی اتان اثر زنجیره‌ای بزرگی بر کل هلدینگ دارد.
+**Payback:** Given Bidboland's role as the largest ethane supplier of the Mahshahr petrochemical chain, even a 1-2% improvement in ethane recovery has a large chain effect on the entire holding.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-5)
+## 5. Proposed Evolution Roadmap (Phase 1-5)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده |
-| ۲ | مدل استنتاج بلادرنگ سهم منبع خوراک |
-| ۳ | مدل پیش‌بینی ریسک هیدرات |
-| ۴ | بهینه‌ساز تطبیقی توربواکسپندر/دی‌متانایزر |
-| ۵ | داشبورد + پایلوت عملیاتی روی یکی از واحدهای NGL |
+| 1 | Base infrastructure + data simulator |
+| 2 | Real-time feed source share inference model |
+| 3 | Hydrate risk prediction model |
+| 4 | Adaptive turboexpander/demethanizer optimizer |
+| 5 | Dashboard + operational pilot on one of the NGL units |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **استنتاج بلادرنگ سهم نسبی خوراک از سه منبع میدان نفتی مختلف** از الگوی ترکیب گاز ورودی.
-2. **بهینه‌سازی تطبیقی مداوم نقطه عملیاتی توربواکسپندر/دی‌متانایزر** متناسب با تغییر خوراک (نه نقطه ثابت طراحی).
-3. **پیش‌بینی و پیشگیری ریسک هیدرات متصل مستقیم به تصمیم عملیاتی بلادرنگ**.
+1. **Real-time inference of the relative feed share from three different oil field sources** from the incoming gas composition pattern.
+2. **Continuous adaptive optimization of the turboexpander/demethanizer operating point** matched to feed change (not a fixed design point).
+3. **Hydrate risk prediction and prevention linked directly to the real-time operational decision**.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [ویکی‌پدیا فارسی — پالایشگاه گاز بیدبلند](https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D9%84%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87_%DA%AF%D8%A7%D8%B2_%D8%A8%DB%8C%D8%AF%D8%A8%D9%84%D9%86%D8%AF)
-- [سایت رسمی پالایش گاز بیدبلند خلیج فارس](https://www.pgbidboland.ir/fa/introduction)
+- [Persian Wikipedia — Bidboland Gas Refinery](https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D9%84%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87_%DA%AF%D8%A7%D8%B2_%D8%A8%DB%8C%D8%AF%D8%A8%D9%84%D9%86%D8%AF)
+- [Official site of Persian Gulf Bidboland Gas Refining](https://www.pgbidboland.ir/fa/introduction)
 - [Operation optimization of a cryogenic NGL recovery unit using deep learning based surrogate modeling — ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0098135420300636)
 - [US6755965B2 — Ethane extraction process for a hydrocarbon gas stream](https://patents.google.com/patent/US6755965)
 - [US6907752B2 — Cryogenic liquid natural gas recovery process](https://patents.google.com/patent/US6907752B2/en)

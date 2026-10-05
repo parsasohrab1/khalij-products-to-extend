@@ -1,101 +1,101 @@
 # Khalij-BuAliSina-Aromatics-Catalyst-Adsorbent-Digital-Twin-System (Khalij-BACAT)
 
-## سامانه هوشمند پیش‌بینی فعالیت کاتالیست پلاتینی ریفورمینگ (CCR)، زوال جاذب مولکولی جداسازی پارازایلین (Parex/Isomar) و بهینه‌سازی هم‌زمان بازده/خلوص محصولات آروماتیک — محصول اختصاصی شرکت پتروشیمی بوعلی سینا
+## Intelligent system for predicting platinum reforming catalyst (CCR) activity, paraxylene separation molecular-sieve adsorbent (Parex/Isomar) deterioration, and simultaneous yield/purity optimization of aromatic products — a dedicated product of Bu Ali Sina Petrochemical Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پتروشیمی بوعلی سینا (BSPC) است که مجتمع سوم آروماتیک ایران با ۷ واحد فرایندی مجوزدار از AXENS، KRUPP UHDE و SINOPEC است. این محصول از الگوی فنی مشترک هلدینگ استفاده می‌کند اما دامنه داده و مدل را به فیزیک منحصربه‌فرد **کاتالیست ریفورمینگ پلاتینی + جاذب مولکولی جداسازی پارازایلین** توسعه می‌دهد که در هیچ‌یک از محصولات ۱ تا ۴ پوشش داده نشده است.
-
----
-
-## ۰. شناخت شرکت پتروشیمی بوعلی سینا (مبتنی بر مطالعه سایت رسمی) و شکاف فنی
-
-**منابع:** [سایت رسمی BSPC](https://bspc.ir/)، [BSPC Products (EN)](https://bspc.ir/en/products/)، [PGPIC — بوعلی سینا](https://pgpic.ir/en/Subsidiaries/Production-Companies/Bou-Ali-Sina-Petrochemical-Company)
-
-### محصولات و واحدهای فرایندی
-
-| ویژگی | مقدار |
-|---|---|
-| محل | منطقه ویژه اقتصادی بندرامام خمینی، ۳۶ هکتار |
-| ظرفیت کل | حدود ۱٫۱ تا ۱٫۷۴ میلیون تن/سال |
-| پارازایلین (PX) | ۴۰۰,۰۰۰ تن/سال |
-| ارتوزایلین (OX) | ۳۰,۰۰۰ تن/سال |
-| بنزن | ۱۸۰,۰۰۰ تن/سال (خوراک استایرن مونومر و LAB) |
-| نفتا/گاز مایع/رافینیت | تا ۴۹۹,۰۰۰ تن/سال محصولات جانبی |
-| مجوزدهنده فناوری | AXENS، KRUPP UHDE (آلمان)، SINOPEC (چین) — ۷ واحد فرایندی |
-| سوم‌مین پروژه آروماتیک ایران | راه‌اندازی از سال ۲۰۰۴ |
-
-هسته فنی این مجتمع، **واحد ریفورمینگ کاتالیستی پیوسته (CCR)** با کاتالیست پلاتینی (برای تبدیل نفتا به آروماتیک) و **واحد جداسازی جذبی پارازایلین (Parex/Isomar)** با جاذب زئولیتی است — دو پدیده فیزیکی/شیمیایی کاملاً متفاوت از راکتورهای پلیمریزاسیون یا کوره‌های کراکینگ که در سایر محصولات هلدینگ پوشش داده شده‌اند.
-
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
-
-| محصول هلدینگ | چرا برای بوعلی سینا کافی نیست |
-|---|---|
-| محصول ۱ (بهینه‌سازی فرایند راکتور) | برای راکتور کراکینگ/پلیمریزاسیون طراحی شده؛ فیزیک ریفورمینگ کاتالیستی (کک‌گیری تدریجی روی پلاتین در سیکل حرکت پیوسته کاتالیست بین راکتورها) را پوشش نمی‌دهد |
-| محصول ۴ (پایش دارایی + زوال کاتالیست) | زوال کاتالیست در محصول ۴ برای **کاتالیست پلیمریزاسیون PE/PP** (زوال تدریجی طی هفته‌ها) مدل‌سازی شده و به مارون تخصیص یافته؛ کاتالیست CCR رفتار کاملاً متفاوتی دارد (احیای پیوسته و چرخشی هر چند ساعت، نه تعویض دوره‌ای) — و **جاذب مولکولی Parex اساساً در هیچ محصولی پوشش داده نشده** |
-| محصول ۳ (انرژی/کربن) | افت راندمان جداسازی PX ناشی از زوال جاذب را به‌عنوان علت انرژی‌بر شدن فرایند بازیافت حلال شناسایی نمی‌کند |
-
-**نتیجه:** بوعلی سینا نیاز به یک دوقلوی دیجیتال اختصاصی دارد که چرخه پیوسته احیای کاتالیست پلاتینی CCR و روند بلندمدت زوال جاذب زئولیتی Parex را هم‌زمان با بازده/خلوص محصولات نهایی (PX/OX/بنزن) ببیند.
+> This document is a **dedicated** product for Bu Ali Sina Petrochemical Company (BSPC), Iran's third aromatics complex with 7 licensed process units from AXENS, KRUPP UHDE and SINOPEC. This product uses the holding's common technical pattern but extends the data and model scope to the unique physics of **platinum reforming catalyst + paraxylene separation molecular-sieve adsorbent**, which is not covered by any of products 1 to 4.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 0. Understanding Bu Ali Sina Petrochemical Company (based on a study of the official site) and the technical gap
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+**Sources:** [BSPC official site](https://bspc.ir/), [BSPC Products (EN)](https://bspc.ir/en/products/), [PGPIC — Bu Ali Sina](https://pgpic.ir/en/Subsidiaries/Production-Companies/Bou-Ali-Sina-Petrochemical-Company)
+
+### Products and process units
+
+| Feature | Value |
+|---|---|
+| Location | Imam Khomeini Port Special Economic Zone, 36 hectares |
+| Total capacity | About 1.1 to 1.74 million tons/year |
+| Paraxylene (PX) | 400,000 tons/year |
+| Orthoxylene (OX) | 30,000 tons/year |
+| Benzene | 180,000 tons/year (feed for styrene monomer and LAB) |
+| Naphtha/LPG/raffinate | Up to 499,000 tons/year of by-products |
+| Technology licensors | AXENS, KRUPP UHDE (Germany), SINOPEC (China) — 7 process units |
+| Third aromatics project of Iran | Operating since 2004 |
+
+The technical core of this complex is the **continuous catalytic reforming (CCR) unit** with platinum catalyst (for converting naphtha to aromatics) and the **paraxylene adsorptive separation unit (Parex/Isomar)** with zeolite adsorbent — two physical/chemical phenomena completely different from the polymerization reactors or cracking furnaces covered in the other holding products.
+
+### Technical Gap Relative to the Holding's Products 1 to 4
+
+| Holding product | Why it is not enough for Bu Ali Sina |
+|---|---|
+| Product 1 (reactor process optimization) | Designed for a cracking/polymerization reactor; it does not cover the physics of catalytic reforming (gradual coking on platinum in the continuous catalyst-movement cycle between reactors) |
+| Product 4 (asset monitoring + catalyst deterioration) | Catalyst deterioration in product 4 is modeled for the **PE/PP polymerization catalyst** (gradual deterioration over weeks) and assigned to Karoun; the CCR catalyst behaves completely differently (continuous, rotating regeneration every few hours, not periodic replacement) — and the **Parex molecular-sieve adsorbent is not covered in any product at all** |
+| Product 3 (energy/carbon) | Does not identify the decrease in PX separation efficiency due to adsorbent deterioration as the cause of the solvent recovery process becoming energy-intensive |
+
+**Conclusion:** Bu Ali Sina needs a dedicated digital twin that sees the continuous platinum CCR catalyst regeneration cycle and the long-term deterioration trend of the Parex zeolite adsorbent simultaneously with the yield/purity of the final products (PX/OX/benzene).
+
+---
+
+## 1. Patent Background and Competitive Analysis
+
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | **US 11,975,316** – *Methods and reforming systems for re-dispersing platinum on reforming catalyst* | روش شیمیایی/سخت‌افزاری بازپخش پلاتین روی کاتالیست پس از احیا؛ فاقد لایه پیش‌بینی یادگیری‌محور برای زمان‌بندی بهینه احیا | پیش‌بینی روند فعالیت کاتالیست با ML برای بهینه‌سازی زمان‌بندی چرخه احیا، نه صرفاً بهبود خود فرایند احیا |
-| ۲ | Predictive Modeling of CCR Reforming (Wiley/ACS – Energy & Fuels) | مدل‌سازی شبیه‌سازی/کینتیکی آفلاین برای طراحی و بهینه‌سازی فرایند؛ سامانه صنعتی بلادرنگ متصل به DCS واقعی نیست | تبدیل مدل کینتیکی به یک سرویس پیش‌بینی بلادرنگ متصل به داده واقعی CCR + توصیه عملیاتی |
-| ۳ | **US 8,778,823** – *Feed additives for CCR reforming* | افزودنی شیمیایی برای کاهش کک‌گیری؛ رویکرد ماده‌ای نه نرم‌افزاری/پیش‌بینانه | مکمل: به‌جای تغییر ماده خوراک، پیش‌بینی و بهینه‌سازی زمان‌بندی احیا بر مبنای داده واقعی عملکرد |
-| ۴ | پتنت‌های جداسازی جذبی پارازایلین (US5495061، US5849981، US6706938 و غیره) | همگی بر مواد/فرمولاسیون جاذب و حلال (Desorbent) تمرکز دارند؛ هیچ‌کدام مدل پیش‌بینی زوال عملکرد جاذب طی زمان با یادگیری ماشین ارائه نمی‌دهند | **مدل یادگیری‌محور پیش‌بینی افت خلوص/بازیافت PX ناشی از زوال تدریجی بستر جاذب (شکاف کاملاً خالی در ادبیات patent یافت‌شده)** |
+| 1 | **US 11,975,316** – *Methods and reforming systems for re-dispersing platinum on reforming catalyst* | Chemical/hardware method of re-dispersing platinum on the catalyst after regeneration; lacks a learning-based prediction layer for optimal regeneration timing | ML prediction of the catalyst activity trend to optimize regeneration cycle timing, not just improving the regeneration process itself |
+| 2 | Predictive Modeling of CCR Reforming (Wiley/ACS – Energy & Fuels) | Offline simulation/kinetic modeling for process design and optimization; not a real-time industrial system connected to a real DCS | Converting the kinetic model into a real-time prediction service connected to real CCR data + operational recommendation |
+| 3 | **US 8,778,823** – *Feed additives for CCR reforming* | Chemical additive to reduce coking; a material approach, not software/predictive | Complementary: instead of changing the feed material, predict and optimize regeneration timing based on real performance data |
+| 4 | Paraxylene adsorptive separation patents (US5495061, US5849981, US6706938, etc.) | All focus on adsorbent and solvent (Desorbent) materials/formulation; none presents a machine-learning model for predicting adsorbent performance degradation over time | **A learning-based model for predicting PX purity/recovery loss caused by gradual deterioration of the adsorbent bed (a completely empty gap in the patent literature found)** |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه دوقلوی دیجیتال یکپارچه واحدهای آروماتیک که برای نخستین‌بار (الف) پیش‌بینی روند فعالیت/کک‌گیری کاتالیست پلاتینی در چرخه احیای پیوسته CCR و (ب) پیش‌بینی زوال تدریجی ظرفیت جذب بستر جاذب زئولیتی واحد Parex/Isomar را در یک مدل واحد ترکیب می‌کند و اثر مشترک هر دو بر بازده و خلوص نهایی پارازایلین/بنزن را به‌صورت بلادرنگ برآورد و بهینه‌سازی می‌کند."**
+> **"An integrated digital twin system for aromatics units that, for the first time, combines (a) prediction of the activity/coking trend of the platinum catalyst in the continuous CCR regeneration cycle and (b) prediction of the gradual deterioration of the adsorption capacity of the zeolite adsorbent bed of the Parex/Isomar unit in a single model, and estimates and optimizes in real time the joint effect of both on the final yield and purity of paraxylene/benzene."**
 
-بخش (ب) — پیش‌بینی یادگیری‌محور زوال جاذب Parex — در هیچ منبع یافته‌شده سابقه نداشت و به‌تنهایی یک ادعای مستقل (Independent Claim) محکم است.
+Part (b) — learning-based prediction of Parex adsorbent deterioration — had no precedent in any source found and on its own is a strong Independent Claim.
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی بوعلی سینا
+## 2. SRS Document – Dedicated product of Bu Ali Sina Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** پایش پیوسته سلامت کاتالیست CCR و جاذب Parex، پیش‌بینی زمان بهینه احیا/تعویض، و بهینه‌سازی بازده و خلوص محصولات آروماتیک نهایی.
+### 2-1. Introduction
+**Purpose:** Continuous health monitoring of the CCR catalyst and Parex adsorbent, prediction of the optimal regeneration/replacement time, and optimization of the yield and purity of final aromatic products.
 
-**چالش‌های میدانی:**
-- کک‌گیری کاتالیست پلاتینی طی گردش پیوسته بین راکتورهای CCR که اگر زمان‌بندی احیا نامناسب باشد، بازده آروماتیک (PX/OX/بنزن) افت می‌کند.
-- زوال تدریجی ظرفیت جذب بستر جاذب زئولیتی Parex که باعث افت خلوص PX (زیر مشخصه پلیمرگرید) یا افزایش مصرف انرژی بازیافت حلال (Desorbent) می‌شود.
-- نبود ابزاری که اثر ترکیبی این دو پدیده را روی خروجی نهایی (PX ۴۰۰ هزار تن/سال) هم‌زمان ببیند.
+**Field challenges:**
+- Coking of the platinum catalyst during continuous circulation between CCR reactors which, if regeneration timing is unsuitable, reduces the aromatics yield (PX/OX/benzene).
+- Gradual deterioration of the adsorption capacity of the Parex zeolite adsorbent bed, which causes a drop in PX purity (below polymer-grade specification) or an increase in solvent (Desorbent) recovery energy consumption.
+- No tool that sees the combined effect of these two phenomena on the final output (PX 400 thousand tons/year) simultaneously.
 
-**دامنه:** مجتمع بوعلی سینا، ماهشهر؛ اتصال به DCS واحدهای CCR، Parex/Isomar و فرکشناسیون.
+**Scope:** Bu Ali Sina complex, Mahshahr; connection to the DCS of the CCR, Parex/Isomar and fractionation units.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای دما/فشار/ترکیب ورودی-خروجی راکتورهای CCR در چرخه احیا | بالا |
-| R-GEN-02 | دریافت داده افت‌فشار، دبی حلال و خلوص خروجی واحد Parex | بالا |
-| R-GEN-03 | داشبورد سلامت «کاتالیست + جاذب» با نمای یکپارچه اثر بر بازده PX/OX/بنزن | بالا |
-| R-GEN-04 | اتصال به سیستم آزمایشگاهی کیفیت (خلوص PX آنلاین/آفلاین) | متوسط |
+| R-GEN-01 | Reception of instantaneous temperature/pressure/inlet-outlet composition data of CCR reactors in the regeneration cycle | High |
+| R-GEN-02 | Reception of pressure drop, solvent flow and output purity data of the Parex unit | High |
+| R-GEN-03 | "Catalyst + adsorbent" health dashboard with an integrated view of the effect on PX/OX/benzene yield | High |
+| R-GEN-04 | Connection to the laboratory quality system (online/offline PX purity) | Medium |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-CCR-01 | پیش‌بینی روند فعالیت/کک‌گیری کاتالیست پلاتینی در هر راکتور CCR با بازه اطمینان | پیش‌بینی چرخه احیا با یادگیری روند نه توالی ثابت |
-| FR-PAREX-01 | پیش‌بینی زوال ظرفیت جذب بستر جاذب Parex از روند افت خلوص/بازیافت PX | **مدل یادگیری‌محور زوال جاذب زئولیتی (نوآوری اصلی)** |
-| FR-YIELD-01 | برآورد بلادرنگ بازده و خلوص PX/OX/بنزن با ورودی هم‌زمان وضعیت کاتالیست و جاذب | **مدل یکپارچه اثر مشترک کاتالیست+جاذب بر محصول نهایی (نوآوری اصلی)** |
-| FR-OPT-01 | بهینه‌سازی زمان‌بندی احیای کاتالیست و چرخه بازیافت/تعویض جاذب برای حداکثرسازی بازده سالانه | زمان‌بندی مشترک دو‌رویداد نگهداری وابسته به هم |
-| FR-ALERT-01 | هشدار سطح‌بندی‌شده با پیش‌بینی اثر مالی افت کیفیت روی قرارداد فروش پلیمرگرید | توصیه‌گر اقدام با اثر تجاری |
-| FR-LOOP-01 | ثبت نتیجه واقعی هر احیا/تعویض جاذب برای بازآموزی مدل | یادگیری بسته |
+| FR-CCR-01 | Prediction of the activity/coking trend of the platinum catalyst in each CCR reactor with a confidence interval | Regeneration cycle prediction by trend learning rather than a fixed sequence |
+| FR-PAREX-01 | Prediction of the deterioration of the adsorption capacity of the Parex adsorbent bed from the trend of PX purity/recovery loss | **Learning-based model of zeolite adsorbent deterioration (main innovation)** |
+| FR-YIELD-01 | Real-time estimation of PX/OX/benzene yield and purity with simultaneous input of catalyst and adsorbent state | **Integrated model of the joint effect of catalyst+adsorbent on the final product (main innovation)** |
+| FR-OPT-01 | Optimization of catalyst regeneration timing and adsorbent recovery/replacement cycle to maximize annual yield | Joint scheduling of two interdependent maintenance events |
+| FR-ALERT-01 | Tiered alert with prediction of the financial impact of quality degradation on the polymer-grade sales contract | Action recommender with commercial impact |
+| FR-LOOP-01 | Recording the actual result of each regeneration/adsorbent replacement for model retraining | Closed learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر پردازش داده CCR/Parex | کمتر از ۱۰ ثانیه |
-| NFR-PER-02 | دقت پیش‌بینی خلوص PX (MAPE) | کمتر از ۱۰٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹٪ |
-| NFR-SEC-01 | رمزنگاری AES-256 + RBAC عملیات CCR/Parex/کنترل کیفیت | اجباری |
+| NFR-PER-01 | CCR/Parex data processing delay | Less than 10 seconds |
+| NFR-PER-02 | PX purity prediction accuracy (MAPE) | Less than 10% |
+| NFR-AVAIL-01 | System availability | 99.9% |
+| NFR-SEC-01 | AES-256 encryption + RBAC for CCR/Parex/quality-control operations | Mandatory |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -118,16 +118,16 @@
                            └────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/ccr-parex-ingestion/` | اتصال DCS واحدهای CCR و Parex/Isomar + سیستم QC آزمایشگاهی |
-| `services/catalyst-adsorbent-twin/` | مدل کک‌گیری کاتالیست + مدل زوال جاذب |
-| `services/yield-purity-optimization/` | زمان‌بندی مشترک احیا/تعویض برای حداکثر بازده |
-| `shared/` | بازاستفاده از محصولات ۱-۴ |
+| `services/ccr-parex-ingestion/` | DCS connection of the CCR and Parex/Isomar units + laboratory QC system |
+| `services/catalyst-adsorbent-twin/` | Catalyst coking model + adsorbent deterioration model |
+| `services/yield-purity-optimization/` | Joint regeneration/replacement scheduling for maximum yield |
+| `shared/` | Reuse of products 1-4 |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -139,22 +139,22 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(minutes=i) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# ۱. کاتالیست CCR - افت فعالیت بین چرخه‌های احیا (اره‌ای شکل)
-cycle_position = (np.arange(NUM_RECORDS) % 500) / 500  # هر ۵۰۰ رکورد یک چرخه احیا
+# 1. CCR catalyst - activity loss between regeneration cycles (sawtooth)
+cycle_position = (np.arange(NUM_RECORDS) % 500) / 500  # one regeneration cycle every 500 records
 catalyst_activity_percent = 98 - 6 * cycle_position + np.random.normal(0, 0.5, NUM_RECORDS)
 reactor_delta_t_c = 15 + 3 * cycle_position + np.random.normal(0, 0.4, NUM_RECORDS)
 
-# ۲. جاذب Parex - زوال بلندمدت (روند نزولی آرام طی کل بازه)
+# 2. Parex adsorbent - long-term deterioration (slow downward trend over the whole period)
 adsorbent_capacity_percent = 100 - 0.0008 * np.arange(NUM_RECORDS) + np.random.normal(0, 0.3, NUM_RECORDS)
 adsorbent_capacity_percent = np.clip(adsorbent_capacity_percent, 82, 100)
 desorbent_ratio = 1.05 + 0.0003 * np.arange(NUM_RECORDS) + np.random.normal(0, 0.02, NUM_RECORDS)
 
-# ۳. کیفیت و بازده محصول نهایی
+# 3. Quality and yield of the final product
 px_purity_percent = 99.7 - 0.03 * (100 - adsorbent_capacity_percent) - 0.01 * (100 - catalyst_activity_percent) + np.random.normal(0, 0.05, NUM_RECORDS)
 px_purity_percent = np.clip(px_purity_percent, 97.5, 99.9)
 aromatics_yield_percent = 62 - 0.08 * (100 - catalyst_activity_percent) + np.random.normal(0, 0.4, NUM_RECORDS)
 
-# ۴. برچسب‌ها
+# 4. Labels
 needs_regen_24h = (catalyst_activity_percent < 93).astype(int)
 adsorbent_replace_flag = (adsorbent_capacity_percent < 88).astype(int)
 
@@ -171,48 +171,48 @@ df = pd.DataFrame({
 })
 
 df.to_csv("bspc_aromatics_catalyst_adsorbent_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-BACAT | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-BACAT | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| زمان‌بندی احیای کاتالیست CCR | چرخه‌ای ثابت مبتنی بر تجربه اپراتور | پیش‌بینانه بر مبنای روند واقعی فعالیت | افزایش بازده آروماتیک و کاهش انرژی مصرفی احیای زودهنگام/دیرهنگام |
-| زوال جاذب Parex | معمولاً تا افت محسوس خلوص PX یا افزایش شدید مصرف حلال شناسایی نمی‌شود | پیش‌بینی زودهنگام با برنامه‌ریزی تعویض بهینه | جلوگیری از فروش PX زیر مشخصه پلیمرگرید (خطر بازگشت/جریمه مشتری) روی ۴۰۰ هزار تن/سال PX |
-| بازده کلی آروماتیک | نوسان بازده ناشی از عدم هماهنگی زمان‌بندی دو رویداد نگهداری | بهینه‌سازی هماهنگ | افزایش چند درصدی بازده مؤثر سالانه |
+| CCR catalyst regeneration timing | Fixed cycle based on operator experience | Predictive based on the real activity trend | Increased aromatics yield and reduced energy consumed by premature/late regeneration |
+| Parex adsorbent deterioration | Usually not identified until a noticeable drop in PX purity or a sharp rise in solvent consumption | Early prediction with optimal replacement planning | Preventing sale of PX below polymer-grade specification (risk of returns/customer penalty) on 400 thousand tons/year of PX |
+| Overall aromatics yield | Yield fluctuation due to lack of coordination of the timing of two maintenance events | Coordinated optimization | A multi-percent increase in annual effective yield |
 
-**Payback:** با توجه به ارزش بالای PX پلیمرگرید (خوراک مستقیم PTA)، جلوگیری از حتی چند روز تولید زیراستاندارد یا یک توقف غیربرنامه‌ریزی‌شده Parex هزینه پیاده‌سازی را در فاز پایلوت جبران می‌کند.
+**Payback:** Given the high value of polymer-grade PX (direct PTA feed), preventing even a few days of substandard production or one unplanned Parex shutdown offsets the implementation cost during the pilot phase.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-6)
+## 5. Proposed Evolution Roadmap (Phase 1-6)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده + اتصال Kafka/TimescaleDB مشترک |
-| ۲ | مدل پیش‌بینی کک‌گیری کاتالیست CCR |
-| ۳ | مدل پیش‌بینی زوال جاذب Parex |
-| ۴ | مدل یکپارچه بازده/خلوص PX-OX-بنزن |
-| ۵ | بهینه‌ساز زمان‌بندی مشترک احیا/تعویض |
-| ۶ | داشبورد مدیریتی + پایلوت عملیاتی روی یک راکتور CCR و بستر Parex واقعی |
+| 1 | Base infrastructure + data simulator + shared Kafka/TimescaleDB connection |
+| 2 | CCR catalyst coking prediction model |
+| 3 | Parex adsorbent deterioration prediction model |
+| 4 | Integrated PX-OX-benzene yield/purity model |
+| 5 | Joint regeneration/replacement scheduling optimizer |
+| 6 | Management dashboard + operational pilot on one real CCR reactor and Parex bed |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **مدل یادگیری‌محور پیش‌بینی زوال جاذب زئولیتی Parex** (شکاف کاملاً خالی در سوابق ثبت اختراع یافت‌شده).
-2. **ترکیب پیش‌بینی کاتالیست CCR و جاذب Parex در یک مدل یکپارچه اثر بر بازده/خلوص نهایی**.
-3. **زمان‌بندی هماهنگ دو رویداد نگهداری وابسته به هم** (احیای کاتالیست و تعویض جاذب) برای حداکثرسازی بازده سالانه.
+1. **A learning-based model for predicting deterioration of the Parex zeolite adsorbent** (a completely empty gap in the patent record found).
+2. **Combining CCR catalyst and Parex adsorbent prediction in one integrated model of the effect on final yield/purity**.
+3. **Coordinated scheduling of two interdependent maintenance events** (catalyst regeneration and adsorbent replacement) to maximize annual yield.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [سایت رسمی پتروشیمی بوعلی سینا](https://bspc.ir/)
+- [Official site of Bu Ali Sina Petrochemical](https://bspc.ir/)
 - [BSPC — Products (EN)](https://bspc.ir/en/products/)
 - [PGPIC — Bou Ali Sina Petrochemical Company](https://pgpic.ir/en/Subsidiaries/Production-Companies/Bou-Ali-Sina-Petrochemical-Company)
 - [US11975316 — Methods and reforming systems for re-dispersing platinum on reforming catalyst](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11975316)

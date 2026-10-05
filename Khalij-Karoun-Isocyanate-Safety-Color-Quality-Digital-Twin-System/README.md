@@ -1,92 +1,92 @@
 # Khalij-Karoun-Isocyanate-Safety-Color-Quality-Digital-Twin-System (Khalij-KISQ)
 
-## سامانه هوشمند هشدار پیش‌گیرانه واکنش‌های فرار گرمایی (Thermal Runaway) در راکتورهای نیتراسیون/هیدروژناسیون و حسگر مجازی رنگ و درصد NCO محصولات TDI/MDI — محصول اختصاصی شرکت پتروشیمی کارون
+## Intelligent system for preventive warning of thermal runaway reactions in nitration/hydrogenation reactors and a virtual sensor of color and NCO percentage of TDI/MDI products — a dedicated product of Karoun Petrochemical Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پتروشیمی کارون است — نخستین و تنها تولیدکننده ایزوسیانات‌ها (TDI، MDI، PMI) در خاورمیانه. این شرکت با زنجیره فرایندی کاملاً متفاوت از سایر شرکت‌های هلدینگ (نیتراسیون آروماتیک → هیدروژناسیون → فسژناسیون) نیازمند محصولی اختصاصی است.
-
----
-
-## ۰. شناخت شرکت پتروشیمی کارون و شکاف فنی
-
-**منابع:** [ویکی‌پدیا فارسی — پتروشیمی کارون](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%DA%A9%D8%A7%D8%B1%D9%88%D9%86)، [سایت رسمی krnpc.ir](https://krnpc.ir/)
-
-### محصولات و ماهیت فرایند
-
-| ویژگی | مقدار |
-|---|---|
-| محصولات | TDI (تولوئن دی‌ایزوسیانات)، MDI (متیلن دی‌فنیل دی‌ایزوسیانات)، گریدهای PMDI |
-| جایگاه | نخستین تولیدکننده ایزوسیانات‌ها در خاورمیانه |
-| تأسیس/افتتاح | ۱۳۸۱ / اسفند ۱۳۸۷ |
-| محل | بندرامام خمینی — سایت ۲ منطقه ویژه اقتصادی پتروشیمی |
-
-**زنجیره فرایندی فنی (پایه طراحی محصول):** تولید TDI/MDI شامل دو مرحله بحرانی متفاوت است:
-1. **نیتراسیون آروماتیک** (تولوئن→دی‌نیتروتولوئن برای TDI؛ یا تراکم آنیلین-فرمالدهید برای MDA) و سپس **هیدروژناسیون** به آمین — واکنش‌های شدیداً گرمازا با ریسک واقعی **فرار گرمایی (Thermal Runaway)** و انفجار ترکیبات نیترو آروماتیک (یکی از خطرناک‌ترین دسته واکنش‌های صنعت شیمیایی).
-2. **فسژناسیون** آمین (TDA/MDA) به ایزوسیانات — همانند خوزستان، از فسژن استفاده می‌شود اما محصول و شیمی پایین‌دستی کاملاً متفاوت است (رنگ و درصد NCO محصول نهایی، نه وزن مولکولی پلیمر).
-
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ و محصول خوزستان
-
-| محصول | چرا برای کارون کافی نیست |
-|---|---|
-| محصولات ۱-۴ هلدینگ | هیچ‌کدام واکنش نیتراسیون/هیدروژناسیون آروماتیک یا محصول ایزوسیانات را پوشش نمی‌دهند |
-| محصول اختصاصی خوزستان (Khalij-KPSI) | روی **تعادل جرمی فسژن** (نشت) و کیفیت **پلیمر** (وزن مولکولی PC) تمرکز دارد؛ ریسک اصلی کارون **فرار گرمایی واکنش نیتراسیون** است (فیزیک ایمنی کاملاً متفاوت: انفجار گرمازا در برابر نشت گاز) و کیفیت هدف آن **رنگ/NCO% مونومر ایزوسیانات** است، نه وزن مولکولی پلیمر |
-
-**نتیجه:** کارون نیاز به لایه ایمنی اختصاصی «فرار گرمایی نیتراسیون» دارد که در هیچ محصول دیگر هلدینگ (شامل محصول خوزستان) پوشش داده نشده، به‌همراه حسگر مجازی کیفیت رنگ/NCO مخصوص ایزوسیانات.
+> This document is a **dedicated** product for Karoun Petrochemical Company — the first and only producer of isocyanates (TDI, MDI, PMI) in the Middle East. With a process chain completely different from the holding's other companies (aromatic nitration → hydrogenation → phosgenation), this company needs a dedicated product.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 0. Understanding Karoun Petrochemical Company and the technical gap
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+**Sources:** [Persian Wikipedia — Karoun Petrochemical](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%DA%A9%D8%A7%D8%B1%D9%88%D9%86), [Official site krnpc.ir](https://krnpc.ir/)
+
+### Products and Process Nature
+
+| Feature | Value |
+|---|---|
+| Products | TDI (toluene diisocyanate), MDI (methylene diphenyl diisocyanate), PMDI grades |
+| Position | First isocyanate producer in the Middle East |
+| Established/inaugurated | 2002 (1381 SH) / March 2009 (Esfand 1387 SH) |
+| Location | Bandar Imam Khomeini — site 2 of the Petrochemical Special Economic Zone |
+
+**Technical process chain (basis of product design):** TDI/MDI production involves two different critical stages:
+1. **Aromatic nitration** (toluene→dinitrotoluene for TDI; or aniline-formaldehyde condensation for MDA) and then **hydrogenation** to amine — strongly exothermic reactions with a real risk of **thermal runaway (Thermal Runaway)** and explosion of nitro-aromatic compounds (one of the most dangerous classes of reactions in the chemical industry).
+2. **Phosgenation** of the amine (TDA/MDA) to isocyanate — as in Khuzestan, phosgene is used but the downstream product and chemistry are completely different (color and NCO percentage of the final product, not polymer molecular weight).
+
+### Technical gap relative to holding products 1 to 4 and the Khuzestan product
+
+| Product | Why it is not enough for Karoun |
+|---|---|
+| Holding products 1-4 | None covers aromatic nitration/hydrogenation reaction or the isocyanate product |
+| Khuzestan dedicated product (Khalij-KPSI) | Focuses on **phosgene mass balance** (leakage) and **polymer** quality (PC molecular weight); Karoun's main risk is **thermal runaway of the nitration reaction** (completely different safety physics: exothermic explosion versus gas leak) and its target quality is the **color/NCO% of the isocyanate monomer**, not polymer molecular weight |
+
+**Conclusion:** Karoun needs a dedicated "nitration thermal runaway" safety layer that is not covered in any other holding product (including the Khuzestan product), together with a color/NCO quality virtual sensor specific to isocyanate.
+
+---
+
+## 1. Patent Background and Competitive Analysis
+
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | مطالعه AIChE — *A Machine Learning Tool for Thermal Runaway Prediction of Chemical Reactors* (Random Forest) | مدل عمومی برای راکتورهای batch/بستر ثابت؛ به زنجیره خاص نیتراسیون-هیدروژناسیون-فسژناسیون TDI/MDI متصل نیست | تطبیق و اتصال مستقیم به زنجیره فرایندی واقعی تولید TDI/MDI با داده DCS صنعتی |
-| ۲ | **Soft-sensor development for product quality estimation... in industrial MDI production** (ScienceDirect، تحقیقاتی) | فقط حسگر مجازی کیفیت (تأخیر زمانی/انتخاب ویژگی)؛ فاقد لایه ایمنی فرار گرمایی و فاقد ثبت اختراع رسمی | ترکیب لایه ایمنی فرار گرمایی + حسگر مجازی کیفیت در یک محصول صنعتی واحد با ثبت اختراع |
-| ۳ | **US 10,189,945** – *Method for producing light-coloured TDI-polyisocyanates* | راهکار شیمیایی/فرایندی برای بهبود رنگ (تغییر فرمولاسیون)؛ رویکرد ماده‌ای نه پیش‌بینی نرم‌افزاری بلادرنگ | پیش‌بینی و کنترل پیش‌بین بلادرنگ رنگ محصول از پارامترهای فرایند موجود، بدون تغییر فرمولاسیون |
-| ۴ | **US 8,748,655** – *Process for preparing light-coloured isocyanates of the diphenylmethane series* | مشابه فوق، راهکار فرایندی/شیمیایی ثابت | مکمل: لایه نرم‌افزاری پیش‌بینی و هشدار زودهنگام رنگ برای هر دسته تولید |
+| 1 | AIChE study — *A Machine Learning Tool for Thermal Runaway Prediction of Chemical Reactors* (Random Forest) | General model for batch/fixed-bed reactors; not connected to the specific TDI/MDI nitration-hydrogenation-phosgenation chain | Adaptation and direct connection to the real TDI/MDI production process chain with industrial DCS data |
+| 2 | **Soft-sensor development for product quality estimation... in industrial MDI production** (ScienceDirect, research) | Only a quality virtual sensor (time delay/feature selection); lacks a thermal runaway safety layer and a formal patent | Combining a thermal runaway safety layer + quality virtual sensor in a single patented industrial product |
+| 3 | **US 10,189,945** – *Method for producing light-coloured TDI-polyisocyanates* | Chemical/process solution for improving color (formulation change); a material approach, not real-time software prediction | Real-time prediction and predictive control of product color from existing process parameters, without changing the formulation |
+| 4 | **US 8,748,655** – *Process for preparing light-coloured isocyanates of the diphenylmethane series* | Similar to above, a fixed process/chemical solution | Complementary: a software layer for prediction and early color warning for each production batch |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه دوقلوی دیجیتال زنجیره‌ای ایزوسیانات که برای نخستین‌بار هشدار پیش‌گیرانه فرار گرمایی در واکنش‌گاه‌های نیتراسیون/هیدروژناسیون آروماتیک (بر مبنای روند اختلاف نرخ تولید-دفع گرما) را با حسگر مجازی بلادرنگ رنگ (Hazen/APHA) و درصد NCO محصول نهایی فسژناسیون، در یک مدل ریسک-کیفیت یکپارچه با حلقه بازخورد بسته ترکیب می‌کند."**
+> **"A chain digital twin system for isocyanate that, for the first time, combines preventive thermal runaway warning in aromatic nitration/hydrogenation reactors (based on the trend of the heat generation-removal rate difference) with a real-time virtual sensor of color (Hazen/APHA) and NCO percentage of the final phosgenation product, in an integrated risk-quality model with a closed feedback loop."**
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی کارون
+## 2. SRS Document – Dedicated product of Karoun Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** افزایش ایمنی فرایندی واکنش‌های نیتراسیون/هیدروژناسیون از طریق هشدار پیش‌گیرانه فرار گرمایی، و تضمین کیفیت رنگ/NCO محصولات TDI/MDI از طریق حسگر مجازی بلادرنگ.
+### 2-1. Introduction
+**Purpose:** Increase the process safety of nitration/hydrogenation reactions through preventive thermal runaway warning, and guarantee the color/NCO quality of TDI/MDI products through a real-time virtual sensor.
 
-**چالش‌های میدانی:**
-- واکنش‌های نیتراسیون آروماتیک به‌شدت گرمازا هستند و کنترل ناکافی می‌تواند به فرار گرمایی (Thermal Runaway) و حادثه فاجعه‌بار منجر شود.
-- رنگ محصول TDI/MDI (شاخص Hazen/APHA) و درصد NCO معمولاً با تأخیر آزمایشگاهی اندازه‌گیری می‌شود، در حالی‌که کیفیت رنگ مستقیماً روی ارزش فروش محصول (خصوصاً برای کاربرد فوم صلب و پوشش) اثر دارد.
+**Field challenges:**
+- Aromatic nitration reactions are strongly exothermic, and insufficient control can lead to thermal runaway (Thermal Runaway) and a catastrophic accident.
+- The color of the TDI/MDI product (Hazen/APHA index) and NCO percentage are usually measured with laboratory delay, whereas color quality directly affects the product's sale value (especially for rigid foam and coating applications).
 
-**دامنه:** مجتمع کارون، سایت ۲ بندرامام؛ اتصال به DCS واحدهای نیتراسیون، هیدروژناسیون و فسژناسیون.
+**Scope:** Karoun complex, Bandar Imam site 2; connection to the DCS of the nitration, hydrogenation and phosgenation units.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای دما/فشار/نرخ تخلیه گرما راکتورهای نیتراسیون و هیدروژناسیون | بحرانی (HSE) |
-| R-GEN-02 | دریافت داده فرایندی واحد فسژناسیون (نسبت فسژن/آمین، دما، زمان ماند) | بالا |
-| R-GEN-03 | داشبورد ایمنی-کیفیت مجزا مشابه ساختار محصول خوزستان اما با مدل‌های اختصاصی این شرکت | بالا |
+| R-GEN-01 | Reception of instantaneous temperature/pressure/heat-removal-rate data of nitration and hydrogenation reactors | Critical (HSE) |
+| R-GEN-02 | Reception of process data of the phosgenation unit (phosgene/amine ratio, temperature, residence time) | High |
+| R-GEN-03 | Separate safety-quality dashboard similar to the structure of the Khuzestan product but with this company's dedicated models | High |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-SAFE-01 | هشدار پیش‌گیرانه فرار گرمایی از روند اختلاف نرخ تولید/دفع گرما در راکتورهای نیتراسیون/هیدروژناسیون | **پیش‌بینی فرار گرمایی زنجیره‌ای اختصاصی ایزوسیانات (نوآوری اصلی)** |
-| FR-QUAL-01 | حسگر مجازی بلادرنگ رنگ (Hazen/APHA) و درصد NCO محصول فسژناسیون | حسگر مجازی کیفیت رنگ/NCO بدون انتظار آزمایشگاه |
-| FR-CHAIN-01 | مدل ترکیبی ریسک-کیفیت که اثر انحراف ایمنی مرحله اول را روی کیفیت محصول نهایی برآورد می‌کند | **مدل یکپارچه ریسک-کیفیت (نوآوری اصلی)** |
-| FR-ALERT-01 | هشدار سطح‌بندی‌شده HSE با اولویت بحرانی مجزا از هشدار کیفیت | توصیه‌گر دوگانه |
-| FR-LOOP-01 | ثبت نتایج واقعی آزمایشگاهی و رویدادهای ایمنی برای بازآموزی مدل | یادگیری بسته |
+| FR-SAFE-01 | Preventive thermal runaway warning from the trend of heat generation/removal rate difference in nitration/hydrogenation reactors | **Isocyanate-chain-specific thermal runaway prediction (main innovation)** |
+| FR-QUAL-01 | Real-time virtual sensor of color (Hazen/APHA) and NCO percentage of the phosgenation product | Color/NCO quality virtual sensor without waiting for the laboratory |
+| FR-CHAIN-01 | Combined risk-quality model that estimates the effect of first-stage safety deviation on final product quality | **Integrated risk-quality model (main innovation)** |
+| FR-ALERT-01 | Tiered HSE alert with critical priority separate from the quality alert | Dual recommender |
+| FR-LOOP-01 | Recording real laboratory results and safety events for model retraining | Closed learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-SAFE-01 | تأخیر هشدار فرار گرمایی | کمتر از ۲ ثانیه (بحرانی) |
-| NFR-PER-01 | دقت پیش‌بینی رنگ محصول (MAPE) | کمتر از ۱۰٪ |
-| NFR-AVAIL-01 | در دسترس بودن ماژول ایمنی | ۹۹.۹۹٪ |
+| NFR-SAFE-01 | Thermal runaway alert delay | Less than 2 seconds (critical) |
+| NFR-PER-01 | Product color prediction accuracy (MAPE) | Less than 10% |
+| NFR-AVAIL-01 | Availability of the safety module | 99.99% |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -106,16 +106,16 @@
         └────────────┘    └───────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/nitration-safety-ingestion/` | اتصال DCS نیتراسیون/هیدروژناسیون با اولویت پیام بحرانی |
-| `services/runaway-early-warning/` | مدل Random Forest/LSTM هشدار فرار گرمایی |
-| `services/color-nco-soft-sensor/` | حسگر مجازی رنگ و NCO |
-| `shared/` | بازاستفاده از محصولات ۱-۴ و الگوی ایمنی محصول خوزستان |
+| `services/nitration-safety-ingestion/` | Connection to the nitration/hydrogenation DCS with critical message priority |
+| `services/runaway-early-warning/` | Random Forest/LSTM thermal runaway warning model |
+| `services/color-nco-soft-sensor/` | Color and NCO virtual sensor |
+| `shared/` | Reuse of products 1-4 and the safety pattern of the Khuzestan product |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -127,25 +127,25 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(seconds=i*2) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# ۱. راکتور نیتراسیون - نرخ تولید گرما در برابر دفع گرما
+# 1. Nitration reactor - heat generation rate versus heat removal
 heat_generation_rate_kw = 850 + 40 * np.sin(t * 0.2) + np.random.normal(0, 10, NUM_RECORDS)
 heat_removal_rate_kw = 860 + 35 * np.sin(t * 0.2 - 0.1) + np.random.normal(0, 12, NUM_RECORDS)
 heat_balance_deviation_kw = heat_generation_rate_kw - heat_removal_rate_kw
-# تزریق چند رویداد شبیه‌سازی‌شده افزایش خطر فرار گرمایی
+# injection of several simulated events of increased thermal runaway risk
 risk_idx = np.random.choice(NUM_RECORDS, size=12, replace=False)
 heat_balance_deviation_kw[risk_idx] += np.random.uniform(30, 70, size=12)
 reactor_temp_c = 55 + 0.05 * heat_balance_deviation_kw + np.random.normal(0, 1, NUM_RECORDS)
 
-# ۲. واحد فسژناسیون
+# 2. Phosgenation unit
 phosgene_amine_molar_ratio = 3.2 + 0.1 * np.sin(t * 0.1) + np.random.normal(0, 0.03, NUM_RECORDS)
 phosgenation_temp_c = 130 + 4 * np.sin(t * 0.08) + np.random.normal(0, 0.8, NUM_RECORDS)
 
-# ۳. کیفیت محصول نهایی
+# 3. Final product quality
 product_color_hazen = 25 + 3 * (phosgene_amine_molar_ratio - 3.2) * 10 + 0.5 * (phosgenation_temp_c - 130) + np.random.normal(0, 2, NUM_RECORDS)
 product_color_hazen = np.clip(product_color_hazen, 10, 80)
 nco_content_percent = 33.5 - 0.02 * (product_color_hazen - 25) + np.random.normal(0, 0.15, NUM_RECORDS)
 
-# ۴. برچسب‌ها
+# 4. Labels
 thermal_runaway_risk = (heat_balance_deviation_kw > 25).astype(int)
 off_spec_color_risk = (product_color_hazen > 40).astype(int)
 
@@ -164,47 +164,47 @@ df = pd.DataFrame({
 })
 
 df.to_csv("karoun_isocyanate_safety_quality_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-KISQ | اثر مالی/ایمنی تقریبی |
+| Indicator | Current state | With Khalij-KISQ | Approximate financial/safety impact |
 | :--- | :--- | :--- | :--- |
-| ایمنی واکنش نیتراسیون/هیدروژناسیون | نظارت دستی بر پارامترهای عملیاتی | هشدار پیش‌گیرانه از روند اختلاف گرمایی | کاهش ریسک حادثه فرار گرمایی/انفجار — بحرانی برای تنها تولیدکننده ایزوسیانات منطقه |
-| کیفیت رنگ TDI/MDI | اندازه‌گیری آزمایشگاهی با تأخیر | پیش‌بینی بلادرنگ و اصلاح فوری فسژناسیون | کاهش ضایعات/فروش با تخفیف محصولات تیره‌رنگ زیر مشخصه |
+| Nitration/hydrogenation reaction safety | Manual monitoring of operating parameters | Preventive warning from the thermal difference trend | Reduced risk of a thermal runaway/explosion accident — critical for the region's only isocyanate producer |
+| TDI/MDI color quality | Laboratory measurement with delay | Real-time prediction and immediate phosgenation correction | Reduced waste/discounted sale of off-spec dark-colored products |
 
-**Payback:** با توجه به ریسک فاجعه‌بار فرار گرمایی و جایگاه انحصاری کارون در تولید ایزوسیانات منطقه، این محصول اولویت ایمنی و اقتصادی هم‌زمان دارد.
+**Payback:** Given the catastrophic risk of thermal runaway and Karoun's exclusive position in the region's isocyanate production, this product is a simultaneous safety and economic priority.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-5)
+## 5. Proposed Evolution Roadmap (Phase 1-5)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده |
-| ۲ | مدل هشدار پیش‌گیرانه فرار گرمایی نیتراسیون/هیدروژناسیون (اولویت اول HSE) |
-| ۳ | حسگر مجازی رنگ/NCO محصول فسژناسیون |
-| ۴ | مدل یکپارچه ریسک-کیفیت |
-| ۵ | داشبورد + پایلوت عملیاتی با نظارت تیم HSE |
+| 1 | Base infrastructure + data simulator |
+| 2 | Preventive nitration/hydrogenation thermal runaway warning model (first HSE priority) |
+| 3 | Color/NCO virtual sensor for the phosgenation product |
+| 4 | Integrated risk-quality model |
+| 5 | Dashboard + operational pilot under HSE team supervision |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **هشدار پیش‌گیرانه فرار گرمایی اختصاصی زنجیره نیتراسیون-هیدروژناسیون ایزوسیانات**.
-2. **حسگر مجازی بلادرنگ رنگ Hazen/APHA و NCO% محصول فسژناسیون**.
-3. **مدل یکپارچه ریسک-کیفیت** که اثر انحراف ایمنی مرحله اول را روی کیفیت محصول نهایی پیوند می‌دهد.
+1. **Preventive thermal runaway warning specific to the isocyanate nitration-hydrogenation chain**.
+2. **Real-time virtual sensor of Hazen/APHA color and NCO% of the phosgenation product**.
+3. **An integrated risk-quality model** linking the effect of first-stage safety deviation to final product quality.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [ویکی‌پدیا فارسی — پتروشیمی کارون](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%DA%A9%D8%A7%D8%B1%D9%88%D9%86)
-- [سایت رسمی پتروشیمی کارون](https://krnpc.ir/)
+- [Persian Wikipedia — Karoun Petrochemical](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%DA%A9%D8%A7%D8%B1%D9%88%D9%86)
+- [Official site of Karoun Petrochemical](https://krnpc.ir/)
 - [AIChE — A Machine Learning Tool for Thermal Runaway Prediction of Chemical Reactors](https://proceedings.aiche.org/conferences/aiche-annual-meeting/2020/proceeding/paper/314b-machine-learning-tool-thermal-runaway-prediction-chemical-reactors)
 - [Soft-sensor development for product quality estimation in industrial MDI production — ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2666821125000481)
 - [US10189945 — Method for producing light-coloured TDI-polyisocyanates](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10189945)

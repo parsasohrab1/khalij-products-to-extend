@@ -1,100 +1,100 @@
 # Khalij-Khuzestan-Phosgene-Safety-Polymer-Grade-Intelligence-System (Khalij-KPSI)
 
-## سامانه هوشمند پیش‌بینی نشت/عدم‌تعادل جرمی فسژن، حسگر مجازی وزن مولکولی پلی‌کربنات و بهینه‌سازی تعویض گرید بین ۱۴ گرید رزین اپوکسی — محصول اختصاصی شرکت پتروشیمی خوزستان
+## Intelligent system for predicting phosgene leakage/mass imbalance, polycarbonate molecular weight virtual sensor, and grade-changeover optimization among 14 epoxy resin grades — a dedicated product of Khuzestan Petrochemical Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پتروشیمی خوزستان (KZPC) است — تنها تولیدکننده پلی‌کربنات و رزین اپوکسی مهندسی در خاورمیانه. برخلاف اکثر شرکت‌های هلدینگ که فرایند «فرایند پتروشیمی معمول» دارند، خوزستان تنها شرکت هلدینگ است که با **گاز فسژن (بسیار سمی)** به‌عنوان واسطه فرایندی کار می‌کند — نیازمند محصولی کاملاً متفاوت از سایر اعضای هلدینگ.
+> This document is a **dedicated** product for Khuzestan Petrochemical Company (KZPC) — the only producer of polycarbonate and engineering epoxy resin in the Middle East. Unlike most of the holding's companies that have a "usual petrochemical process", Khuzestan is the only holding company working with **phosgene gas (extremely toxic)** as a process intermediate — requiring a product completely different from the other holding members.
 
 ---
 
-## ۰. شناخت شرکت پتروشیمی خوزستان (مبتنی بر مطالعه سایت رسمی) و شکاف فنی
+## 0. Understanding Khuzestan Petrochemical Company (based on a study of the official site) and the technical gap
 
-**منابع:** [سایت رسمی KZPC — معرفی](https://kzpc.ir/introduction/)، [پیمانه صنایع پلاستیک — پتانسیل پلی‌کربنات خوزستان](https://pimw.ir/polycarbonate-potential-of-khuzestan-petrochemical-complex/)
+**Sources:** [KZPC official site — Introduction](https://kzpc.ir/introduction/), [Plastic Industry Monthly — Khuzestan polycarbonate potential](https://pimw.ir/polycarbonate-potential-of-khuzestan-petrochemical-complex/)
 
-### محصولات و واحدهای فرایندی
+### Products and process units
 
-| محصول | ظرفیت | توضیح |
+| Product | Capacity | Description |
 |---|---|---|
-| پلی‌کربنات (PC) | ~۲۵,۰۰۰ تن/سال (~۲ هزار تن/ماه) | نخستین و تنها تولیدکننده پلی‌کربنات مهندسی خاورمیانه |
-| رزین اپوکسی جامد | ۵,۰۰۰ تن/سال | ۱۴ گرید مختلف |
-| رزین اپوکسی مایع | ۵,۰۰۰ تن/سال | چندین گرید (مثل E01، E06 SPL) |
-| بیسفنول A (BPA) | محصول میانی | خوراک مستقیم PC و رزین اپوکسی |
-| آب ژاول | ۲,۰۰۰ تن/سال | جانبی |
+| Polycarbonate (PC) | ~25,000 tons/year (~2 thousand tons/month) | The first and only engineering polycarbonate producer in the Middle East |
+| Solid epoxy resin | 5,000 tons/year | 14 different grades |
+| Liquid epoxy resin | 5,000 tons/year | Several grades (such as E01, E06 SPL) |
+| Bisphenol A (BPA) | Intermediate product | Direct feed of PC and epoxy resin |
+| Sodium hypochlorite (bleach) | 2,000 tons/year | By-product |
 
-**واحدهای میانی حساس (طبق سایت رسمی):** تولید گاز مونوکسیدکربن → جداسازی CO → **تولید فسژن (کربونیل کلراید)** → تصفیه گاز کلر → آب ژاول. واکنش فسژن با BPA، هسته اصلی تولید پلی‌کربنات و برخی رزین‌های اپوکسی است.
+**Sensitive intermediate units (per the official site):** carbon monoxide gas production → CO separation → **phosgene (carbonyl chloride) production** → chlorine gas treatment → bleach. The reaction of phosgene with BPA is the core of polycarbonate and some epoxy resin production.
 
-فناوری و لیسانس اروپایی است و کاربرد محصولات در صنایع مخابرات، الکترونیک، ساختمان، هوافضا، پزشکی و ایمنی است — یعنی **الزامات کیفیت بسیار سخت‌گیرانه‌تر** از پلیمرهای عمومی (PE/PP/PVC) که سایر شرکت‌های هلدینگ تولید می‌کنند.
+The technology and license are European, and the products' applications are in telecommunications, electronics, construction, aerospace, medical and safety industries — meaning **much stricter quality requirements** than the commodity polymers (PE/PP/PVC) produced by the holding's other companies.
 
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
+### Technical Gap Relative to the Holding's Products 1 to 4
 
-| محصول هلدینگ | چرا برای خوزستان کافی نیست |
+| Holding product | Why it is not enough for Khuzestan |
 |---|---|
-| محصول ۱، ۳، ۴ | هیچ‌کدام گاز **فسژن** (سمّیت حاد، ماده کنترل‌شده بین‌المللی مشابه سلاح شیمیایی) را به‌عنوان واسطه فرایندی در نظر نگرفته‌اند؛ نیازمند لایه ایمنی فرایندی (Process Safety) کاملاً اختصاصی است |
-| محصول ۴ (پایش دارایی/کاتالیست) | برای زوال کاتالیست پلیمریزاسیون گاز (PE/PP) طراحی شده؛ کنترل کیفیت پلی‌کربنات مبتنی بر **وزن مولکولی/ویسکوزیته مذاب** و تعویض بین ۱۴ گرید رزین اپوکسی، مسئله‌ای کاملاً متفاوت (کیفیت محصول ویژه، نه سلامت تجهیز) است |
-| هیچ محصول هلدینگ | به تعویض مکرر بین چندین گرید محصول با مشخصات فنی سخت‌گیرانه (که باعث ضایعات دوره گذار می‌شود) نمی‌پردازد |
+| Products 1, 3, 4 | None considered **phosgene** gas (acute toxicity, an internationally controlled substance similar to a chemical weapon) as a process intermediate; a completely dedicated Process Safety layer is required |
+| Product 4 (asset/catalyst monitoring) | Designed for gas-phase polymerization catalyst deterioration (PE/PP); polycarbonate quality control based on **molecular weight/melt viscosity** and changeover among 14 epoxy resin grades is a completely different problem (specialty product quality, not equipment health) |
+| No holding product | Addresses frequent changeover among several product grades with strict technical specifications (which causes transition-period waste) |
 
-**نتیجه:** خوزستان نیاز به محصولی دارد که (الف) ایمنی فرایندی فسژن را با یادگیری ماشین پیش‌بینانه کند و (ب) کیفیت/گرید محصولات ویژه (PC و ۱۴ گرید اپوکسی) را بلادرنگ کنترل و بهینه کند.
+**Conclusion:** Khuzestan needs a product that (a) makes phosgene process safety predictive with machine learning and (b) controls and optimizes the quality/grade of specialty products (PC and 14 epoxy grades) in real time.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 1. Patent Background and Competitive Analysis
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | **US 7,442,835** – *Process and apparatus for the production of phosgene* | تجهیز پایش نشت فسژن به داخل مدار خنک‌کننده؛ صرفاً تشخیص نشت پس از وقوع، نه پیش‌بینی پیش‌گیرانه از روی روند تعادل جرمی | مدل ML که از روند عدم‌تعادل جرمی CO/Cl₂/فسژن **پیش از** نشت واقعی هشدار می‌دهد |
-| ۲ | **WO2020033316A1** – *Leak detection with artificial intelligence* | عمومی برای خطوط لوله نفت/گاز/آب؛ به شیمی خاص فسژن یا واکنش با BPA در راکتور پلی‌کربنات نمی‌پردازد | تطبیق‌یافته برای واکنش‌گاه فسژن-BPA با ورودی ترکیبی DCS واکنش‌گاه + حسگرهای گازی |
-| ۳ | مطالعات soft-sensor وزن مولکولی/ویسکوزیته ذوب برای پلی‌پروپیلن/PLA (Bayesian Inference، RFE) | برای پلی‌الفین‌های عمومی؛ به پلی‌کربنات (واکنش فسژن-BPA، حساسیت متفاوت به دما/زمان ماند) یا رزین اپوکسی نمی‌پردازد | حسگر مجازی اختصاصی وزن مولکولی PC/ویسکوزیته اپوکسی با ورودی از واکنش‌گاه فسژن-BPA |
-| ۴ | ادبیات عمومی بهینه‌سازی توالی تولید چندمحصولی (Scheduling) در صنایع فرایندی | معمولاً هدف کمینه‌سازی زمان تعویض است، نه کمینه‌سازی هم‌زمان ضایعات کیفی دوره گذار بین گریدهای دقیق مهندسی | بهینه‌سازی توالی ۱۴ گرید اپوکسی + گریدهای PC با هدف کمینه‌سازی هم‌زمان زمان و ضایعات کیفی گذار |
+| 1 | **US 7,442,835** – *Process and apparatus for the production of phosgene* | Equipment for monitoring phosgene leakage into the cooling circuit; merely detecting a leak after it occurs, not preventive prediction from the mass-balance trend | An ML model that warns of CO/Cl₂/phosgene mass imbalance trend **before** an actual leak |
+| 2 | **WO2020033316A1** – *Leak detection with artificial intelligence* | General for oil/gas/water pipelines; does not address phosgene-specific chemistry or reaction with BPA in the polycarbonate reactor | Adapted for the phosgene-BPA reactor with combined input from reactor DCS + gas sensors |
+| 3 | Molecular weight/melt viscosity soft-sensor studies for polypropylene/PLA (Bayesian Inference, RFE) | For commodity polyolefins; does not address polycarbonate (phosgene-BPA reaction, different sensitivity to temperature/residence time) or epoxy resin | A dedicated virtual sensor of PC molecular weight/epoxy viscosity with input from the phosgene-BPA reactor |
+| 4 | General literature on multi-product production sequence optimization (Scheduling) in process industries | Usually aims to minimize changeover time, not simultaneously minimize quality waste of the transition period between precise engineering grades | Sequence optimization of 14 epoxy grades + PC grades aiming to simultaneously minimize transition time and quality waste |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه یکپارچه ایمنی-کیفیت (Safety-Quality Digital Twin) که برای نخستین‌بار پیش‌بینی پیش‌گیرانه عدم‌تعادل جرمی زنجیره فسژن (CO→فسژن→واکنش با BPA) را — پیش از بروز نشت واقعی — با حسگر مجازی بلادرنگ وزن مولکولی پلی‌کربنات و ویسکوزیته رزین اپوکسی و بهینه‌ساز توالی تعویض بین چندین گرید مهندسی، در یک حلقه تصمیم واحد ترکیب می‌کند."**
+> **"An integrated Safety-Quality Digital Twin system that, for the first time, combines preventive prediction of the mass imbalance in the phosgene chain (CO→phosgene→reaction with BPA) — before an actual leak occurs — with real-time virtual sensors of polycarbonate molecular weight and epoxy resin viscosity and a changeover sequence optimizer among several engineering grades, in a single decision loop."**
 
-بخش پیش‌بینی پیش‌گیرانه (نه صرفاً تشخیصی) نشت فسژن مبتنی بر روند تعادل جرمی، در ادبیات patent یافت‌شده سابقه نداشت.
+The preventive (not merely diagnostic) prediction of phosgene leakage based on the mass-balance trend had no precedent in the patent literature found.
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی خوزستان
+## 2. SRS Document – Dedicated product of Khuzestan Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** افزایش ایمنی فرایندی واحد فسژن از طریق پیش‌بینی پیش‌گیرانه عدم‌تعادل جرمی، و افزایش کیفیت/بازده تولید پلی‌کربنات و رزین اپوکسی از طریق حسگر مجازی و بهینه‌سازی توالی تعویض گرید.
+### 2-1. Introduction
+**Purpose:** Increase the process safety of the phosgene unit through preventive mass-imbalance prediction, and increase the quality/yield of polycarbonate and epoxy resin production through virtual sensors and grade changeover sequence optimization.
 
-**چالش‌های میدانی:**
-- فسژن گازی بسیار سمی و خطرناک است؛ سامانه‌های تشخیص فعلی معمولاً واکنشی هستند (پس از تشخیص نشت با حسگر گازی)، نه پیش‌گیرانه از روی روند تعادل جرمی واکنش‌گاه.
-- وزن مولکولی پلی‌کربنات و ویسکوزیته رزین اپوکسی معمولاً با تأخیر آزمایشگاهی (نه بلادرنگ) اندازه‌گیری می‌شود که باعث تولید مقدار قابل‌توجه محصول خارج از مشخصه می‌شود.
-- تعویض بین ۱۴ گرید رزین اپوکسی و گریدهای مختلف PC معمولاً بر اساس تجربه اپراتور برنامه‌ریزی می‌شود، نه بهینه‌سازی سیستماتیک.
+**Field challenges:**
+- Phosgene is a highly toxic and dangerous gas; current detection systems are usually reactive (after a leak is detected by a gas sensor), not preventive from the reactor mass-balance trend.
+- The molecular weight of polycarbonate and the viscosity of epoxy resin are usually measured with laboratory delay (not real time), which causes a significant amount of off-spec product.
+- Changeover among 14 epoxy resin grades and the different PC grades is usually scheduled based on operator experience, not systematic optimization.
 
-**دامنه:** مجتمع خوزستان؛ اتصال به DCS واحدهای CO/فسژن/BPA/PC/اپوکسی.
+**Scope:** Khuzestan complex; connection to the DCS of the CO/phosgene/BPA/PC/epoxy units.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای دبی/غلظت CO، کلر، فسژن در واحدهای تولید و مصرف | بحرانی (HSE) |
-| R-GEN-02 | دریافت داده فرایندی راکتور پلی‌کربنات (دما، فشار، زمان ماند، نسبت مولی BPA/فسژن) | بالا |
-| R-GEN-03 | داشبورد ایمنی-کیفیت با هشدار مجزای HSE (اولویت بحرانی) و کیفیت (اولویت عملیاتی) | بالا |
-| R-GEN-04 | اتصال به سیستم مدیریت ایمنی فرایندی (PSM) موجود شرکت | بالا |
+| R-GEN-01 | Reception of instantaneous flow/concentration data of CO, chlorine and phosgene in the production and consumption units | Critical (HSE) |
+| R-GEN-02 | Reception of process data of the polycarbonate reactor (temperature, pressure, residence time, BPA/phosgene molar ratio) | High |
+| R-GEN-03 | Safety-quality dashboard with separate HSE (critical priority) and quality (operational priority) alerts | High |
+| R-GEN-04 | Connection to the company's existing Process Safety Management (PSM) system | High |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-SAFE-01 | پیش‌بینی پیش‌گیرانه عدم‌تعادل جرمی زنجیره فسژن (ورودی CO/Cl₂ در برابر مصرف در واکنش BPA) با هشدار پیش از آستانه نشت | **پیش‌بینی پیش‌گیرانه ایمنی فرایندی فسژن (نوآوری اصلی)** |
-| FR-QUAL-01 | حسگر مجازی بلادرنگ وزن مولکولی/شاخص جریان مذاب پلی‌کربنات از پارامترهای فرایندی (بدون انتظار نتیجه آزمایشگاه) | حسگر مجازی کیفیت اختصاصی پلی‌کربنات |
-| FR-QUAL-02 | حسگر مجازی ویسکوزیته و درصد اپوکسی رزین برای هر یک از ۱۴ گرید | حسگر مجازی چندگریدی |
-| FR-SCHED-01 | بهینه‌سازی توالی تعویض گرید (اپوکسی/PC) برای کمینه‌سازی هم‌زمان زمان گذار و مقدار محصول خارج از مشخصه | **بهینه‌سازی توالی چندگریدی با هدف مضاعف زمان+ضایعات (نوآوری اصلی)** |
-| FR-ALERT-01 | هشدار سطح‌بندی‌شده HSE (بحرانی/هشدار/پایش) مجزا از هشدار کیفیت | توصیه‌گر دوگانه ایمنی-کیفیت |
-| FR-LOOP-01 | ثبت نتیجه واقعی آزمایشگاهی برای بازآموزی مداوم حسگر مجازی | یادگیری بسته |
+| FR-SAFE-01 | Preventive prediction of the phosgene chain mass imbalance (CO/Cl₂ input versus consumption in the BPA reaction) with an alert before the leak threshold | **Preventive phosgene process safety prediction (main innovation)** |
+| FR-QUAL-01 | Real-time virtual sensor of polycarbonate molecular weight/melt flow index from process parameters (without waiting for the laboratory result) | Dedicated polycarbonate quality virtual sensor |
+| FR-QUAL-02 | Virtual sensor of resin viscosity and epoxy percentage for each of the 14 grades | Multi-grade virtual sensor |
+| FR-SCHED-01 | Grade changeover (epoxy/PC) sequence optimization to simultaneously minimize transition time and amount of off-spec product | **Multi-grade sequence optimization with dual objective of time+waste (main innovation)** |
+| FR-ALERT-01 | Tiered HSE alert (critical/warning/monitoring) separate from the quality alert | Dual safety-quality recommender |
+| FR-LOOP-01 | Recording actual laboratory results for continuous retraining of the virtual sensor | Closed learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-SAFE-01 | تأخیر هشدار عدم‌تعادل جرمی فسژن | کمتر از ۳ ثانیه (بحرانی) |
-| NFR-PER-01 | دقت حسگر مجازی وزن مولکولی PC (MAPE) | کمتر از ۸٪ |
-| NFR-AVAIL-01 | در دسترس بودن ماژول ایمنی | ۹۹.۹۹٪ (بالاتر از سایر ماژول‌ها به دلیل ماهیت HSE) |
-| NFR-SEC-01 | رمزنگاری AES-256 + RBAC با دسترسی محدود به تیم HSE برای هشدارهای بحرانی | اجباری |
+| NFR-SAFE-01 | Delay of the phosgene mass-imbalance alert | Less than 3 seconds (critical) |
+| NFR-PER-01 | PC molecular weight virtual sensor accuracy (MAPE) | Less than 8% |
+| NFR-AVAIL-01 | Availability of the safety module | 99.99% (higher than other modules due to the HSE nature) |
+| NFR-SEC-01 | AES-256 encryption + RBAC with access restricted to the HSE team for critical alerts | Mandatory |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -118,17 +118,17 @@
                            └────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/phosgene-safety-ingestion/` | اتصال DCS + حسگرهای گازی واحد فسژن با اولویت پیام بحرانی |
-| `services/mass-balance-safety-model/` | مدل پیش‌بینی پیش‌گیرانه عدم‌تعادل جرمی |
-| `services/quality-soft-sensor/` | حسگر مجازی وزن مولکولی PC و ویسکوزیته اپوکسی |
-| `services/grade-sequencing-optimizer/` | بهینه‌ساز توالی تعویض گرید |
-| `shared/` | بازاستفاده از محصولات ۱-۴ |
+| `services/phosgene-safety-ingestion/` | Connection to the DCS + gas sensors of the phosgene unit with critical message priority |
+| `services/mass-balance-safety-model/` | Preventive mass-imbalance prediction model |
+| `services/quality-soft-sensor/` | Virtual sensor of PC molecular weight and epoxy viscosity |
+| `services/grade-sequencing-optimizer/` | Grade changeover sequence optimizer |
+| `shared/` | Reuse of products 1-4 |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -140,25 +140,25 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(seconds=i) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# ۱. تعادل جرمی زنجیره فسژن (mol/s ورودی در برابر مصرف واکنش)
+# 1. Phosgene chain mass balance (mol/s input versus reaction consumption)
 co_feed_rate = 100 + 3 * np.sin(t * 0.2) + np.random.normal(0, 1, NUM_RECORDS)
 phosgene_produced_rate = 0.97 * co_feed_rate + np.random.normal(0, 0.8, NUM_RECORDS)
 phosgene_consumed_reaction_rate = 0.96 * phosgene_produced_rate + np.random.normal(0, 0.6, NUM_RECORDS)
 mass_balance_deviation_percent = 100 * (phosgene_produced_rate - phosgene_consumed_reaction_rate) / phosgene_produced_rate
-# تزریق چند رویداد عدم‌تعادل مصنوعی برای آموزش مدل هشدار
+# injection of several artificial imbalance events for training the alert model
 anomaly_idx = np.random.choice(NUM_RECORDS, size=15, replace=False)
 mass_balance_deviation_percent[anomaly_idx] += np.random.uniform(3, 8, size=15)
 
-# ۲. راکتور پلی‌کربنات
+# 2. Polycarbonate reactor
 reactor_temp_c = 30 + 2 * np.sin(t * 0.15) + np.random.normal(0, 0.5, NUM_RECORDS)
 bpa_phosgene_molar_ratio = 1.02 + 0.01 * np.sin(t * 0.1) + np.random.normal(0, 0.005, NUM_RECORDS)
 residence_time_min = 45 + np.random.normal(0, 2, NUM_RECORDS)
 
-# ۳. کیفیت محصول (حسگر مجازی)
+# 3. Product quality (virtual sensor)
 pc_molecular_weight = 30000 + 1500 * (bpa_phosgene_molar_ratio - 1.02) * 100 - 50 * (reactor_temp_c - 30) + np.random.normal(0, 300, NUM_RECORDS)
 epoxy_viscosity_cp = 12000 + 200 * np.sin(t * 0.05) + np.random.normal(0, 150, NUM_RECORDS)
 
-# ۴. برچسب‌ها
+# 4. Labels
 phosgene_safety_alert = (np.abs(mass_balance_deviation_percent) > 2.5).astype(int)
 off_spec_pc_risk = (np.abs(pc_molecular_weight - 30000) > 2000).astype(int)
 
@@ -178,49 +178,49 @@ df = pd.DataFrame({
 })
 
 df.to_csv("kzpc_safety_quality_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-KPSI | اثر مالی/ایمنی تقریبی |
+| Indicator | Current state | With Khalij-KPSI | Approximate financial/safety impact |
 | :--- | :--- | :--- | :--- |
-| ایمنی فرایندی فسژن | تشخیص نشت پس از وقوع با حسگر گازی | هشدار پیش‌گیرانه از روند عدم‌تعادل جرمی | کاهش ریسک حادثه HSE فاجعه‌بار (ماده بسیار سمی) — ارزش غیرقابل قیمت‌گذاری مستقیم اما بحرانی |
-| کیفیت پلی‌کربنات | اندازه‌گیری آزمایشگاهی با تأخیر، امکان تولید مقدار قابل‌توجه خارج از مشخصه | حسگر مجازی بلادرنگ + اصلاح فوری | کاهش ضایعات روی ظرفیت ۲۵ هزار تن/سال PC با ارزش بالای محصول مهندسی |
-| تعویض گرید اپوکسی | تجربه‌محور، ضایعات دوره گذار قابل توجه بین ۱۴ گرید | بهینه‌سازی سیستماتیک توالی | کاهش ضایعات دوره گذار و افزایش نرخ تحویل به‌موقع سفارش مشتری |
+| Phosgene process safety | Leak detection after occurrence with a gas sensor | Preventive alert from the mass-imbalance trend | Reduced risk of a catastrophic HSE accident (highly toxic material) — directly unpriceable value but critical |
+| Polycarbonate quality | Laboratory measurement with delay, possibility of producing a significant amount of off-spec product | Real-time virtual sensor + immediate correction | Reduced waste on the 25 thousand tons/year PC capacity with the high value of the engineering product |
+| Epoxy grade changeover | Experience-based, significant transition-period waste among 14 grades | Systematic sequence optimization | Reduced transition-period waste and an increased rate of on-time customer order delivery |
 
-**Payback:** با توجه به ماهیت پرریسک HSE فسژن و ارزش بالای محصولات مهندسی ویژه (PC/اپوکسی)، این محصول هم بعد ایمنی (غیرقابل جبران) و هم بعد اقتصادی (کاهش ضایعات محصول گران‌قیمت) دارد که توجیه سرمایه‌گذاری را بسیار قوی می‌کند.
+**Payback:** Given the high HSE risk nature of phosgene and the high value of specialty engineering products (PC/epoxy), this product has both a safety dimension (irreplaceable) and an economic dimension (reducing waste of expensive product), which makes the investment justification very strong.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-6)
+## 5. Proposed Evolution Roadmap (Phase 1-6)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده + اتصال Kafka/TimescaleDB مشترک |
-| ۲ | مدل پیش‌بینی پیش‌گیرانه عدم‌تعادل جرمی فسژن (اولویت اول به دلیل HSE) |
-| ۳ | حسگر مجازی وزن مولکولی پلی‌کربنات |
-| ۴ | حسگر مجازی ویسکوزیته/کیفیت ۱۴ گرید اپوکسی |
-| ۵ | بهینه‌ساز توالی تعویض گرید |
-| ۶ | داشبورد ایمنی-کیفیت + پایلوت عملیاتی با نظارت مستقیم تیم HSE |
+| 1 | Base infrastructure + data simulator + shared Kafka/TimescaleDB connection |
+| 2 | Preventive phosgene mass-imbalance prediction model (first priority due to HSE) |
+| 3 | Polycarbonate molecular weight virtual sensor |
+| 4 | Viscosity/quality virtual sensor of 14 epoxy grades |
+| 5 | Grade changeover sequence optimizer |
+| 6 | Safety-quality dashboard + operational pilot under direct supervision of the HSE team |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **پیش‌بینی پیش‌گیرانه (نه صرفاً تشخیصی) نشت/عدم‌تعادل جرمی فسژن** بر مبنای روند تعادل جرمی زنجیره واکنش.
-2. **حسگر مجازی بلادرنگ وزن مولکولی پلی‌کربنات** با ورودی مستقیم از پارامترهای راکتور فسژن-BPA.
-3. **بهینه‌سازی توالی تعویض بین ۱۴ گرید رزین اپوکسی** با هدف مضاعف کمینه‌سازی زمان و ضایعات کیفی.
+1. **Preventive (not merely diagnostic) prediction of phosgene leakage/mass imbalance** based on the reaction chain mass-balance trend.
+2. **Real-time virtual sensor of polycarbonate molecular weight** with direct input from the phosgene-BPA reactor parameters.
+3. **Changeover sequence optimization among 14 epoxy resin grades** with a dual objective of minimizing time and quality waste.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [سایت رسمی پتروشیمی خوزستان — معرفی](https://kzpc.ir/introduction/)
-- [بررسی پتانسیل پلی‌کربنات پتروشیمی خوزستان — ماهنامه صنایع پلاستیک](https://pimw.ir/polycarbonate-potential-of-khuzestan-petrochemical-complex/)
+- [Official site of Khuzestan Petrochemical — Introduction](https://kzpc.ir/introduction/)
+- [Review of the polycarbonate potential of Khuzestan Petrochemical — Plastic Industry Monthly](https://pimw.ir/polycarbonate-potential-of-khuzestan-petrochemical-complex/)
 - [US7442835 — Process and apparatus for the production of phosgene](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7442835)
 - [WO2020033316A1 — Leak detection with artificial intelligence](https://patents.google.com/patent/WO2020033316A1/en)
 - [A novel Bayesian inference soft sensor for industrial polypropylene melt index prediction](https://onlinelibrary.wiley.com/doi/abs/10.1002/app.45384)

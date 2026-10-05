@@ -1,95 +1,95 @@
 # Khalij-Apadana-Reformer-Methanol-Loop-Digital-Twin-System (Khalij-ARML)
 
-## سامانه هوشمند پیش‌بینی عمر خزشی لوله‌های ریفرمر، زوال کاتالیست مسی سنتز متانول و بهینه‌سازی بلادرنگ نسبت مدول گاز سنتز — محصول اختصاصی شرکت پتروشیمی آپادانا خلیج فارس
+## Intelligent System for Predicting Reformer Tube Creep Life, Copper Methanol Synthesis Catalyst Degradation, and Real-Time Optimization of the Syngas Module Ratio — Proprietary Product of Persian Gulf Apadana Petrochemical Company
 
-> این سند یک محصول **اختصاصی** برای شرکت پتروشیمی آپادانا خلیج فارس است — بزرگ‌ترین واحد تک‌خطی متانول هلدینگ (۱٫۶۵ میلیون تن/سال) در فاز ۲ عسلویه. به دلیل ماهیت **تک‌خطی (Single-Train)** این مجتمع، هر توقف غیربرنامه‌ریزی‌شده اثر مالی فوری و بزرگ دارد؛ این ویژگی محصولی کاملاً متفاوت از سایر شرکت‌های چندواحدی هلدینگ می‌طلبد.
-
----
-
-## ۰. شناخت شرکت پتروشیمی آپادانا خلیج فارس و شکاف فنی
-
-**منابع:** [PGPIC — آپادانا خلیج فارس](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%A2%D9%BE%D8%A7%D8%AF%D8%A7%D9%86%D8%A7-%D8%AE%D9%84%DB%8C%D8%AC-%D9%81%D8%A7%D8%B1%D8%B3)، [offshore-technology.com — Persian Gulf Apadana Petrochemical Assaluyeh Complex](https://www.offshore-technology.com/data-insights/persian-gulf-apadana-petrochemical-assaluyeh-complex-iran-2/)
-
-### محصولات و ماهیت فرایند
-
-| ویژگی | مقدار |
-|---|---|
-| محصول | متانول (تک‌محصولی) |
-| ظرفیت | ۱,۶۵۰,۰۰۰ تن/سال |
-| محل | منطقه ویژه اقتصادی پارس، سایت ۲، عسلویه |
-| خوراک | گاز طبیعی |
-| بهره‌برداری تجاری | ۱۴۰۳ (۲۰۲۴/۲۰۲۵) — واحد نسبتاً جدید |
-
-**زنجیره فرایندی:** گاز طبیعی → ریفرمینگ بخار (SMR/ATR) → گاز سنتز (H₂/CO/CO₂) → راکتور سنتز متانول (کاتالیست مسی Cu/ZnO/Al₂O₃) → تقطیر و خالص‌سازی متانول.
-
-دو دارایی حیاتی این زنجیره: (الف) **لوله‌های ریفرمر** که در دما و فشار بسیار بالا کار می‌کنند و در معرض خزش (Creep) تدریجی و خطر پارگی فاجعه‌بار هستند، و (ب) **کاتالیست مسی سنتز متانول** که با گذشت زمان (۱ تا ۵ سال) دچار زینتر (Sintering) و افت فعالیت می‌شود.
-
-### شکاف فنی نسبت به محصولات ۱ تا ۴ هلدینگ
-
-| محصول هلدینگ | چرا برای آپادانا کافی نیست |
-|---|---|
-| محصول ۴ (پایش دارایی/کوره) | مدل کوره آن برای **کوره کراکینگ پیرولیز** طراحی شده (دمای پوسته کویل، افت‌فشار کک‌گیری)؛ فیزیک **خزش لوله ریفرمر** (تغییر شکل پلاستیک تدریجی تحت تنش/دمای بسیار بالا، نه رسوب کربنی) کاملاً متفاوت است و به شرکت مارون تخصیص یافته، نه یک واحد متانول تک‌خطی |
-| محصول ۴ (زوال کاتالیست) | برای کاتالیست پلیمریزاسیون گاز طراحی شده؛ زوال کاتالیست مسی سنتز متانول (زینتر حرارتی، مسمومیت با کلراید) مکانیزم متفاوتی دارد |
-| هیچ محصول هلدینگ | به ریسک ویژه **تک‌خطی بودن** (بدون واحد پشتیبان موازی) که هر ساعت توقف اثر مستقیم و کامل بر کل تولید شرکت دارد، توجه نکرده است |
-
-**نتیجه:** آپادانا نیاز به دوقلوی دیجیتالی دارد که سلامت لوله‌های ریفرمر (خزش) و کاتالیست سنتز متانول (زینتر) را هم‌زمان با بهینه‌سازی نسبت مدول گاز سنتز ببیند — با تمرکز ویژه بر پیشگیری از توقف تک‌خطی.
+> This document describes a **proprietary** product for Persian Gulf Apadana Petrochemical Company — the holding's largest single-train methanol unit (1.65 million tons/year) in Phase 2 of Asaluyeh. Because of this complex's **single-train** nature, any unplanned shutdown has an immediate and large financial impact; this characteristic calls for a product entirely different from the other multi-unit companies of the holding.
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی
+## 0. Understanding Persian Gulf Apadana Petrochemical Company and the Technical Gap
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+**Sources:** [PGPIC — Persian Gulf Apadana](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%A2%D9%BE%D8%A7%D8%AF%D8%A7%D9%86%D8%A7-%D8%AE%D9%84%DB%8C%D8%AC-%D9%81%D8%A7%D8%B1%D8%B3), [offshore-technology.com — Persian Gulf Apadana Petrochemical Assaluyeh Complex](https://www.offshore-technology.com/data-insights/persian-gulf-apadana-petrochemical-assaluyeh-complex-iran-2/)
+
+### Products and Process Nature
+
+| Feature | Value |
+|---|---|
+| Product | Methanol (single product) |
+| Capacity | 1,650,000 tons/year |
+| Location | Pars Special Economic Zone, Site 2, Asaluyeh |
+| Feed | Natural gas |
+| Commercial operation | 1403 (2024/2025) — a relatively new unit |
+
+**Process chain:** Natural gas → steam reforming (SMR/ATR) → syngas (H₂/CO/CO₂) → methanol synthesis reactor (Cu/ZnO/Al₂O₃ copper catalyst) → methanol distillation and purification.
+
+Two critical assets of this chain: (a) **reformer tubes**, which operate at very high temperature and pressure and are exposed to gradual creep and the risk of catastrophic rupture, and (b) the **copper methanol synthesis catalyst**, which over time (1 to 5 years) suffers sintering and loss of activity.
+
+### Technical Gap Relative to the Holding's Products 1 to 4
+
+| Holding product | Why it is not sufficient for Apadana |
+|---|---|
+| Product 4 (asset/furnace monitoring) | Its furnace model is designed for a **pyrolysis cracking furnace** (coil skin temperature, decoking pressure drop); the physics of **reformer tube creep** (gradual plastic deformation under very high stress/temperature, not carbon fouling) is entirely different, and it was allocated to Maroun company, not a single-train methanol unit |
+| Product 4 (catalyst degradation) | Designed for a gas polymerization catalyst; degradation of the copper methanol synthesis catalyst (thermal sintering, chloride poisoning) has a different mechanism |
+| No holding product | Has addressed the special risk of **single-train operation** (no parallel backup unit), where every hour of downtime has a direct and complete impact on the company's entire production |
+
+**Conclusion:** Apadana needs a digital twin that sees the health of reformer tubes (creep) and the methanol synthesis catalyst (sintering) simultaneously with optimization of the syngas module ratio — with a special focus on preventing single-train shutdowns.
+
+---
+
+## 1. Patent Background and Competitive Analysis
+
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | **US RE50,475 / RE48,734** – *Method and apparatus for determining the health and remaining service life of austenitic steel reformer tubes* | روش اندازه‌گیری/بازرسی (مغناطش القایی) در بازه‌های زمانی مشخص؛ سامانه پیش‌بینی بلادرنگ مبتنی بر یادگیری ماشین با داده DCS پیوسته نیست | تبدیل بازرسی نقطه‌ای دوره‌ای به پایش پیوسته و پیش‌بینی بلادرنگ با ML از داده عملیاتی واقعی |
-| ۲ | Creep life estimation of reformer alloy using θ-projection method — Neuro-Fuzzy (ScienceDirect) | مدل آزمایشگاهی/آفلاین بر مبنای نمونه فلز؛ به داده عملیاتی واقعی واحد و اتصال به کاتالیست پایین‌دستی متصل نیست | مدل بلادرنگ متصل به DCS واقعی + پیوند به وضعیت کاتالیست سنتز متانول |
-| ۳ | مطالعات چندهدفه بهینه‌سازی حلقه سنتز متانول (Bayesian/NSGA-II، ACS Omega) | بهینه‌سازی آفلاین/طراحی فرایند؛ به سلامت لحظه‌ای لوله ریفرمر یا کاتالیست به‌عنوان قید بهینه‌سازی وارد نمی‌شود | بهینه‌سازی بلادرنگ نسبت مدول گاز سنتز با قید مستقیم سلامت لوله ریفرمر و کاتالیست |
-| ۴ | **US 10,308,576** – *Method for methanol synthesis* | بهبود فرایند شیمیایی سنتز؛ رویکرد فرایندی نه نرم‌افزاری/پیش‌بینانه | مکمل: لایه نرم‌افزاری پیش‌بینی و بهینه‌سازی روی فرایند موجود |
+| 1 | **US RE50,475 / RE48,734** – *Method and apparatus for determining the health and remaining service life of austenitic steel reformer tubes* | A measurement/inspection method (magnetic induction) at fixed intervals; not a real-time machine-learning prediction system using continuous DCS data | Converting periodic spot inspection into continuous monitoring and real-time ML prediction from real operational data |
+| 2 | Creep life estimation of reformer alloy using θ-projection method — Neuro-Fuzzy (ScienceDirect) | Laboratory/offline model based on metal samples; not connected to the unit's real operational data or to the downstream catalyst | Real-time model connected to the real DCS + link to the methanol synthesis catalyst condition |
+| 3 | Multi-objective optimization studies of the methanol synthesis loop (Bayesian/NSGA-II, ACS Omega) | Offline optimization/process design; the instantaneous health of the reformer tube or catalyst does not enter as an optimization constraint | Real-time optimization of the syngas module ratio with direct constraints on reformer tube and catalyst health |
+| 4 | **US 10,308,576** – *Method for methanol synthesis* | Chemical synthesis process improvement; a process approach, not software/predictive | Complementary: a software layer for prediction and optimization on the existing process |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه دوقلوی دیجیتال زنجیره‌ای تک‌خطی (Single-Train Chain Digital Twin) که برای نخستین‌بار پیش‌بینی بلادرنگ عمر خزشی لوله‌های ریفرمر (از روند دما/تنش عملیاتی پیوسته، نه بازرسی دوره‌ای) را با مدل پیش‌بینی زینتر کاتالیست مسی سنتز متانول و بهینه‌سازی بلادرنگ نسبت مدول گاز سنتز (H₂-CO₂)/(CO+CO₂) در یک حلقه تصمیم واحد با هدف حداکثرسازی دسترسی‌پذیری خط تولید تک‌خطی ترکیب می‌کند."**
+> **"A Single-Train Chain Digital Twin system that, for the first time, combines real-time prediction of reformer tube creep life (from continuous operating temperature/stress trends, not periodic inspection) with a sintering prediction model for the copper methanol synthesis catalyst and real-time optimization of the syngas module ratio (H₂-CO₂)/(CO+CO₂) in a single decision loop with the goal of maximizing the availability of the single-train production line."**
 
 ---
 
-## ۲. سند SRS – محصول اختصاصی پتروشیمی آپادانا خلیج فارس
+## 2. SRS Document – Proprietary Product of Persian Gulf Apadana Petrochemical
 
-### ۲-۱. مقدمه
-**هدف:** حداکثرسازی دسترسی‌پذیری خط تولید تک‌خطی از طریق پیش‌بینی زودهنگام عمر لوله‌های ریفرمر و زوال کاتالیست، و بهینه‌سازی بلادرنگ بازده متانول.
+### 2-1. Introduction
+**Purpose:** Maximize the availability of the single-train production line through early prediction of reformer tube life and catalyst degradation, and real-time optimization of methanol yield.
 
-**چالش‌های میدانی:**
-- پارگی لوله ریفرمر ناشی از خزش تجمعی، ریسک فاجعه‌بار HSE و توقف کامل تولید تک‌خطی.
-- افت تدریجی فعالیت کاتالیست مسی سنتز متانول (زینتر حرارتی) که اگر دیرهنگام شناسایی شود، بازده و مصرف انرژی ویژه را تحت تأثیر قرار می‌دهد.
-- نبود ابزاری که هر دو ریسک را هم‌زمان با بهینه‌سازی نسبت مدول گاز سنتز ببیند.
+**Field challenges:**
+- Reformer tube rupture caused by cumulative creep, a catastrophic HSE risk and complete shutdown of the single-train production.
+- Gradual loss of activity of the copper methanol synthesis catalyst (thermal sintering) which, if detected late, affects yield and specific energy consumption.
+- No tool that sees both risks simultaneously with syngas module ratio optimization.
 
-**دامنه:** مجتمع آپادانا، سایت ۲ عسلویه؛ اتصال به DCS واحدهای ریفرمینگ و سنتز متانول.
+**Scope:** Apadana complex, Asaluyeh Site 2; connection to the DCS of the reforming and methanol synthesis units.
 
-### ۲-۲. نیازمندی‌های کلی
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت داده لحظه‌ای دما پوسته/تنش برآوردی هر ردیف لوله ریفرمر | بحرانی (HSE) |
-| R-GEN-02 | دریافت داده راکتور سنتز متانول (دما، فشار، ترکیب گاز سنتز، افت فعالیت کاتالیست) | بالا |
-| R-GEN-03 | داشبورد «سلامت تک‌خطی» با نمای واحد از ریفرمر تا محصول نهایی | بالا |
+| R-GEN-01 | Receive real-time skin temperature/estimated stress data for each row of reformer tubes | Critical (HSE) |
+| R-GEN-02 | Receive methanol synthesis reactor data (temperature, pressure, syngas composition, catalyst activity loss) | High |
+| R-GEN-03 | "Single-train health" dashboard with a unified view from reformer to final product | High |
 
-### ۲-۳. نیازمندی‌های عملکردی
+### 2-3. Functional Requirements
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-TUBE-01 | پیش‌بینی بلادرنگ عمر خزشی باقی‌مانده هر ردیف لوله ریفرمر با بازه اطمینان | **پایش پیوسته خزش لوله (نوآوری اصلی)** |
-| FR-CAT-01 | پیش‌بینی روند زینتر و افت فعالیت کاتالیست سنتز متانول | پیش‌بینی زوال کاتالیست مسی اختصاصی |
-| FR-LOOP-OPT-01 | بهینه‌سازی بلادرنگ نسبت مدول گاز سنتز با قید سلامت لوله و کاتالیست | **بهینه‌سازی زنجیره‌ای با قید دوگانه سلامت (نوآوری اصلی)** |
-| FR-ALERT-01 | هشدار سطح‌بندی‌شده با اولویت بحرانی برای ریسک پارگی لوله | توصیه‌گر اقدام بحرانی |
-| FR-LOOP-02 | ثبت نتایج واقعی بازرسی/تعویض کاتالیست برای بازآموزی مدل | یادگیری بسته |
+| FR-TUBE-01 | Real-time prediction of remaining creep life of each row of reformer tubes with a confidence interval | **Continuous tube creep monitoring (main innovation)** |
+| FR-CAT-01 | Predict the sintering trend and activity loss of the methanol synthesis catalyst | Dedicated copper catalyst degradation prediction |
+| FR-LOOP-OPT-01 | Real-time optimization of the syngas module ratio with tube and catalyst health constraints | **Chain optimization with dual health constraints (main innovation)** |
+| FR-ALERT-01 | Tiered alerting with critical priority for tube rupture risk | Critical action advisor |
+| FR-LOOP-02 | Record actual inspection/catalyst replacement results for model retraining | Closed-loop learning |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-SAFE-01 | تأخیر هشدار ریسک بحرانی لوله ریفرمر | کمتر از ۵ ثانیه |
-| NFR-PER-01 | دقت پیش‌بینی عمر خزشی باقی‌مانده (MAPE) | کمتر از ۱۵٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه | ۹۹.۹۹٪ (به دلیل ماهیت تک‌خطی) |
+| NFR-SAFE-01 | Reformer tube critical risk alert latency | Less than 5 seconds |
+| NFR-PER-01 | Remaining creep life prediction accuracy (MAPE) | Less than 15% |
+| NFR-AVAIL-01 | System availability | 99.99% (due to single-train nature) |
 
-### ۲-۵. معماری فنی
+### 2-5. Technical Architecture
 
 ```
 ┌──────────────────┐
@@ -108,16 +108,16 @@
         └────────────┘    └───────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/reformer-synloop-ingestion/` | اتصال DCS ریفرمر و حلقه سنتز |
-| `services/tube-catalyst-twin/` | مدل خزش لوله + زینتر کاتالیست |
-| `services/syngas-ratio-optimizer/` | بهینه‌ساز مقید نسبت مدول |
-| `shared/` | بازاستفاده از محصولات ۱-۴ |
+| `services/reformer-synloop-ingestion/` | Reformer and synthesis loop DCS connection |
+| `services/tube-catalyst-twin/` | Tube creep model + catalyst sintering |
+| `services/syngas-ratio-optimizer/` | Constrained module ratio optimizer |
+| `shared/` | Reuse of products 1-4 |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک
+## 3. Synthetic Data Generation Code
 
 ```python
 import numpy as np
@@ -129,21 +129,21 @@ START_TIME = datetime(2026, 9, 14, 8, 0, 0)
 timestamps = [START_TIME + timedelta(minutes=i) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
-# ۱. لوله ریفرمر - دما پوسته و کرنش خزشی تجمعی
+# 1. Reformer tube - skin temperature and cumulative creep strain
 tube_skin_temp_c = 880 + 15 * np.sin(t * 0.1) + 0.003 * np.arange(NUM_RECORDS) + np.random.normal(0, 3, NUM_RECORDS)
 creep_strain_percent = 0.0001 * np.arange(NUM_RECORDS) / 100 + np.random.normal(0, 0.002, NUM_RECORDS)
 creep_strain_percent = np.clip(creep_strain_percent, 0, 1.2)
 
-# ۲. کاتالیست سنتز متانول - زینتر تدریجی
+# 2. Methanol synthesis catalyst - gradual sintering
 catalyst_activity_percent = 100 - 0.0007 * np.arange(NUM_RECORDS) + np.random.normal(0, 0.4, NUM_RECORDS)
 catalyst_activity_percent = np.clip(catalyst_activity_percent, 55, 100)
 
-# ۳. نسبت مدول گاز سنتز و بازده
+# 3. Syngas module ratio and yield
 syngas_module_ratio = 2.05 + 0.05 * np.sin(t * 0.05) + np.random.normal(0, 0.01, NUM_RECORDS)
 methanol_yield_tph = 195 - 0.3 * (100 - catalyst_activity_percent) - 5 * np.abs(syngas_module_ratio - 2.05) + np.random.normal(0, 2, NUM_RECORDS)
 specific_energy_gj_per_ton = 30.5 + 0.05 * (100 - catalyst_activity_percent) + np.random.normal(0, 0.3, NUM_RECORDS)
 
-# ۴. برچسب‌ها
+# 4. Labels
 tube_critical_risk = (creep_strain_percent > 0.8).astype(int)
 catalyst_replace_flag_90d = (catalyst_activity_percent < 65).astype(int)
 
@@ -160,46 +160,46 @@ df = pd.DataFrame({
 })
 
 df.to_csv("apadana_reformer_methanol_data_10k.csv", index=False)
-print(f"✅ ذخیره شد. رکوردها: {len(df):,} - متغیرها: {len(df.columns)}")
+print(f"✅ Saved. Records: {len(df):,} - Variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی
+## 4. Economic Justification
 
-| شاخص | وضعیت فعلی | با Khalij-ARML | اثر مالی تقریبی |
+| Indicator | Current state | With Khalij-ARML | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| ریسک پارگی لوله ریفرمر | بازرسی دوره‌ای (سالانه/دوسالانه) | پایش پیوسته و پیش‌بینی زودهنگام | جلوگیری از توقف کامل خط تک‌خطی ۱٫۶۵ میلیون تنی — زیان روزانه بسیار بالا در صورت توقف اضطراری |
-| زوال کاتالیست سنتز | تعویض بر مبنای دوره ثابت یا افت محسوس بازده | پیش‌بینانه با بهینه‌سازی هم‌زمان مدول گاز سنتز | افزایش بازده مؤثر و کاهش مصرف انرژی ویژه |
+| Reformer tube rupture risk | Periodic inspection (annual/biennial) | Continuous monitoring and early prediction | Prevents a complete shutdown of the 1.65-million-ton single-train line — very high daily loss in an emergency shutdown |
+| Synthesis catalyst degradation | Replacement on a fixed schedule or noticeable yield loss | Predictive with simultaneous syngas module optimization | Increased effective yield and lower specific energy consumption |
 
-**Payback:** با توجه به ماهیت تک‌خطی و ظرفیت بسیار بزرگ (۱٫۶۵ میلیون تن/سال)، جلوگیری از حتی چند روز توقف غیربرنامه‌ریزی‌شده، هزینه پیاده‌سازی این سامانه را به‌سرعت جبران می‌کند.
+**Payback:** Given the single-train nature and very large capacity (1.65 million tons/year), preventing even a few days of unplanned downtime quickly offsets the implementation cost of this system.
 
 ---
 
-## ۵. نقشه تکامل پیشنهادی (Phase 1-5)
+## 5. Proposed Evolution Roadmap (Phase 1-5)
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده |
-| ۲ | مدل پیش‌بینی عمر خزشی لوله ریفرمر (اولویت اول HSE) |
-| ۳ | مدل پیش‌بینی زینتر کاتالیست سنتز متانول |
-| ۴ | بهینه‌ساز مقید نسبت مدول گاز سنتز |
-| ۵ | داشبورد سلامت تک‌خطی + پایلوت عملیاتی |
+| 1 | Base infrastructure + data simulator |
+| 2 | Reformer tube creep life prediction model (HSE first priority) |
+| 3 | Methanol synthesis catalyst sintering prediction model |
+| 4 | Constrained syngas module ratio optimizer |
+| 5 | Single-train health dashboard + operational pilot |
 
 ---
 
-## ۶. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 6. Summary of Patentable Innovations
 
-1. **پایش پیوسته و پیش‌بینی بلادرنگ عمر خزشی لوله‌های ریفرمر** از داده عملیاتی واقعی (نه بازرسی دوره‌ای).
-2. **بهینه‌سازی بلادرنگ نسبت مدول گاز سنتز با قید مستقیم سلامت لوله ریفرمر و کاتالیست**.
-3. **مدل یکپارچه ریسک تک‌خطی** که سلامت بالادستی (ریفرمر) و پایین‌دستی (کاتالیست) را برای حداکثرسازی دسترسی‌پذیری کل خط ترکیب می‌کند.
+1. **Continuous monitoring and real-time prediction of reformer tube creep life** from real operational data (not periodic inspection).
+2. **Real-time optimization of the syngas module ratio with direct constraints on reformer tube and catalyst health**.
+3. **Integrated single-train risk model** that combines upstream (reformer) and downstream (catalyst) health to maximize the availability of the entire line.
 
 ---
 
-## ۷. منابع
+## 7. References
 
-- [PGPIC — شرکت پتروشیمی آپادانا خلیج فارس](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%A2%D9%BE%D8%A7%D8%AF%D8%A7%D9%86%D8%A7-%D8%AE%D9%84%DB%8C%D8%AC-%D9%81%D8%A7%D8%B1%D8%B3)
+- [PGPIC — Persian Gulf Apadana Petrochemical Company](https://pgpic.ir/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%A8%D8%B9%D9%87/%D8%B7%D8%B1%D8%AD-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%A7%D8%AC%D8%B1%D8%A7/%D8%B4%D8%B1%DA%A9%D8%AA-%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C-%D8%A2%D9%BE%D8%A7%D8%AF%D8%A7%D9%86%D8%A7-%D8%AE%D9%84%DB%8C%D8%AC-%D9%81%D8%A7%D8%B1%D8%B3)
 - [offshore-technology.com — Persian Gulf Apadana Petrochemical Assaluyeh Complex](https://www.offshore-technology.com/data-insights/persian-gulf-apadana-petrochemical-assaluyeh-complex-iran-2/)
 - [US RE50475 — Method and apparatus for determining the health and remaining service life of austenitic steel reformer tubes](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/RE50475)
 - [Creep life estimation of reformer alloy using θ-projection method — Neuro-Fuzzy — ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0308016123000558)

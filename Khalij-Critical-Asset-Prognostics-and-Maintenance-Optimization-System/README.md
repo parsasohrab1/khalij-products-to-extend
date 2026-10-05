@@ -1,99 +1,99 @@
 # Khalij-Critical-Asset-Prognostics-and-Maintenance-Optimization-System (Khalij-CAPM)
 
-## سامانه هوشمند پایش سلامت، پیش‌بینی عمر باقی‌مانده و بهینه‌سازی نگهداری دارایی‌های حیاتی (تجهیزات دوار، کوره‌های کراکینگ و کاتالیست) — محصول چهارم هلدینگ خلیج‌فارس
+## Intelligent system for health monitoring, remaining useful life prediction and maintenance optimization of critical assets (rotating equipment, cracking furnaces and catalyst) — the fourth product of the Persian Gulf Holding
 
-> این سند، محصول چهارم را در ادامه سه محصول قبلاً معرفی‌شده هلدینگ ارائه می‌کند و به‌صورت **تکاملی** از زیرساخت، الگوهای فنی و داده‌های مشترک آن‌ها استفاده می‌کند (نه یک محصول موازی و تکراری).
+> This document presents the fourth product following the three previously introduced products of the holding and uses their infrastructure, technical patterns and shared data in an **evolutionary** way (not a parallel and duplicate product).
 
 ---
 
-## ۰. جایگاه این محصول در نقشه راه محصولات هلدینگ — چرا این محصول، چرا الان
+## 0. The position of this product in the holding's product roadmap — why this product, why now
 
-سه محصول قبلی هلدینگ خلیج‌فارس هرکدام یک لایه از "مغز دیجیتال" یک مجتمع پتروشیمی را پوشش می‌دهند، اما یک لایهٔ حیاتی و پرهزینه هنوز خالی مانده است: **سلامت فیزیکی دارایی‌ها (Asset Health)**.
+Each of the holding's three previous products covers one layer of the "digital brain" of a petrochemical complex, but one critical and costly layer remains empty: **the physical health of assets (Asset Health)**.
 
-| # | محصول | لایه‌ای که پوشش می‌دهد | آنچه پوشش نمی‌دهد (شکاف) |
+| # | Product | Layer covered | What it does not cover (gap) |
 |---|--------|------------------------|----------------------------|
-| ۱ | Khalij-Production-Process-Prediction-and-Optimization-System | بهینه‌سازی لحظه‌ای **پارامترهای فرایندی** راکتور (دما، فشار، دبی) برای کیفیت/انرژی/هزینه | فرض می‌کند تجهیزات (کمپرسور، پمپ، توربین، کوره) همیشه سالم و در دسترس‌اند؛ به سلامت فیزیکی و طول عمر تجهیز کاری ندارد |
-| ۲ | khalij-Digital-Transformation-and-Value-Chain-Integration-System | یکپارچه‌سازی **زنجیره تأمین/تولید/توزیع/فروش** در سطح هلدینگ (Data Mesh) | به سطح تجهیز و خط تولید کاری ندارد؛ سطح آن کلان (Board/Command Center) است |
-| ۳ | khalij-Intelligent-Energy-Carbon-and-Sustainability-Management-System | مصرف انرژی، کربن Scope 1/2/3 و بهینه‌سازی بلادرنگ انرژی (RTO) | افت راندمان انرژی ناشی از **زوال فیزیکی تجهیز** (فولینگ کوره، خوردگی، عدم بالانس روتور) را به‌عنوان علت ریشه‌ای تشخیص نمی‌دهد |
-| **۴ (این سند)** | **Khalij-Critical-Asset-Prognostics-and-Maintenance-Optimization-System** | **پیش‌بینی خرابی/عمر باقی‌مانده تجهیزات دوار، زمان‌بندی دی‌کوکینگ کوره‌های کراکینگ، پیش‌بینی افت فعالیت کاتالیست، و بهینه‌سازی برنامه تعمیرات/موجودی قطعات یدکی** | — |
+| 1 | Khalij-Production-Process-Prediction-and-Optimization-System | Real-time optimization of reactor **process parameters** (temperature, pressure, flow) for quality/energy/cost | Assumes equipment (compressor, pump, turbine, furnace) is always healthy and available; does not deal with the physical health and life of equipment |
+| 2 | khalij-Digital-Transformation-and-Value-Chain-Integration-System | Integration of the **supply/production/distribution/sales chain** at holding level (Data Mesh) | Does not deal with the equipment and production line level; its level is macro (Board/Command Center) |
+| 3 | khalij-Intelligent-Energy-Carbon-and-Sustainability-Management-System | Energy consumption, Scope 1/2/3 carbon and real-time energy optimization (RTO) | Does not diagnose energy efficiency loss caused by **physical equipment deterioration** (furnace fouling, corrosion, rotor unbalance) as a root cause |
+| **4 (this document)** | **Khalij-Critical-Asset-Prognostics-and-Maintenance-Optimization-System** | **Failure/remaining-life prediction of rotating equipment, decoking scheduling of cracking furnaces, catalyst activity-loss prediction, and optimization of maintenance schedule/spare-parts inventory** | — |
 
-**چرا این شکاف مهم‌ترین اولویت بعدی است:**
-1. بزرگ‌ترین منبع توقف ناخواسته تولید (Unplanned Shutdown) در پتروشیمی، خرابی تجهیزات دوار حیاتی (کمپرسور گاز کراکه، کمپرسور تبرید پروپیلن) و فولینگ/کک‌گرفتگی کوره‌های کراکینگ است — نه انحراف پارامتر فرایندی که محصول ۱ آن را پوشش می‌دهد.
-2. این محصول از نظر فنی **مستقیماً روی زیرساخت محصول ۱ و ۳ سوار می‌شود** (همان الگوی حسگر مجازی XGBoost/LSTM، همان Kafka/TimescaleDB/InfluxDB، همان MLflow) و فقط دامنه داده و مدل را از «متغیرهای فرایندی راکتور» به «سیگنال‌های ارتعاش/حرارت/فشار افت کوره/کاتالیست» توسعه می‌دهد؛ بنابراین دقیقاً همان مسیر **تکاملی** خواسته‌شده است، نه بازتعریف از صفر.
-3. برخلاف سه محصول قبلی که "بهینه‌سازی" و "یکپارچه‌سازی" را هدف قرار داده‌اند، این محصول مستقیماً روی **جلوگیری از ضرر مالی فاجعه‌بار** (توقف چند‌روزه یک واحد الفین) تمرکز دارد که ساده‌ترین و سریع‌ترین محصول برای متقاعدسازی مدیریت یک پتروشیمی به سرمایه‌گذاری است (ROI قابل محاسبه و ملموس در چند هفته اول پایلوت).
+**Why this gap is the most important next priority:**
+1. The biggest source of unplanned shutdown in a petrochemical is the failure of critical rotating equipment (cracked-gas compressor, propylene refrigeration compressor) and fouling/coking of cracking furnaces — not the process parameter deviation that product 1 covers.
+2. Technically, this product **is built directly on the infrastructure of products 1 and 3** (the same XGBoost/LSTM virtual sensor pattern, the same Kafka/TimescaleDB/InfluxDB, the same MLflow) and only extends the data and model scope from "reactor process variables" to "vibration/thermal/furnace pressure-drop/catalyst signals"; thus it is exactly the **evolutionary** path requested, not a redefinition from scratch.
+3. Unlike the previous three products that target "optimization" and "integration", this product focuses directly on **preventing catastrophic financial loss** (multi-day shutdown of an olefin unit), which is the simplest and fastest product for persuading a petrochemical's management to invest (ROI that is calculable and tangible in the first few weeks of the pilot).
 
 ---
 
-## ۱. سابقه ثبت اختراع و تحلیل رقابتی (Prior-Art Search) — مبنای نوآوری
+## 1. Patent history and competitive analysis (Prior-Art Search) — the basis of innovation
 
-جست‌وجوی سوابق ثبت اختراع و ادبیات فنی (نتایج و منابع در بخش ۸) نشان می‌دهد:
+A search of patent records and the technical literature (results and sources in section 8) shows:
 
-| ردیف | اختراع/فناوری موجود | محدودیت اصلی | تفاوت این محصول |
+| No. | Existing patent/technology | Main limitation | Difference of this product |
 |---|---|---|---|
-| ۱ | **US 11,650,184 B2** – *System and method for monitoring rotating equipment* | فقط تشخیص عیب/RUL تجهیز دوار بر مبنای سیگنال مکانیکی (ارتعاش/دما)؛ به فرایند شیمیایی متصل نیست | این سامانه سیگنال تجهیز را با **متغیرهای فرایندی DCS** (دما/فشار/ترکیب) هم‌بست می‌دهد تا علت ریشه‌ای (فرایندی یا مکانیکی) را تفکیک کند |
-| ۲ | **US 2018/0282633 A1** – *Rotating equipment in a petrochemical plant or refinery* (Invariant/PCA-based) | تشخیص ناهنجاری کلی سطح واحد؛ به سطح یک تجهیز خاص و برنامه تعمیرات وارد نمی‌شود | تفکیک به سطح Tag/Asset + خروجی مستقیم به برنامه‌ریز تعمیرات و موجودی قطعه |
-| ۳ | **US 10,913,905 B2** – *Catalyst cycle length prediction using eigen analysis* | فقط دامنه کاتالیست راکتور؛ کاملاً مجزا از تجهیزات دوار و کوره | یک مدل واحد (Digital Twin) که کاتالیست + کوره + دوار را هم‌زمان می‌بیند |
-| ۴ | **US 12,044,642 B2** – *Estimating outer surface temperature of radiant coil of cracking furnace* | یک روش نقطه‌ای اندازه‌گیری/برآورد دمای پوسته کویل؛ ابزار سخت‌افزاری/محاسباتی مجزا، بدون یادگیری ماشین یا حلقه بهینه‌سازی تعمیرات | زمان‌بندی دی‌کوکینگ به‌صورت پیش‌بینی یادگیری‌محور (LSTM روی روند افت دما/افزایش افت‌فشار) + پیوند مستقیم به برنامه توقف/تعمیر |
-| ۵ | خبر شانا (۱۴۰۲) – دستیابی شرکت دانش‌بنیان ایرانی به فناوری پایش وضعیت ماشین‌های دوار | صرفاً سخت‌افزار/نرم‌افزار پایش وضعیت (Condition Monitoring)؛ فاقد بهینه‌سازی موجودی قطعات یدکی و برنامه‌ریزی نیروی تعمیرات | تلفیق پایش با **بهینه‌سازی تصمیم تعمیرات** (چه زمانی، با چه قطعه‌ای، توسط چه تیمی) |
-| ۶ | مقالات دانشگاهی/صنعتی (PNNL, AIChE, ScienceDirect) دربارهٔ ML برای زوال کاتالیست و زمان‌بندی چرخه کوره کراکینگ | مدل‌های تک‌دامنه‌ای پژوهشی، بدون معماری محصول صنعتی، بدون اتصال DCS/CMMS واقعی | تبدیل این یافته‌های پژوهشی به یک **محصول صنعتی یکپارچه** با APIهای عملیاتی و اتصال به CMMS/ERP نگهداری |
+| 1 | **US 11,650,184 B2** – *System and method for monitoring rotating equipment* | Only fault detection/RUL of rotating equipment based on mechanical signals (vibration/temperature); not connected to the chemical process | This system correlates equipment signals with **DCS process variables** (temperature/pressure/composition) to separate the root cause (process or mechanical) |
+| 2 | **US 2018/0282633 A1** – *Rotating equipment in a petrochemical plant or refinery* (Invariant/PCA-based) | General unit-level anomaly detection; does not go down to a specific equipment and maintenance schedule | Separation at the Tag/Asset level + direct output to the maintenance scheduler and part inventory |
+| 3 | **US 10,913,905 B2** – *Catalyst cycle length prediction using eigen analysis* | Only the reactor catalyst domain; completely separate from rotating equipment and furnace | A single model (Digital Twin) that sees catalyst + furnace + rotating equipment simultaneously |
+| 4 | **US 12,044,642 B2** – *Estimating outer surface temperature of radiant coil of cracking furnace* | A point method for measuring/estimating coil skin temperature; a separate hardware/computational tool, without machine learning or a maintenance optimization loop | Decoking scheduling as a learning-based prediction (LSTM on the temperature-drop/pressure-drop trend) + direct link to the shutdown/maintenance schedule |
+| 5 | Shana news (2023) – an Iranian knowledge-based company achieves rotating machine condition monitoring technology | Purely condition monitoring hardware/software; lacks spare-parts inventory optimization and repair workforce planning | Combining monitoring with **maintenance decision optimization** (when, with which part, by which team) |
+| 6 | Academic/industrial papers (PNNL, AIChE, ScienceDirect) on ML for catalyst deterioration and cracking-furnace cycle scheduling | Single-domain research models, without an industrial product architecture, without a real DCS/CMMS connection | Turning these research findings into an **integrated industrial product** with operational APIs and connection to the maintenance CMMS/ERP |
 
-### نوآوری اصلی قابل ثبت اختراع (Core Patentable Claim)
+### Core Patentable Claim
 
-> **"سامانه دوقلوی دیجیتال دارایی چندلایه (Multi-Layer Asset Digital Twin) که برای نخستین‌بار سه حوزهٔ (الف) پایش لرزشی/حرارتی تجهیزات دوار، (ب) حسگر مجازی زوال حرارتی کوره‌های کراکینگ و افت فعالیت کاتالیست مبتنی بر متغیرهای فرایندی DCS، و (ج) بهینه‌سازی پویای هم‌زمان برنامه تعمیرات و موجودی قطعات یدکی بر پایهٔ بازهٔ عدم‌قطعیت پیش‌بینی عمر باقی‌مانده (RUL Confidence Interval) را در یک حلقهٔ بستهٔ توصیه→تأیید اپراتور→اقدام→بازخورد واقعی تلفیق می‌کند."**
+> **"A Multi-Layer Asset Digital Twin system that, for the first time, combines three domains: (a) vibration/thermal monitoring of rotating equipment, (b) virtual sensor of thermal deterioration of cracking furnaces and catalyst activity loss based on DCS process variables, and (c) dynamic simultaneous optimization of the maintenance schedule and spare-parts inventory based on the remaining-useful-life prediction uncertainty interval (RUL Confidence Interval) in a closed loop of recommendation→operator approval→action→real feedback."**
 
-این ترکیب سه‌گانه (تجهیز دوار + کوره/کاتالیست + بهینه‌سازی تصمیم نگهداری، با ورودی مشترک از حسگرهای مجازی محصول ۱) در هیچ‌یک از اختراعات یا مقالات یافت‌شده به‌صورت یکپارچه دیده نشد و مبنای ادعای ثبت اختراع (Independent Claim) این محصول است.
+This triple combination (rotating equipment + furnace/catalyst + maintenance decision optimization, with shared input from the virtual sensors of product 1) was not seen in an integrated form in any of the patents or papers found and is the basis of the patent claim (Independent Claim) of this product.
 
 ---
 
-## ۲. سند SRS – محصول ۴: پایش سلامت و بهینه‌سازی نگهداری دارایی‌های حیاتی (با قابلیت ثبت اختراع)
+## 2. SRS Document – Product 4: Critical asset health monitoring and maintenance optimization (patentable)
 
-### ۲-۱. مقدمه
-**هدف:** توسعه سامانه‌ای مبتنی بر یادگیری ماشین و بهینه‌سازی که با پایش پیوسته تجهیزات دوار حیاتی، کوره‌های کراکینگ و کاتالیست راکتورها، از توقف‌های ناخواسته تولید جلوگیری کرده و هزینهٔ نگهداری و موجودی قطعات یدکی را کاهش دهد.
+### 2-1. Introduction
+**Purpose:** Develop a system based on machine learning and optimization that, by continuously monitoring critical rotating equipment, cracking furnaces and reactor catalysts, prevents unplanned production shutdowns and reduces maintenance and spare-parts inventory costs.
 
-**چالش‌های میدانی که این محصول حل می‌کند:**
-- ترافیک کمپرسورهای گاز کراکه و تبرید پروپیلن/اتیلن که خرابی هرکدام به معنی توقف کامل واحد الفین (چند میلیون دلار زیان روزانه) است.
-- کک‌گرفتگی (Coking) تدریجی کویل‌های کوره پیرولیز که اگر دیرهنگام تشخیص داده شود باعث ترکیدگی کویل یا کاهش شدید بازده اتیلن می‌شود.
-- افت تدریجی فعالیت کاتالیست در راکتورهای پلیمریزاسیون (PE/PP) که باعث افزایش مصرف کاتالیست، کاهش نرخ تولید و نوسان کیفیت گرید می‌شود.
-- برنامه‌ریزی سنتی تعمیرات (زمان‌محور/Time-Based) که یا خیلی زودتر از لازم قطعه سالم را تعویض می‌کند (هزینه اضافی) یا خیلی دیر (ریسک خرابی فاجعه‌بار).
+**Field challenges this product solves:**
+- The traffic of cracked-gas and propylene/ethylene refrigeration compressors, where the failure of any one means a complete shutdown of the olefin unit (several million dollars of daily loss).
+- Gradual coking of the pyrolysis furnace coils, which if detected late causes coil rupture or a sharp reduction in ethylene yield.
+- Gradual loss of catalyst activity in polymerization reactors (PE/PP), which increases catalyst consumption, reduces production rate and causes grade quality fluctuation.
+- Traditional maintenance planning (time-based) that either replaces a healthy part much earlier than necessary (extra cost) or too late (risk of catastrophic failure).
 
-**دامنه:** این سامانه در سطح واحد‌های دارای تجهیزات دوار حیاتی و کوره‌های فرایندی هلدینگ (اولویت: واحدهای الفین) پیاده‌سازی و به CMMS/ERP نگهداری‌وتعمیرات موجود متصل می‌شود؛ ورودی حسگر آن از همان زیرساخت Data Ingestion محصول ۱ تغذیه می‌شود.
+**Scope:** This system is implemented at the level of units with critical rotating equipment and process furnaces of the holding (priority: olefin units) and connects to the existing maintenance CMMS/ERP; its sensor input is fed from the same Data Ingestion infrastructure of product 1.
 
-### ۲-۲. نیازمندی‌های کلی (General Requirements)
+### 2-2. General Requirements
 
-| شناسه | نیاز | اولویت |
+| ID | Requirement | Priority |
 | :--- | :--- | :--- |
-| R-GEN-01 | دریافت هم‌زمان داده ارتعاش/حرارت/فشار تجهیزات دوار (نرخ ≥ ۱ رکورد/ثانیه) و متغیرهای فرایندی کوره/راکتور از همان گذرگاه داده محصول ۱ | بالا |
-| R-GEN-02 | نگهداری تاریخچه سلامت هر Asset (شناسه تجهیز، سریال، تاریخ نصب، تاریخچه تعمیرات) به مدت حداقل ۱۰ سال | بالا |
-| R-GEN-03 | داشبورد واحد «اتاق فرماندهی نگهداری» با نمایش نقشه حرارتی سلامت کل دارایی‌های حیاتی واحد | بالا |
-| R-GEN-04 | اتصال دوطرفه با CMMS/ERP موجود (SAP-PM یا معادل) برای صدور خودکار درخواست کار (Work Order) | متوسط |
+| R-GEN-01 | Simultaneous reception of vibration/thermal/pressure data of rotating equipment (rate ≥ 1 record/second) and furnace/reactor process variables from the same data bus of product 1 | High |
+| R-GEN-02 | Retention of the health history of each Asset (equipment ID, serial, installation date, repair history) for at least 10 years | High |
+| R-GEN-03 | Unit "Maintenance command center" dashboard showing a heat map of the health of all critical assets of the unit | High |
+| R-GEN-04 | Two-way connection with the existing CMMS/ERP (SAP-PM or equivalent) for automatic Work Order issuance | Medium |
 
-### ۲-۳. نیازمندی‌های عملکردی (با تأکید بر قابلیت اختراع)
+### 2-3. Functional Requirements (with emphasis on patentability)
 
-| شناسه | نیاز | قابلیت ثبت اختراع |
+| ID | Requirement | Patent capability |
 | :--- | :--- | :--- |
-| FR-ROT-01 | تشخیص عیب تجهیز دوار (عدم‌بالانس، سایش یاتاقان، کاویتاسیون پمپ) از طیف ارتعاش (FFT) + دما با مدل‌های یادگیری عمیق | تشخیص چندعیبی هم‌زمان با اطمینان احتمالاتی |
-| FR-ROT-02 | پیش‌بینی عمر باقی‌مانده (RUL) هر تجهیز دوار حیاتی با بازه اطمینان (Confidence Interval)، نه فقط یک عدد قطعی | **بازهٔ عدم‌قطعیت RUL به‌عنوان ورودی مستقیم بهینه‌سازی نگهداری (نوآوری اصلی)** |
-| FR-FUR-01 | حسگر مجازی افت راندمان حرارتی و پیش‌بینی زمان بهینه دی‌کوکینگ کوره کراکینگ بر اساس روند دمای پوسته کویل و افت‌فشار | زمان‌بندی دی‌کوکینگ پیش‌بینانه (یادگیری‌محور، نه آستانه ثابت) |
-| FR-CAT-01 | پیش‌بینی افت فعالیت کاتالیست راکتور پلیمریزاسیون/کراکینگ و برآورد نقطه بهینه تعویض/احیا | حسگر مجازی زوال کاتالیست تلفیق‌شده با تجهیز و کوره در یک مدل |
-| FR-OPT-01 | بهینه‌سازی هم‌زمان برنامه توقف/تعمیر، تخصیص تیم تعمیراتی و سطح موجودی قطعات یدکی بحرانی با الگوریتم فراابتکاری (مثل NSGA-II) با ورودی بازه‌های RUL چند تجهیز به‌طور هم‌زمان | **بهینه‌سازی یکپارچه چند-دارایی نگهداری (نوآوری اصلی)** |
-| FR-ALERT-01 | صدور هشدار سطح‌بندی‌شده (Watch/Warning/Critical) به اپراتور و مدیر نگهداری + توصیه اقدام مشخص | توصیه‌گر اقدام تعمیراتی بلادرنگ |
-| FR-LOOP-01 | ثبت بازخورد واقعی (آیا خرابی رخ داد؟ تعمیر چقدر طول کشید؟) برای بازآموزی مداوم مدل (Closed-Loop Learning) | حلقه یادگیری مداوم مبتنی بر نتیجه واقعی میدانی |
+| FR-ROT-01 | Fault detection of rotating equipment (unbalance, bearing wear, pump cavitation) from the vibration spectrum (FFT) + temperature with deep learning models | Simultaneous multi-fault detection with probabilistic confidence |
+| FR-ROT-02 | Remaining useful life (RUL) prediction of every critical rotating equipment with a confidence interval, not just a single deterministic number | **RUL uncertainty interval as a direct input to maintenance optimization (main innovation)** |
+| FR-FUR-01 | Virtual sensor of thermal efficiency loss and prediction of the optimal decoking time of the cracking furnace based on the coil skin temperature and pressure-drop trend | Predictive decoking scheduling (learning-based, not a fixed threshold) |
+| FR-CAT-01 | Prediction of polymerization/cracking reactor catalyst activity loss and estimation of the optimal replacement/regeneration point | Catalyst deterioration virtual sensor integrated with equipment and furnace in one model |
+| FR-OPT-01 | Simultaneous optimization of the shutdown/repair schedule, repair team allocation and critical spare-parts inventory level with a meta-heuristic algorithm (e.g., NSGA-II) with RUL intervals of multiple equipment as simultaneous input | **Integrated multi-asset maintenance optimization (main innovation)** |
+| FR-ALERT-01 | Issuing tiered alerts (Watch/Warning/Critical) to the operator and maintenance manager + specific action recommendation | Real-time repair action recommender |
+| FR-LOOP-01 | Recording real feedback (did a failure occur? how long did the repair take?) for continuous model retraining (Closed-Loop Learning) | Continuous learning loop based on real field outcome |
 
-### ۲-۴. نیازمندی‌های غیرعملکردی (Non-Functional Requirements)
+### 2-4. Non-Functional Requirements
 
-| شناسه | نیاز | مقدار هدف |
+| ID | Requirement | Target value |
 | :--- | :--- | :--- |
-| NFR-PER-01 | تأخیر تشخیص عیب حاد تجهیز دوار | کمتر از ۵ ثانیه |
-| NFR-PER-02 | دقت پیش‌بینی RUL (MAPE) در فاز پایلوت | کمتر از ۱۵٪ |
-| NFR-AVAIL-01 | در دسترس بودن سامانه پایش | ۹۹.۹٪ |
-| NFR-SEC-01 | رمزنگاری داده حسگر (AES-256) + تفکیک RBAC نقش اپراتور/سرپرست نگهداری/مدیر HSE | اجباری |
-| NFR-INTEG-01 | سازگاری با استانداردهای پایش وضعیت صنعتی (ISO 13374, ISO 17359) | اجباری |
+| NFR-PER-01 | Detection delay of acute rotating equipment fault | Less than 5 seconds |
+| NFR-PER-02 | RUL prediction accuracy (MAPE) in the pilot phase | Less than 15% |
+| NFR-AVAIL-01 | Availability of the monitoring system | 99.9% |
+| NFR-SEC-01 | Sensor data encryption (AES-256) + RBAC separation of operator/maintenance supervisor/HSE manager roles | Mandatory |
+| NFR-INTEG-01 | Compatibility with industrial condition monitoring standards (ISO 13374, ISO 17359) | Mandatory |
 
-### ۲-۵. معماری فنی (بازاستفاده مستقیم از الگوی محصول ۱ و ۳)
+### 2-5. Technical architecture (direct reuse of the pattern of products 1 and 3)
 
 ```
                          ┌──────────────────┐
-                         │   API Gateway     │  (RBAC + 2FA — همان الگوی محصول ۱)
+                         │   API Gateway     │  (RBAC + 2FA — same pattern as product 1)
                          └─────────┬─────────┘
         ┌───────────────┬─────────┼───────────────┬───────────────┐
 ┌───────▼───────┐┌───────▼────────┐ ┌──────────────▼───┐┌──────────▼──────────┐
@@ -107,26 +107,26 @@
                    ▼                  ▼                                ▼
             ┌────────────┐    ┌───────────────┐                ┌────────────┐
             │   Kafka    │    │  TimescaleDB/ │                │ PostgreSQL │
-            │ (همان بروکر│    │  InfluxDB     │                │ (Work      │
-            │  محصول ۱)  │    │ (سیگنال زمانی)│                │  Orders)   │
+            │ (same broker│    │  InfluxDB     │                │ (Work      │
+            │  of product 1)│  │ (time signal) │                │  Orders)   │
             └────────────┘    └───────────────┘                └────────────┘
                                        │
                                 ┌────────────┐
-                                │   MLflow   │ (همان رجیستری مدل محصول ۱/۳)
+                                │   MLflow   │ (same model registry of product 1/3)
                                 └────────────┘
 ```
 
-| مسیر پیشنهادی | توضیح |
+| Suggested path | Description |
 | :--- | :--- |
-| `services/asset-ingestion/` | اتصال به حسگرهای ارتعاش/حرارت (IEPE/Accelerometer, Thermocouple) + بازاستفاده از کلاینت OPC-UA محصول ۱ |
-| `services/digital-twin-prediction/` | مدل‌های RUL (LSTM/Survival Analysis)، حسگر مجازی کوره، حسگر مجازی کاتالیست |
-| `services/maintenance-optimization/` | NSGA-II چندهدفه (ریسک خرابی، هزینه توقف، هزینه موجودی قطعه) |
-| `services/cmms-connector/` | آداپتور SAP-PM/ERP برای صدور Work Order خودکار |
-| `shared/` | بازاستفاده کامل از مدل‌های Pydantic، Kafka utils و تنظیمات محصول ۱ |
+| `services/asset-ingestion/` | Connection to vibration/thermal sensors (IEPE/Accelerometer, Thermocouple) + reuse of product 1's OPC-UA client |
+| `services/digital-twin-prediction/` | RUL models (LSTM/Survival Analysis), furnace virtual sensor, catalyst virtual sensor |
+| `services/maintenance-optimization/` | Multi-objective NSGA-II (failure risk, downtime cost, spare-part inventory cost) |
+| `services/cmms-connector/` | SAP-PM/ERP adapter for automatic Work Order issuance |
+| `shared/` | Full reuse of product 1's Pydantic models, Kafka utils and settings |
 
 ---
 
-## ۳. کد تولید داده‌های سنتتیک (Synthetic Data Generator)
+## 3. Synthetic Data Generator Code
 
 ```python
 import numpy as np
@@ -134,137 +134,137 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # ==============================================
-# پارامترهای تولید داده
+# Data generation parameters
 # ==============================================
-NUM_RECORDS = 10000          # ~2.7 ساعت داده با نرخ ۱ رکورد/ثانیه
+NUM_RECORDS = 10000          # ~2.7 hours of data at 1 record/second
 START_TIME = datetime(2026, 9, 12, 8, 0, 0)
 
 timestamps = [START_TIME + timedelta(seconds=i) for i in range(NUM_RECORDS)]
 t = np.linspace(0, 20 * np.pi, NUM_RECORDS)
 
 # ------------------------------------------------
-# ۱. تجهیز دوار حیاتی: کمپرسور گاز کراکه (Cracked Gas Compressor)
+# 1. Critical rotating equipment: Cracked Gas Compressor
 # ------------------------------------------------
-# دامنه ارتعاش کلی (RMS, mm/s) - روند افزایشی تدریجی = زوال یاتاقان
+# overall vibration amplitude (RMS, mm/s) - gradual upward trend = bearing deterioration
 vibration_rms = 2.5 + 0.0006 * np.arange(NUM_RECORDS) + 0.3 * np.sin(t * 0.4) + np.random.normal(0, 0.15, NUM_RECORDS)
 vibration_rms = np.clip(vibration_rms, 1.0, 12.0)
 
-# دمای یاتاقان (Bearing Temperature) - همبسته با ارتعاش
+# Bearing Temperature - correlated with vibration
 bearing_temp_c = 65 + 4 * (vibration_rms - 2.5) + np.random.normal(0, 1.2, NUM_RECORDS)
 bearing_temp_c = np.clip(bearing_temp_c, 55, 110)
 
-# دور کمپرسور (RPM)
+# compressor speed (RPM)
 compressor_rpm = 9500 + 200 * np.sin(t * 0.2) + np.random.normal(0, 30, NUM_RECORDS)
 
 # ------------------------------------------------
-# ۲. کوره کراکینگ (Pyrolysis Furnace) - دی‌کوکینگ
+# 2. Cracking furnace (Pyrolysis Furnace) - decoking
 # ------------------------------------------------
-# دمای پوسته کویل خروجی (Coil Outlet Skin Temperature) - افزایش تدریجی با تجمع کک
+# Coil Outlet Skin Temperature - gradual increase with coke accumulation
 coil_skin_temp_c = 850 + 0.008 * np.arange(NUM_RECORDS) + 5 * np.sin(t * 0.1) + np.random.normal(0, 2, NUM_RECORDS)
 coil_skin_temp_c = np.clip(coil_skin_temp_c, 830, 1050)
 
-# افت فشار کویل (Coil Pressure Drop, bar) - افزایش تدریجی همراه با کک‌گرفتگی
+# Coil Pressure Drop (bar) - gradual increase with coking
 coil_pressure_drop_bar = 1.2 + 0.0003 * np.arange(NUM_RECORDS) + np.random.normal(0, 0.05, NUM_RECORDS)
 coil_pressure_drop_bar = np.clip(coil_pressure_drop_bar, 1.0, 3.5)
 
 # ------------------------------------------------
-# ۳. کاتالیست راکتور پلیمریزاسیون (PE/PP)
+# 3. Polymerization reactor catalyst (PE/PP)
 # ------------------------------------------------
-# فعالیت نسبی کاتالیست (٪) - کاهش تدریجی
+# relative catalyst activity (%) - gradual decrease
 catalyst_activity_percent = 100 - 0.0015 * np.arange(NUM_RECORDS) - 2 * np.sin(t * 0.05) + np.random.normal(0, 0.8, NUM_RECORDS)
 catalyst_activity_percent = np.clip(catalyst_activity_percent, 40, 100)
 
-# نرخ تولید واقعی (تن بر ساعت) - وابسته به فعالیت کاتالیست
+# actual production rate (tons per hour) - depends on catalyst activity
 production_rate_tph = 45 * (catalyst_activity_percent / 100) + np.random.normal(0, 1, NUM_RECORDS)
 production_rate_tph = np.clip(production_rate_tph, 15, 48)
 
 # ------------------------------------------------
-# ۴. متغیرهای هدف (برچسب‌های آموزش مدل)
+# 4. Target variables (model training labels)
 # ------------------------------------------------
-# برچسب باینری خرابی نزدیک کمپرسور طی ۷۲ ساعت آینده (برای آموزش مدل RUL/طبقه‌بندی)
+# binary label of imminent compressor failure within the next 72 hours (for RUL/classification model training)
 failure_risk_72h = (vibration_rms > 7.5).astype(int)
 
-# روز باقی‌مانده تا دی‌کوکینگ توصیه‌شده کوره (بر اساس آستانه افت‌فشار ۲.۸ بار)
+# days remaining until the recommended furnace decoking (based on a 2.8 bar pressure-drop threshold)
 days_to_recommended_decoke = np.clip((2.8 - coil_pressure_drop_bar) / 0.0003 / 86400, 0, 45)
 
 df = pd.DataFrame({
     'timestamp': timestamps,
-    # کمپرسور
+    # compressor
     'compressor_vibration_rms_mms': np.round(vibration_rms, 3),
     'compressor_bearing_temp_c': np.round(bearing_temp_c, 2),
     'compressor_rpm': np.round(compressor_rpm, 0).astype(int),
     'compressor_failure_risk_72h': failure_risk_72h,
-    # کوره کراکینگ
+    # cracking furnace
     'furnace_coil_skin_temp_c': np.round(coil_skin_temp_c, 2),
     'furnace_coil_pressure_drop_bar': np.round(coil_pressure_drop_bar, 3),
     'days_to_recommended_decoke': np.round(days_to_recommended_decoke, 1),
-    # کاتالیست
+    # catalyst
     'catalyst_activity_percent': np.round(catalyst_activity_percent, 2),
     'production_rate_tph': np.round(production_rate_tph, 2),
 })
 
 output_file = "critical_asset_health_data_10k.csv"
 df.to_csv(output_file, index=False)
-print(f"✅ داده‌های سلامت دارایی در فایل '{output_file}' ذخیره شد.")
-print(f"📊 تعداد رکوردها: {len(df):,} - تعداد متغیرها: {len(df.columns)}")
+print(f"✅ Asset health data was saved to file '{output_file}'.")
+print(f"📊 Number of records: {len(df):,} - Number of variables: {len(df.columns)}")
 print(df.describe())
 ```
 
 ---
 
-## ۴. توجیه اقتصادی و متقاعدسازی پتروشیمی (Business Case)
+## 4. Economic justification and persuading the petrochemical (Business Case)
 
-آنچه این محصول را برای مدیریت یک پتروشیمی «قابل‌فروش و ملموس» می‌کند (نه صرفاً یک ابزار تحلیلی):
+What makes this product "sellable and tangible" to a petrochemical's management (not merely an analytical tool):
 
-| شاخص | وضعیت فعلی معمول در پتروشیمی‌های بزرگ | با Khalij-CAPM | اثر مالی تقریبی |
+| Indicator | Typical current state in large petrochemicals | With Khalij-CAPM | Approximate financial impact |
 | :--- | :--- | :--- | :--- |
-| توقف ناخواسته به دلیل خرابی کمپرسور حیاتی | ۱ تا ۳ رویداد در سال، هر رویداد ۲ تا ۵ روز توقف واحد | تشخیص ۷۲ ساعت زودتر → توقف برنامه‌ریزی‌شده به‌جای اضطراری | جلوگیری از توقف چندروزه معادل چند میلیون دلار زیان تولید در هر رویداد |
-| زمان‌بندی دی‌کوکینگ کوره | زمان‌محور (تقویمی) یا با تأخیر پس از افت محسوس بازده | پیش‌بینانه بر اساس روند واقعی افت‌فشار/دما | افزایش ۲ تا ۴٪ در بازده اتیلن هر سیکل کوره + کاهش ریسک آسیب کویل |
-| موجودی قطعات یدکی بحرانی | نگهداری موجودی احتیاطی بالا («هر چه بیشتر بهتر») به دلیل عدم قطعیت | موجودی بهینه بر اساس بازه اطمینان RUL چند تجهیز هم‌زمان | کاهش ۱۵ تا ۳۰٪ سرمایه در گردش قفل‌شده در انبار قطعات یدکی |
-| افت فعالیت کاتالیست پلیمریزاسیون | تعویض بر اساس دوره ثابت یا افت محسوس کیفیت | برنامه‌ریزی تعویض/احیا در نقطه بهینه اقتصادی | کاهش مصرف کاتالیست + ثبات کیفیت گرید |
+| Unplanned shutdown due to critical compressor failure | 1 to 3 events per year, each causing 2 to 5 days of unit shutdown | Detection 72 hours earlier → planned shutdown instead of emergency | Preventing a multi-day shutdown equal to several million dollars of production loss per event |
+| Furnace decoking scheduling | Time-based (calendar) or late after a noticeable efficiency drop | Predictive based on the actual pressure-drop/temperature trend | 2 to 4% increase in ethylene yield per furnace cycle + reduced coil damage risk |
+| Critical spare-parts inventory | Holding high safety stock ("the more the better") due to uncertainty | Optimal inventory based on the RUL confidence interval of multiple equipment simultaneously | 15 to 30% reduction in working capital locked in the spare-parts warehouse |
+| Polymerization catalyst activity loss | Replacement based on a fixed period or noticeable quality loss | Replacement/regeneration planning at the economic optimum | Reduced catalyst consumption + grade quality stability |
 
-**زمان بازگشت سرمایه (Payback) واقع‌بینانه:** با جلوگیری از تنها **یک** توقف ناخواسته کمپرسور در سال اول، هزینه کامل پیاده‌سازی و پایلوت این سامانه معمولاً در همان رویداد اول جبران می‌شود — این ساده‌ترین استدلال برای تصویب بودجه در سطح مدیریت پتروشیمی است.
+**Realistic payback:** By preventing only **one** unplanned compressor shutdown in the first year, the full implementation and pilot cost of this system is usually offset at that first event — this is the simplest argument for budget approval at petrochemical management level.
 
 ---
 
-## ۵. تخصیص محصولات ۱ تا ۴ به شرکت‌های زیرمجموعه هلدینگ خلیج‌فارس (PGPIC)
+## 5. Allocation of products 1 to 4 to the subsidiaries of the Persian Gulf Holding (PGPIC)
 
-> جزئیات کامل استدلال در فایل جداگانه [`../نقشه-تخصیص-محصولات-به-شرکت-های-هلدینگ.md`](../نقشه-تخصیص-محصولات-به-شرکت-های-هلدینگ.md) آمده است. خلاصه:
+> The full details of the reasoning are in the separate file [`../نقشه-تخصیص-محصولات-به-شرکت-های-هلدینگ.md`](../نقشه-تخصیص-محصولات-به-شرکت-های-هلدینگ.md) (the product-to-company allocation map). Summary:
 
-| محصول | شرکت پیشنهادی هدف | دلیل کوتاه |
+| Product | Proposed target company | Short reason |
 | :--- | :--- | :--- |
-| ۱ – بهینه‌سازی فرایند تولید | **پتروشیمی بندرامام (BIPC)** | مجتمع مادر الفین/آروماتیک/پلیمر با تنوع بالای واکنش‌گاه‌های نیازمند بهینه‌سازی چندهدفه |
-| ۲ – تحول دیجیتال و زنجیره ارزش | **ستاد هلدینگ خلیج‌فارس (PGPIC)** | دامنه محصول صراحتاً «کلیه شرکت‌های تابعه» است؛ مشتری واقعی سطح هلدینگ/ستاد است، نه یک شرکت تابعه |
-| ۳ – انرژی، کربن و پایداری | **پتروشیمی شهید تندگویان (PTA/PET)** | تنها تولیدکننده PTA کشور، فرایند بسیار انرژی‌بر با بار Scope1/2 بالا؛ دقیقاً منطبق با نام محصول («olefin and PTA units») |
-| ۴ – پایش سلامت دارایی (این سند) | **پتروشیمی مارون** | بزرگ‌ترین مجتمع الفین/پلی‌اتیلن/پلی‌پروپیلن هلدینگ با بزرگ‌ترین فیلوی کمپرسورهای حیاتی و کوره‌های کراکینگ؛ بیشترین ریسک مالی ناشی از توقف ناخواسته |
+| 1 – Production process optimization | **Bandar Imam Petrochemical (BIPC)** | Parent olefin/aromatics/polymer complex with a high diversity of reactors requiring multi-objective optimization |
+| 2 – Digital transformation and value chain | **Persian Gulf Holding HQ (PGPIC)** | The product scope is explicitly "all subsidiaries"; the real customer is at the holding/HQ level, not one subsidiary |
+| 3 – Energy, carbon and sustainability | **Shahid Tondgooyan Petrochemical (PTA/PET)** | The country's only PTA producer, a highly energy-intensive process with a high Scope 1/2 load; exactly matching the product name ("olefin and PTA units") |
+| 4 – Asset health monitoring (this document) | **Maroun Petrochemical** | The holding's largest olefin/polyethylene/polypropylene complex with the largest fleet of critical compressors and cracking furnaces; the highest financial risk from unplanned shutdown |
 
 ---
 
-## ۶. نقشه تکامل پیشنهادی (Phase 1–8) — برای پیاده‌سازی بعدی مشابه محصولات ۱ تا ۳
+## 6. Proposed evolution roadmap (Phase 1–8) — for later implementation similar to products 1 to 3
 
-| فاز | قابلیت |
+| Phase | Capability |
 | :--- | :--- |
-| ۱ | زیرساخت پایه + شبیه‌ساز داده (این سند) + اتصال به Kafka/TimescaleDB مشترک با محصول ۱ |
-| ۲ | مدل تشخیص عیب/RUL تجهیز دوار (LSTM + Survival Analysis) |
-| ۳ | حسگر مجازی کوره کراکینگ (زمان‌بندی دی‌کوکینگ) |
-| ۴ | حسگر مجازی زوال کاتالیست |
-| ۵ | بهینه‌ساز چندهدفه نگهداری (NSGA-II) + اتصال CMMS/SAP-PM |
-| ۶ | داشبورد «اتاق فرماندهی نگهداری» + هشدار/توصیه بلادرنگ |
-| ۷ | امنیت، RBAC، Audit trail (بازاستفاده کامل از الگوی امنیتی محصول ۱) |
-| ۸ | پایلوت عملیاتی روی یک ترافیک کمپرسور واقعی + یک کوره کراکینگ در پتروشیمی مارون |
+| 1 | Base infrastructure + data simulator (this document) + connection to the Kafka/TimescaleDB shared with product 1 |
+| 2 | Rotating equipment fault detection/RUL model (LSTM + Survival Analysis) |
+| 3 | Cracking furnace virtual sensor (decoking scheduling) |
+| 4 | Catalyst deterioration virtual sensor |
+| 5 | Multi-objective maintenance optimizer (NSGA-II) + CMMS/SAP-PM connection |
+| 6 | "Maintenance command center" dashboard + real-time alert/recommendation |
+| 7 | Security, RBAC, Audit trail (full reuse of product 1's security pattern) |
+| 8 | Operational pilot on one real compressor train + one cracking furnace at Maroun Petrochemical |
 
 ---
 
-## ۷. جمع‌بندی نوآوری‌های قابل ثبت اختراع
+## 7. Summary of patentable innovations
 
-1. **حسگر مجازی زمان‌بندی دی‌کوکینگ پیش‌بینانه** کوره‌های کراکینگ بر پایه یادگیری روند (نه آستانه ثابت مهندسی).
-2. **مدل یکپارچه پیش‌بینی عمر باقی‌مانده با بازه عدم‌قطعیت** برای تجهیز دوار + کوره + کاتالیست در یک دوقلوی دیجیتال واحد.
-3. **بهینه‌سازی هم‌زمان چند-دارایی برنامه تعمیرات و موجودی قطعات یدکی** بر پایه بازه‌های RUL (نه زمان‌بندی تقویمی).
-4. **حلقه یادگیری بسته (Closed-Loop)** که نتیجه واقعی هر اقدام تعمیراتی را برای بازآموزی مداوم مدل ثبت می‌کند.
+1. **Predictive decoking-scheduling virtual sensor** for cracking furnaces based on trend learning (not a fixed engineering threshold).
+2. **An integrated remaining-useful-life prediction model with an uncertainty interval** for rotating equipment + furnace + catalyst in a single digital twin.
+3. **Simultaneous multi-asset optimization of the maintenance schedule and spare-parts inventory** based on RUL intervals (not calendar scheduling).
+4. **A closed learning loop (Closed-Loop)** that records the actual result of every maintenance action for continuous model retraining.
 
 ---
 
-## ۸. منابع و سوابق ثبت اختراع بررسی‌شده (Sources)
+## 8. Sources and patent records reviewed (Sources)
 
 - [US11650184 — System and method for monitoring rotating equipment](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11650184)
 - [US20180282633A1 — Rotating equipment in a petrochemical plant or refinery (Google Patents)](https://patents.google.com/patent/US20180282633A1/en)
@@ -274,7 +274,7 @@ print(df.describe())
 - [Remaining Useful Life prediction with uncertainty quantification (arXiv)](https://arxiv.org/pdf/2109.11579)
 - [PNNL — Predicting Catalyst Degradation with Machine Learning](https://www.pnnl.gov/news-media/predicting-catalyst-degradation-machine-learning)
 - [ScienceDirect — Cyclic scheduling for an ethylene cracking furnace system](https://www.sciencedirect.com/science/article/abs/pii/S0098135417300248)
-- [شانا — ایران به فناوری سامانه پایش وضع ماشین‌های دوار دست یافت](https://www.shana.ir/news/640166/)
-- [ویکی‌پدیا فارسی — شرکت صنایع پتروشیمی خلیج فارس](https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D8%B5%D9%86%D8%A7%DB%8C%D8%B9_%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D8%AE%D9%84%DB%8C%D8%AC_%D9%81%D8%A7%D8%B1%D8%B3)
-- [ویکی‌پدیا فارسی — شرکت پتروشیمی مارون](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D9%85%D8%A7%D8%B1%D9%88%D9%86)
-- [PGPIC — درباره ما](https://www.pgpic.ir/)
+- [Shana — Iran achieves rotating machine condition monitoring system technology](https://www.shana.ir/news/640166/)
+- [Persian Wikipedia — Persian Gulf Petrochemical Industries Company](https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D8%B5%D9%86%D8%A7%DB%8C%D8%B9_%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D8%AE%D9%84%DB%8C%D8%AC_%D9%81%D8%A7%D8%B1%D8%B3)
+- [Persian Wikipedia — Maroun Petrochemical Company](https://fa.wikipedia.org/wiki/%D9%BE%D8%AA%D8%B1%D9%88%D8%B4%DB%8C%D9%85%DB%8C_%D9%85%D8%A7%D8%B1%D9%88%D9%86)
+- [PGPIC — About us](https://www.pgpic.ir/)
